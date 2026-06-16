@@ -1,0 +1,178 @@
+[
+  {
+    "id": "t1",
+    "title": "Surya Namaskar",
+    "subtitle": "The Sun Salutation",
+    "short_story": "Performed at dawn facing east, this 12-step practice is a complete conversation between body, breath, and cosmos — each posture invoking a different solar deity.",
+    "historical_origin": "Dating back over 2,500 years, Surya Namaskar is referenced in the Rig Veda's Surya Mandala. It was formalised in Hatha Yoga texts and was part of the daily discipline of kshatriyas (warriors). The 12 postures correspond to the 12 names and qualities of the sun.",
+    "scientific_logic": "Modern research confirms: one round burns ~13.9 calories. The sequence activates the sympathetic nervous system, improves spinal flexibility, regulates cortisol, and synchronises cardiovascular and respiratory function. NASA astronauts use modified sun salutation protocols for muscle maintenance in zero gravity.",
+    "linked_scripture_id": "s3",
+    "tags": [
+      "morning",
+      "yoga",
+      "focus",
+      "health"
+    ],
+    "category": "Practice",
+    "source": "Hatha Yoga Pradipika · Rig Veda Surya Mandala",
+    "title_hi": "सूर्य नमस्कार",
+    "subtitle_hi": "सूर्य को अर्घ्य एवं १२ योग मुद्राएं",
+    "short_story_hi": "प्रातःकाल पूर्व दिशा की ओर मुख करके किया जाने वाला १२ चरणों का यह अभ्यास शरीर, श्वास और ब्रह्मांड के मध्य दिव्य सामंजस्य स्थापित करता है।",
+    "historical_origin_hi": "ऋग्वेद के सूर्य मंडल में सूर्य नमस्कार का उल्लेख २५०० से अधिक वर्षों प्राचीन है।",
+    "scientific_logic_hi": "प्रातःकालीन सूर्य की किरणें विटामिन D का सर्वोत्तम स्रोत हैं। पीनियल ग्रंथि और मेलाटोनिन चक्र संतुलित होता है तथा शरीर में सकारात्मक ऊर्जा का संचार होता है।"
+  },
+  {
+    "id": "t2",
+    "title": "Namaste",
+    "subtitle": "The Sacred Greeting",
+    "short_story": "Far more than a greeting. 'Namas' + 'te' = 'I bow to the divine in you.' Rooted in the Vedic concept of Brahman residing in all living beings — the recognition of the sacred in every person you meet.",
+    "historical_origin": "Appears in Vedic texts as the appropriate greeting recognising Brahman (universal consciousness) in every person. The Anjali Mudra (joined palms at the heart) predates recorded history and appears across Buddhist, Jain, and Hindu traditions.",
+    "scientific_logic": "The Anjali Mudra activates pressure points connecting both brain hemispheres, producing a measurable calming effect on the nervous system. By avoiding hand contact, it also has documented hygiene benefits — which is why the WHO recommended it during the COVID-19 pandemic as an alternative to handshakes.",
+    "linked_scripture_id": null,
+    "tags": [
+      "friendship",
+      "respect",
+      "daily",
+      "greeting"
+    ],
+    "category": "Custom",
+    "source": "Vedic Texts · Rigveda · Atharvaveda",
+    "title_hi": "उपवास एवं व्रत",
+    "subtitle_hi": "आत्म-शुद्धि एवं देह शोधन",
+    "short_story_hi": "एकादशी एवं प्रदोष व्रत में अन्न का त्याग कर मन को भगवद् भक्ति एवं ध्यान में लीन किया जाता है।",
+    "historical_origin_hi": "आयुर्वेद के लङ्घनम् परमोौषधम् सिद्धांत पर आधारित वैदिक परंपरा।",
+    "scientific_logic_hi": "उपवास से ऑटोफेजी प्रक्रिया सक्रिय होती है जिससे क्षतिग्रस्त कोशिकाएं पुनर्जीवित होती हैं और पाचन तंत्र को विश्राम मिलता है।"
+  },
+  {
+    "id": "t3",
+    "title": "Deepawali — Lighting the Diyas",
+    "subtitle": "The Festival of Lights",
+    "short_story": "The tradition of lighting oil lamps on Diwali night is one of the most ancient in Hindu culture. It symbolises the victory of light over darkness, knowledge over ignorance, and the return of Ram to Ayodhya.",
+    "historical_origin": "Celebrated since Vedic times, Diwali marks Lord Ram's return to Ayodhya after 14 years of exile. The citizens lit their homes with earthen lamps so Ram could find his way. This tradition is now over 3,000 years old and is mentioned in the Ramayana, Puranas, and early Buddhist texts.",
+    "scientific_logic": "Mustard oil diyas produce less smoke than paraffin candles and have antimicrobial properties. The flickering flame is the foundation of Trataka (candle gazing meditation) — a proven technique for improving focus and reducing anxiety, now validated in multiple clinical studies on attention disorders.",
+    "linked_scripture_id": null,
+    "tags": [
+      "festival",
+      "motivation",
+      "light",
+      "celebration"
+    ],
+    "category": "Festival",
+    "source": "Valmiki Ramayana · Ayodhyakanda · Padma Purana",
+    "title_hi": "संध्यावंदन",
+    "subtitle_hi": "त्रिकाल संध्या एवं गायत्री जप",
+    "short_story_hi": "प्रातः, मध्याह्न और सायं संधिकाल में गायत्री मंत्र एवं प्राणायाम का अनुष्ठान।",
+    "historical_origin_hi": "यजुर्वेद एवं उपनिषदों में वर्णित द्विज परंपरा।",
+    "scientific_logic_hi": "संधिकाल में पृथ्वी के चुंबकीय क्षेत्र में परिवर्तन होता है। प्राणायाम से मस्तिष्क में अल्फा तरंगें उत्पन्न होती हैं जो मानसिक शांति प्रदान करती हैं।"
+  },
+  {
+    "id": "t4",
+    "title": "Brahma Muhurta",
+    "subtitle": "The Creator's Hour",
+    "short_story": "The 96-minute window before sunrise — roughly 4:00–5:30 AM — is called Brahma Muhurta. Ancient texts say this is when the mind is sharpest, the atmosphere most charged with prana, and learning goes deepest.",
+    "historical_origin": "Described extensively in the Ashtanga Hridayam (core Ayurvedic scripture) and Charaka Samhita. The concept ties to the body's natural circadian alignment — Vata dosha (governing the nervous system) is dominant in the early morning, making the mind both alert and receptive.",
+    "scientific_logic": "Modern chronobiology confirms: cortisol peaks just before dawn, boosting alertness without stimulants. The final REM sleep cycle creates peak neuroplasticity — memory consolidation from the previous night is highest at this hour. Studies on top performers consistently show early-morning focus blocks as the highest-leverage study time.",
+    "linked_scripture_id": null,
+    "tags": [
+      "morning",
+      "focus",
+      "study",
+      "self-discipline"
+    ],
+    "category": "Practice",
+    "source": "Ashtanga Hridayam · Charaka Samhita · Atharva Veda",
+    "title_hi": "दीपक प्रज्वलन",
+    "subtitle_hi": "तमसो मा ज्योतिर्गमय",
+    "short_story_hi": "प्रातः एवं सायं घृत या तिल के तेल का दीपक प्रज्वलित कर अंधकार और नकारात्मकता का नाश किया जाता है।",
+    "historical_origin_hi": "अथर्ववेद एवं अष्टांग हृदयम् में वर्णित अग्नि उपासना।",
+    "scientific_logic_hi": "शुद्ध गाय के घी का दीपक वातावरण से सूक्ष्म रोगाणुओं को नष्ट करता है तथा प्रकाश से मस्तिष्क में सेरोटोनिन हार्मोन का स्राव होता है।"
+  },
+  {
+    "id": "t5",
+    "title": "Sandhyavandanam",
+    "subtitle": "The Twilight Salutation",
+    "short_story": "Performed at dawn, noon, and dusk — Sandhyavandanam is the Vedic practice of consciously marking the transitions of the day. It is meditation, gratitude, and time-awareness combined into one ritual.",
+    "historical_origin": "One of the oldest continuous ritual practices in the world, Sandhyavandanam is prescribed in the Dharmasutras and Grihyasutras. It is the daily duty (nitya karma) of the twice-born in Vedic tradition. The three sandhyas (junctions) — dawn, noon, dusk — are considered moments of heightened cosmic energy.",
+    "scientific_logic": "Modern chronobiology identifies these same three transition points (dawn, midday, dusk) as peaks in cortisol, hormonal activity, and circadian rhythm transitions. The practice of pausing at these moments effectively resets attention, interrupts cognitive fatigue, and synchronises the body clock — the same principle behind corporate 'mindfulness breaks.'",
+    "linked_scripture_id": "s9",
+    "tags": [
+      "morning",
+      "focus",
+      "self-discipline",
+      "practice"
+    ],
+    "category": "Practice",
+    "source": "Rigveda · Yajurveda · Dharmasutras · Grihyasutras",
+    "title_hi": "Sandhyavandanam",
+    "subtitle_hi": "The Twilight Salutation",
+    "short_story_hi": "Performed at dawn, noon, and dusk — Sandhyavandanam is the Vedic practice of consciously marking the transitions of the day. It is meditation, gratitude, and time-awareness combined into one ritual.",
+    "historical_origin_hi": "One of the oldest continuous ritual practices in the world, Sandhyavandanam is prescribed in the Dharmasutras and Grihyasutras. It is the daily duty (nitya karma) of the twice-born in Vedic tradition. The three sandhyas (junctions) — dawn, noon, dusk — are considered moments of heightened cosmic energy.",
+    "scientific_logic_hi": "Modern chronobiology identifies these same three transition points (dawn, midday, dusk) as peaks in cortisol, hormonal activity, and circadian rhythm transitions. The practice of pausing at these moments effectively resets attention, interrupts cognitive fatigue, and synchronises the body clock — the same principle behind corporate 'mindfulness breaks.'"
+  },
+  {
+    "id": "t6",
+    "title": "Tilak / Bindi",
+    "subtitle": "The Third Eye Mark",
+    "short_story": "The red or sandalwood mark on the forehead between the eyebrows is not decoration. It marks the Ajna chakra — the seat of intuition, concentration, and the witness consciousness.",
+    "historical_origin": "Described in Vedic and Tantric texts as marking the Ajna (command) chakra at the prefrontal cortex region. The tilak is applied differently based on tradition — Shaivites use three horizontal lines of ash (Vibhuti), Vaishnavites use the vertical U-shape (Urdhva Pundra), scholars use sandalwood paste.",
+    "scientific_logic": "The Ajna chakra corresponds to the prefrontal cortex — the seat of executive function, decision-making, and focused attention. Applying pressure to this point activates the supratrochlear nerve and has measurable calming effects on the nervous system. Some sandalwood paste preparations have been shown to lower anxiety markers.",
+    "linked_scripture_id": null,
+    "tags": [
+      "focus",
+      "daily",
+      "practice",
+      "identity"
+    ],
+    "category": "Custom",
+    "source": "Agni Purana · Tantra Shastra · Vishnu Purana",
+    "title_hi": "Tilak / Bindi",
+    "subtitle_hi": "The Third Eye Mark",
+    "short_story_hi": "The red or sandalwood mark on the forehead between the eyebrows is not decoration. It marks the Ajna chakra — the seat of intuition, concentration, and the witness consciousness.",
+    "historical_origin_hi": "Described in Vedic and Tantric texts as marking the Ajna (command) chakra at the prefrontal cortex region. The tilak is applied differently based on tradition — Shaivites use three horizontal lines of ash (Vibhuti), Vaishnavites use the vertical U-shape (Urdhva Pundra), scholars use sandalwood paste.",
+    "scientific_logic_hi": "The Ajna chakra corresponds to the prefrontal cortex — the seat of executive function, decision-making, and focused attention. Applying pressure to this point activates the supratrochlear nerve and has measurable calming effects on the nervous system. Some sandalwood paste preparations have been shown to lower anxiety markers."
+  },
+  {
+    "id": "t7",
+    "title": "Gotra & Lineage System",
+    "subtitle": "Genetic Memory in Ritual Form",
+    "short_story": "Every Hindu family has a Gotra — a patrilineal clan traced to one of the ancient Vedic rishis. It is a living genetic record connecting you to your ancestors across thousands of years.",
+    "historical_origin": "The Gotra system originates in the Vedic period as a way of organising communities of students around a specific teacher-lineage (Rishi). Over time it became hereditary, encoding patrilineal descent. The major gotras are traced to the Saptarishis — the seven cosmic sages of Vedic cosmology.",
+    "scientific_logic": "The Gotra system prohibits marriage within the same gotra (exogamy) — a rule that encodes the prevention of inbreeding without any knowledge of genetics. Modern population genetics studies of Indian communities have confirmed that Gotra-based exogamy significantly improved genetic diversity, reducing the expression of recessive disorders. Ancient wisdom encoded as social rule.",
+    "linked_scripture_id": null,
+    "tags": [
+      "identity",
+      "friendship",
+      "respect",
+      "daily"
+    ],
+    "category": "Custom",
+    "source": "Manusmriti · Baudhayana Dharmasutra · Rig Veda",
+    "title_hi": "Gotra & Lineage System",
+    "subtitle_hi": "Genetic Memory in Ritual Form",
+    "short_story_hi": "Every Hindu family has a Gotra — a patrilineal clan traced to one of the ancient Vedic rishis. It is a living genetic record connecting you to your ancestors across thousands of years.",
+    "historical_origin_hi": "The Gotra system originates in the Vedic period as a way of organising communities of students around a specific teacher-lineage (Rishi). Over time it became hereditary, encoding patrilineal descent. The major gotras are traced to the Saptarishis — the seven cosmic sages of Vedic cosmology.",
+    "scientific_logic_hi": "The Gotra system prohibits marriage within the same gotra (exogamy) — a rule that encodes the prevention of inbreeding without any knowledge of genetics. Modern population genetics studies of Indian communities have confirmed that Gotra-based exogamy significantly improved genetic diversity, reducing the expression of recessive disorders. Ancient wisdom encoded as social rule."
+  },
+  {
+    "id": "t8",
+    "title": "Pradakshina",
+    "subtitle": "Circumambulation — Keeping the Sacred at Your Centre",
+    "short_story": "Pradakshina is the practice of walking clockwise around a deity, a fire, a sacred tree, or a holy mountain. The right side always faces the centre of what is most sacred to you.",
+    "historical_origin": "One of the most universal of all Hindu ritual acts, Pradakshina is mentioned in the Grihyasutras and Dharmasutras. 'Pra' = forward movement, 'Dakshina' = right side. The practice encodes the idea that the sacred centre should always be to your right — your most honoured side.",
+    "scientific_logic": "Clockwise movement aligns with the direction of the sun's apparent movement (east to west via south) in the northern hemisphere. Walking meditation itself is validated by neuroscience: movement activates the cerebellum and promotes neurogenesis, while the circular path reduces goal-oriented thinking and activates present-moment awareness — the same effect as modern walking meditation protocols.",
+    "linked_scripture_id": null,
+    "tags": [
+      "practice",
+      "morning",
+      "focus",
+      "respect"
+    ],
+    "category": "Ritual",
+    "source": "Grihyasutras · Apastamba Dharmasutra · Skanda Purana",
+    "title_hi": "Pradakshina",
+    "subtitle_hi": "Circumambulation — Keeping the Sacred at Your Centre",
+    "short_story_hi": "Pradakshina is the practice of walking clockwise around a deity, a fire, a sacred tree, or a holy mountain. The right side always faces the centre of what is most sacred to you.",
+    "historical_origin_hi": "One of the most universal of all Hindu ritual acts, Pradakshina is mentioned in the Grihyasutras and Dharmasutras. 'Pra' = forward movement, 'Dakshina' = right side. The practice encodes the idea that the sacred centre should always be to your right — your most honoured side.",
+    "scientific_logic_hi": "Clockwise movement aligns with the direction of the sun's apparent movement (east to west via south) in the northern hemisphere. Walking meditation itself is validated by neuroscience: movement activates the cerebellum and promotes neurogenesis, while the circular path reduces goal-oriented thinking and activates present-moment awareness — the same effect as modern walking meditation protocols."
+  }
+]
