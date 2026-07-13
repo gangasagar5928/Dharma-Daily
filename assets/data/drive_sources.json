@@ -1,0 +1,28 @@
+{
+  "vedas": [
+    {"id": "rigveda", "name": "ऋग्वेद", "name_en": "Rigveda", "file_id": "1ULeopB6k19pC9OhoW7pXwiK1WunSbE34"},
+    {"id": "yajurveda", "name": "यजुर्वेद", "name_en": "Yajurveda", "file_id": "1hUqLHMIuZTAkh5FpJwROoZ4qilRA2pOi"},
+    {"id": "samaveda", "name": "सामवेद", "name_en": "Samaveda", "file_id": "1ycOKehEvKYp4FKVadnA9Pgwfs9qDN1r8"},
+    {"id": "atharvaveda", "name": "अथर्ववेद", "name_en": "Atharvaveda", "file_id": "1_snxVm81H-edGVw-4_l76ZmWZQGVZDju"}
+  ],
+  "puranas": [
+    {"id": "bhagavat_puran", "name": "श्रीमद्भागवत पुराण", "name_en": "Shrimad Bhagavat Purana", "file_id": "1Fi2X70V8_FO5NBBoi4tespwt0cloHTWA"},
+    {"id": "shiva_puran", "name": "शिव पुराण", "name_en": "Shiva Purana", "file_id": "1K6NSuKApayIf-12KwYSNTkLXzb57bU6Z"},
+    {"id": "vishnu_puran", "name": "विष्णु पुराण", "name_en": "Vishnu Purana", "file_id": "1yOUtciEHShEmadEe5Vkf4p060VaZk7z7"},
+    {"id": "garuda_puran", "name": "गरुड़ पुराण", "name_en": "Garuda Purana", "file_id": "1birZa9f7Az4B3LQCEF6XFi-D8jgqWzp8"},
+    {"id": "padma_puran", "name": "पद्म पुराण", "name_en": "Padma Purana", "file_id": "13aplPsZVTj50EHAUGasEPjaKN4bIRQsR"},
+    {"id": "skanda_puran", "name": "स्कन्द पुराण", "name_en": "Skanda Purana", "file_id": "1_dh5Lgad0aWwaVWmNkh90JbQ3NxV3U6y"},
+    {"id": "agni_puran", "name": "अग्नि पुराण", "name_en": "Agni Purana", "file_id": "1gecOppWsqtKgfrJu63a6lrg945PmO-rT"},
+    {"id": "bhavishya_puran", "name": "भविष्य पुराण", "name_en": "Bhavishya Purana", "file_id": "16l2g-rrGD_WAb3q1U9bBdH1Iyy_l6SgK"},
+    {"id": "markandeya_puran", "name": "मार्कण्डेय पुराण", "name_en": "Markandeya Purana", "file_id": "12Z8oonA9qee6CNSrrbfRwd61usyc9KTV"},
+    {"id": "matsya_puran", "name": "मत्स्य पुराण", "name_en": "Matsya Purana", "file_id": "1vjxwhx3eQK84dlKqOMWWrNr6dITJX70h"},
+    {"id": "brahma_puran", "name": "ब्रह्म पुराण", "name_en": "Brahma Purana", "file_id": "10KfsMseaziK-J7wGwN7xy1qKOARI707N"},
+    {"id": "brahmanda_puran", "name": "ब्रह्माण्ड पुराण", "name_en": "Brahmanda Purana", "file_id": "1vnSQIhwjwYgsH8uIpKj-Dxt5QfjeZ4mq"},
+    {"id": "brahma_vaivarta_puran", "name": "ब्रह्मवैवर्त पुराण", "name_en": "Brahma Vaivarta Purana", "file_id": "1XHpeu_a-vfNmdawtiJjtxRLVxY3ClUUc"},
+    {"id": "kurma_puran", "name": "कूर्म पुराण", "name_en": "Kurma Purana", "file_id": "1p3AMU09fujLv1LFJKiu3rA7VDcaB1eJt"},
+    {"id": "linga_puran", "name": "लिंग पुराण", "name_en": "Linga Purana", "file_id": "1Wo6qx7t_xmpGID-wSnTdoR-u6AaBVOrB"},
+    {"id": "narada_puran", "name": "नारद पुराण", "name_en": "Narada Purana", "file_id": "1CXKlzjVy0FEV4I0RebUL5AbJ_C4CjywG"},
+    {"id": "varaha_puran", "name": "वराह पुराण", "name_en": "Varaha Purana", "file_id": "1YP_97TfKS7T_YThTxTaH5E2H7KabXnru"},
+    {"id": "vamana_puran", "name": "वामन पुराण", "name_en": "Vamana Purana", "file_id": "1cOQ5-qF6jcE0ipPp3DWKk-M7_YNilD9e"}
+  ]
+}
