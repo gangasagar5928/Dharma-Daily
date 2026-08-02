@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../models/models.dart';
 import '../data/prefs_service.dart';
+import 'drive_pdf_screen.dart';
 
 void showScriptureSheet(BuildContext context, ScriptureItem scripture) {
   showModalBottomSheet(
@@ -497,6 +498,24 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                   ),
                 ),
                 IconButton(
+                  icon: const Icon(Icons.picture_as_pdf, color: Colors.amber),
+                  tooltip: 'Read Full PDF Scan (Google Drive)',
+                  onPressed: () async {
+                    await DriveSourcesService().load();
+                    final sources = DriveSourcesService().vedas;
+                    final source = sources.firstWhere(
+                      (s) => s.id.contains(v.id) || v.id.contains(s.id),
+                      orElse: () => sources.isNotEmpty ? sources.first : const DriveSource(id: 'rigved', name: 'ऋग्वेद', nameEn: 'Rigveda', fileId: '1ULeopB6k19pC9OhoW7pXwiK1WunSbE34'),
+                    );
+                    if (context.mounted) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => DrivePdfScreen(source: source)),
+                      );
+                    }
+                  },
+                ),
+                IconButton(
                   icon: const Icon(Icons.close),
                   onPressed: () => Navigator.pop(context),
                 ),
@@ -709,6 +728,24 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                       ),
                     ],
                   ),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.picture_as_pdf, color: Colors.purpleAccent),
+                  tooltip: 'Read Full PDF Scan (Google Drive)',
+                  onPressed: () async {
+                    await DriveSourcesService().load();
+                    final sources = DriveSourcesService().puranas;
+                    final source = sources.firstWhere(
+                      (s) => s.id.contains(p.id) || p.id.contains(s.id),
+                      orElse: () => sources.isNotEmpty ? sources.first : const DriveSource(id: 'bhagwat-puran', name: 'श्रीमद्भागवत पुराण', nameEn: 'Shrimad Bhagavat Purana', fileId: '1Fi2X70V8_FO5NBBoi4tespwt0cloHTWA'),
+                    );
+                    if (context.mounted) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => DrivePdfScreen(source: source)),
+                      );
+                    }
+                  },
                 ),
                 IconButton(
                   icon: const Icon(Icons.close),

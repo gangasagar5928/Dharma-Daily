@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../data/data_service.dart';
 import '../models/models.dart';
 import 'detail_sheets.dart';
+import 'drive_pdf_screen.dart';
 
 class LibraryScreen extends StatefulWidget {
   const LibraryScreen({super.key});
@@ -62,6 +63,18 @@ class _LibraryScreenState extends State<LibraryScreen> with SingleTickerProvider
     return Scaffold(
       appBar: AppBar(
         title: const Text('DHARMA LIBRARY'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.cloud_download, color: Colors.amber),
+            tooltip: 'Google Drive PDF Reader',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const DriveLibraryScreen()),
+              );
+            },
+          ),
+        ],
         bottom: TabBar(
           controller: _tabController,
           isScrollable: true,

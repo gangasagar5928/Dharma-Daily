@@ -50,3 +50,4 @@ migrate_working_dir/
 # Large binary PDFs in root (stored in JSON assets)
 /Vedas/
 /Puran/
+/extracted_apk/
