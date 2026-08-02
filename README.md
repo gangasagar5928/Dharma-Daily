@@ -67,9 +67,53 @@
   </tr>
 </table>
 
+## 🧮 Astronomical Panchang Architecture & Math
+
+The Panchang engine utilizes a **Hybrid Ephemeris & Drik Siddhanta Engine**:
+
+### 1. Data Origin & Precalculated Ephemeris
+- **Ephemeris Dataset:** 455-day dataset covering **Vikram Samvat 2083** (Jan 1, 2026 to Mar 31, 2027) generated from Swiss Ephemeris Drik Siddhanta astronomical data.
+- **Geocentric Ecliptic Longitudes:** Contains exact daily Solar ($\lambda_{\text{Sun}}$) and Lunar ($\lambda_{\text{Moon}}$) geocentric longitudes in degrees ($0^\circ \text{ to } 360^\circ$).
+
+### 2. Drik Siddhanta Mathematical Formulas
+
+$$\begin{aligned}
+\text{\textbf{Elongation (E)}} &= (\lambda_{\text{Moon}} - \lambda_{\text{Sun}}) \pmod{360^\circ} \\[6pt]
+\text{\textbf{Tithi Index}} &= \left\lfloor \frac{E}{12^\circ} \right\rfloor + 1 \quad (1 \le \text{Tithi} \le 30) \\[6pt]
+\text{\textbf{Nakshatra Index}} &= \left\lfloor \frac{\lambda_{\text{Moon}}}{13^\circ 20'} \right\rfloor + 1 \quad (1 \le \text{Nakshatra} \le 27) \\[6pt]
+\text{\textbf{Yoga Index}} &= \left\lfloor \frac{(\lambda_{\text{Sun}} + \lambda_{\text{Moon}}) \pmod{360^\circ}}{13^\circ 20'} \right\rfloor + 1 \quad (1 \le \text{Yoga} \le 27)
+\end{aligned}$$
+
+### 3. Rahu Kaal Octant Calculation
+Dynamic daytime division into 8 equal octants ($\Delta T = \frac{T_{\text{sunset}} - T_{\text{sunrise}}}{8}$), mapped to weekday octant multipliers:
+- **Sunday:** $8^{\text{th}}$ octant
+- **Monday:** $2^{\text{nd}}$ octant
+- **Tuesday:** $7^{\text{th}}$ octant
+- **Wednesday:** $5^{\text{th}}$ octant
+- **Thursday:** $6^{\text{th}}$ octant
+- **Friday:** $4^{\text{th}}$ octant
+- **Saturday:** $3^{\text{rd}}$ octant
+
+### 4. Regional Amanta vs. Purnimanta System
+- **North Indian (Purnimanta):** Month ends on Purnima (Full Moon).
+- **South & West Indian (Amanta):** Month ends on Amavasya (New Moon).
+
 <br />
 
-## 🌿 Traditions, Science & Bilingual Support
+## 🧪 Automated Test Suite
+
+Run automated unit and astronomical tests:
+
+```bash
+# Run all tests
+flutter test
+
+# Run Panchang astronomical verification test suite
+flutter test test/panchang_test.dart
+
+# Run Data Loader verification test suite
+flutter test test/data_test.dart
+```
 
 - **Bilingual Experience:** Switch seamlessly between **Hindi (हिंदी)** and **English**.
 - **Vedic Science Integration:** Discover the scientific logic, health benefits (Ayurveda, circadian rhythm, autophagy), and historical origins behind sacred daily rituals like *Surya Namaskar*, *Upavasa*, *Sandhyavandanam*, and *Deepa Prajwalanam*.
