@@ -1,0 +1,200 @@
+[
+  {
+    "id": "rigveda",
+    "name": "ऋग्वेद (Rigveda)",
+    "name_hi": "ऋग्वेद संहिता",
+    "subtitle": "अनादि ज्ञान एवं देवताओं की स्तुतियों का प्राचीनतम वेद",
+    "vedic_period": "१५०० - १००० ईसा पूर्व",
+    "total_mandalas": 10,
+    "total_suktas": 1028,
+    "summary": "१० मण्डलों तथा १०२८ सूक्तों में विभाजित देवताओं की ऋचाओं एवं दर्शन का महान ग्रन्थ। इसमें अग्नि, इन्द्र, वरुण, सूर्य एवं सोम देव की स्तुतियां संगृहीत हैं।",
+    "sections": [
+      {
+        "section_name": "मण्डल १ (सूक्त १) - अग्नि सूक्त",
+        "summary_hi": "ऋग्वेद का प्रथम सूक्त भगवान अग्निदेव को समर्पित है जो देवताओं के पुरोहित एवं यज्ञ के संवाहक हैं।",
+        "mantras": [
+          {
+            "number": 1,
+            "sanskrit": "ॐ अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम्। होतारं रत्नधातमम्॥",
+            "transliteration": "Om agnimīḷe purohitaṁ yajñasya devamṛtvijam | hotāraṁ ratnadhātamam ||",
+            "translation_hi": "मैं यज्ञ के पुरोहित, प्रकाशमान, ऋत्विक और प्रचुर रत्नों को धारण करने वाले अग्निदेव की स्तुति करता हूँ।",
+            "translation_en": "I praise Agni, the chosen priest, the divine minister of sacrifice, the invoker, the bestower of treasure."
+          },
+          {
+            "number": 2,
+            "sanskrit": "अग्निः पूर्वेभिरृषिभिरीड्यो नूतनैरुत। स देवाँ एह वक्षति॥",
+            "transliteration": "Agniḥ pūrvebhirṛṣibhirīḍyo nūtanairuta | sa devāṁ eha vakṣati ||",
+            "translation_hi": "अग्निदेव प्राचीन ऋषियों द्वारा स्तुत्य हैं और नवीन ऋषियों द्वारा भी। वे देवताओं को यहाँ लिवा लाएँ।",
+            "translation_en": "Agni, worthy to be praised by ancient and modern seers, may he bring the gods hither."
+          }
+        ]
+      },
+      {
+        "section_name": "मण्डल ३ (सूक्त ६२) - गायत्री महामंत्र",
+        "summary_hi": "महर्षि विश्वामित्र द्वारा दृष्ट गायत्री मंत्र जो समस्त वेदों का सार है।",
+        "mantras": [
+          {
+            "number": 10,
+            "sanskrit": "ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्॥",
+            "transliteration": "Om bhūr bhuvaḥ svaḥ tat savitur vareṇyaṁ bhargo devasya dhīmahi dhiyo yo naḥ pracodayāt ||",
+            "translation_hi": "उस प्राणस्वरूप, दुःखनाशक, सुखस्वरूप, श्रेष्ठ, तेजस्वी, पापनाशक, देवस्वरूप परमात्मा का हम ध्यान करें। वह परमात्मा हमारी बुद्धि को सन्मार्ग में प्रेरित करे।",
+            "translation_en": "We meditate on the glory of that Being who has created the Universe, who is fit to be worshipped, who is the remover of all sins. May He enlighten our intellect."
+          }
+        ]
+      },
+      {
+        "section_name": "मण्डल १० (सूक्त ९०) - पुरुष सूक्त",
+        "summary_hi": "सृष्टि उत्पत्ति एवं विराट पुरुष का वर्णन।",
+        "mantras": [
+          {
+            "number": 1,
+            "sanskrit": "सहस्रशीर्षा पुरुषः सहस्राक्षः सहस्रपात्। स भूमिं विश्वतो वृत्वात्यतिष्ठद्दशांगुलम्॥",
+            "transliteration": "Sahasraśīrṣā puruṣaḥ sahasrākṣaḥ sahasrapāt | sa bhūmiṁ viśvato vṛtvātyatiṣṭhaddaśāṁgulam ||",
+            "translation_hi": "वह परम पुरुष अनंत शीश, अनंत नेत्र और अनंत चरणों वाले हैं। वे संपूर्ण ब्रह्मांड को आच्छादित करके दस अंगुल ऊपर स्थित हैं।",
+            "translation_en": "The Supreme Being has a thousand heads, a thousand eyes, and a thousand feet. Pervading the earth on all sides, He exists beyond it."
+          }
+        ]
+      },
+      {
+        "section_name": "मण्डल १० (सूक्त १२९) - नासदीय सूक्त",
+        "summary_hi": "सृष्टि पूर्व की अवस्था एवं दर्शन शास्त्र का सर्वोच्च शिखर।",
+        "mantras": [
+          {
+            "number": 1,
+            "sanskrit": "नासदासीन्नो सदासीत्तदानीं नासीद्रजो नो व्योमा परो यत्। किमावरीवः कुह कस्य शर्मन्नम्भः किमासीद् गहनं गभीरम्॥",
+            "transliteration": "Nāsadāsīnno sadāsīttadānīṁ nāsīdrajo no vyomā paro yat | kimāvarīvaḥ kuha kasya śarmannambhaḥ kimāsīd gahanaṁ gabhīram ||",
+            "translation_hi": "सृष्टि से पूर्व न असत् था, न सत् था; न अंतरिक्ष था, न परे आकाश था। उस समय गहन गंभीर जल के अतिरिक्त क्या था?",
+            "translation_en": "There was neither non-existence nor existence then; there was neither realm of space nor the sky which is beyond. What cloaked it? Where was it? In whose protection?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yajurveda",
+    "name": "यजुर्वेद (Yajurveda)",
+    "name_hi": "यजुर्वेद संहिता",
+    "subtitle": "यज्ञ, कर्मकांड, ध्यान एवं शिव संकल्प का वेद",
+    "vedic_period": "१२०० - १००० ईसा पूर्व",
+    "total_mandalas": 40,
+    "total_suktas": 1975,
+    "summary": "शुक्ल यजुर्वेद एवं कृष्ण यजुर्वेद शाखाओं में विभक्त यह वेद कर्मयोग, प्राणायाम, रुद्र उपासना एवं आत्मज्ञान का मूल स्त्रोत है।",
+    "sections": [
+      {
+        "section_name": "अध्याय ३४ - शिवसंकल्प सूक्त",
+        "summary_hi": "मन की शुद्धता एवं शुभ संकल्प हेतु प्रार्थना।",
+        "mantras": [
+          {
+            "number": 1,
+            "sanskrit": "यज्जाग्रतो दूरमुदैति दैवं तदु सुप्तस्य तथैवैति। दूरङ्गमं ज्योतिषां ज्योतिरेकं तन्मे मनः शिवसङ्कल्पमस्तु॥",
+            "transliteration": "Yajjāgrato dūramudaiti daivaṁ tadu suptasya tathaivaiti | dūraṅgamaṁ jyotiṣāṁ jyotirekaṁ tanme manaḥ śivasankalpamastu ||",
+            "translation_hi": "जो मन जाग्रत अवस्था में दूर-दूर चला जाता है और सुप्त अवस्था में भी वैसा ही रहता है, वह दीपकों का भी दीपक मन मेरा शुभ संकल्पों वाला बने।",
+            "translation_en": "May my mind, which travels far in waking and sleeping state, the light of lights, be filled with noble thoughts."
+          }
+        ]
+      },
+      {
+        "section_name": "अध्याय १६ - श्रीरुद्रम् (चमकम् एवं नम कम्)",
+        "summary_hi": "भगवान शिव के रुद्र स्वरूप की महा महिमा एवं नमन।",
+        "mantras": [
+          {
+            "number": 1,
+            "sanskrit": "ॐ नमस्ते रुद्र मन्यव उतो त इषवे नमः। नमस्ते अस्तु धन्वने बाहुभ्यामुत ते नमः॥",
+            "transliteration": "Om namaste rudra manyava uto ta iṣave namaḥ | namaste astu dhanvane bāhubhyāmuta te namaḥ ||",
+            "translation_hi": "हे रुद्र! आपके क्रोध और आपके बाण को प्रणाम है। आपके धनुष और आपकी दोनों भुजाओं को बारंबार प्रणाम है।",
+            "translation_en": "Salutations to Your wrath, O Rudra, and to Your arrow. Salutations to Your bow and to Your arms."
+          }
+        ]
+      },
+      {
+        "section_name": "अध्याय ४० - ईशावास्योपनिषद्",
+        "summary_hi": "यजुर्वेद का अंतिम अध्याय जो प्रसिद्ध ईशावास्योपनिषद् है।",
+        "mantras": [
+          {
+            "number": 1,
+            "sanskrit": "ईशा वास्यमिदं सर्वं यत्किञ्च जगत्यां जगत्। तेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम्॥",
+            "transliteration": "Īśā vāsyamidaṁ sarvaṁ yatkiñca jagatyāṁ jagat | tena tyaktena bhuñjīthā mā gṛdhaḥ kasyasviddhanam ||",
+            "translation_hi": "इस परिवर्तनशील संसार में जो कुछ भी है, वह सब ईश्वर से व्याप्त है। त्यागपूर्वक उसका उपभोग करो, किसी के धन का लोभ मत करो।",
+            "translation_en": "All this, whatsoever moves in this universe, is enveloped by the Lord. Enjoy through renunciation; do not covet anyone's wealth."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samaveda",
+    "name": "सामवेद (Samaveda)",
+    "name_hi": "सामवेद संहिता",
+    "subtitle": "संगीतमय ऋचाएं एवं भारतीय संगीत का मूल जनक ग्रन्थ",
+    "vedic_period": "१२०० - १००० ईसा पूर्व",
+    "total_mandalas": 2,
+    "total_suktas": 1875,
+    "summary": "सामवेद के मंत्रों का गान यज्ञों में उद्गाता ऋषियों द्वारा किया जाता है। भगवान श्रीकृष्ण ने गीता में कहा है — वेदानां सामवेदोऽस्मि (वेदों में मैं सामवेद हूँ)।",
+    "sections": [
+      {
+        "section_name": "पूर्वार्चिक - आग्नेय पर्व",
+        "summary_hi": "अग्नि उपासना की सामगान स्वरलिपिबद्ध ऋचाएं।",
+        "mantras": [
+          {
+            "number": 1,
+            "sanskrit": "अग्न आयाहि वीतये गृणानो हव्यदातये। नि होता सत्सि बर्हिषि॥",
+            "transliteration": "Agna āyāhi vītaye gṛṇāno havyadātaye | ni hotā satsi barhiṣi ||",
+            "translation_hi": "हे प्रकाशमान अग्निदेव! हविष्य ग्रहण करने और यज्ञ पूर्ण करने हेतु पधारें तथा कुश के आसन पर विराजमान हों।",
+            "translation_en": "O Agni, come to our sacrifice, praised for the giving of oblations. Sit as invoker upon the sacred grass."
+          }
+        ]
+      },
+      {
+        "section_name": "उत्तरार्चिक - ऐन्द्र पर्व",
+        "summary_hi": "देवराज इन्द्र एवं परमात्म शक्ति की संगीतमय स्तुति।",
+        "mantras": [
+          {
+            "number": 1,
+            "sanskrit": "पुनानः सोम धारया अपो वसानो अर्षसि। आ रत्‍नधा योनिम् ऋतस्य सीदसि॥",
+            "transliteration": "Punānaḥ soma dhārayā apo vasāno arṣasi | ā ratnadhā yonim ṛtasya sīdasi ||",
+            "translation_hi": "पवित्र सोम रस की धारा जल के साथ प्रवाहित होती है और सत्य के स्वरूप रत्नमय धाम में प्रतिष्ठित होती है।",
+            "translation_en": "The Soma stream flows purified, clothed in waters, taking its seat in the jewel-bearing realm of Truth."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "atharvaveda",
+    "name": "अथर्ववेद (Atharvaveda)",
+    "name_hi": "अथर्ववेद संहिता",
+    "subtitle": "आयुर्वेद, विज्ञान, गृहस्थ धर्म एवं पृथ्वी सूक्त",
+    "vedic_period": "१००० - ८०० ईसा पूर्व",
+    "total_mandalas": 20,
+    "total_suktas": 730,
+    "summary": "२० काण्डों में रचित अथर्ववेद में रोग निवारण, औषधि विज्ञान, समाज नीति, राष्ट्र प्रेम एवं आध्यात्मिक रहस्य संकलित हैं।",
+    "sections": [
+      {
+        "section_name": "काण्ड १२ (सूक्त १) - पृथ्वी सूक्त",
+        "summary_hi": "मातृभूमि एवं पर्यावरण संरक्षण का विश्व प्रसिद्ध वैदिक सूक्त।",
+        "mantras": [
+          {
+            "number": 12,
+            "sanskrit": "माता भूमिः पुत्रो अहम् पृथिव्याः। पर्जन्यः पिता स उ नः बिभर्तु॥",
+            "transliteration": "Mātā bhūmiḥ putro aham pṛthivyāḥ | parjanyaḥ pitā sa u naḥ bibhartu ||",
+            "translation_hi": "पृथ्वी मेरी माता है और मैं इस भूमि का पुत्र हूँ। पर्जन्य (मेघ) मेरे पिता हैं जो हमारा पालन करते हैं।",
+            "translation_en": "The Earth is my Mother, I am the Son of Earth. The rain-cloud is my Father, may he sustain us."
+          }
+        ]
+      },
+      {
+        "section_name": "काण्ड १९ (सूक्त ५३) - काल सूक्त",
+        "summary_hi": "समय (समय चक्र) एवं ब्रह्मांडीय नियम की महिमा।",
+        "mantras": [
+          {
+            "number": 1,
+            "sanskrit": "कालो अश्वो वहति सप्तरश्मिः सहस्राक्षो अजरो भूरिरेताः। तमारोहन्ति कवयो विपश्चितस्तस्य चक्रा भुवनानि विश्वा॥",
+            "transliteration": "Kālo aśvo vahati saptaraśmiḥ sahasrākṣo ajaro bhūriretāḥ | tamārohanti kavayo vipaścitastasya cakrā bhuvanāni viśvā ||",
+            "translation_hi": "काल रूपी अश्व सात रश्मियों (किरणों) से युक्त होकर बहता है। ज्ञानी ऋषि उस पर आरूढ़ होते हैं और समस्त भुवन उसके चक्र हैं।",
+            "translation_en": "Time, like a horse with seven rays, flows eternal. Wise seers ascend it, and all worlds are its wheels."
+          }
+        ]
+      }
+    ]
+  }
+]
