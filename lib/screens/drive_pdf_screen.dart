@@ -28,7 +28,7 @@ class DriveSource {
       );
 
   String get downloadUrl =>
-      'https://drive.google.com/uc?export=download&id=$fileId';
+      'https://drive.usercontent.google.com/download?id=$fileId&export=download&confirm=t';
 
   String get cacheFileName => '$id.pdf';
 }
@@ -76,35 +76,80 @@ class PdfCacheManager {
     final file = File('${cacheDir.path}/${source.cacheFileName}');
 
     if (file.existsSync() && file.lengthSync() > 100000) {
+      onProgress(1.0);
       return file;
     }
 
     try {
-      final client = http.Client();
-      final request = http.Request('GET', Uri.parse(source.downloadUrl));
-      final response = await client.send(request);
+      final client = HttpClient();
+      client.autoUncompress = true;
 
-      if (response.statusCode != 200) {
-        debugPrint('Download failed: ${response.statusCode}');
+      final urls = [
+        'https://drive.usercontent.google.com/download?id=${source.fileId}&export=download&confirm=t',
+        'https://drive.google.com/uc?export=download&id=${source.fileId}&confirm=t',
+        'https://drive.google.com/uc?export=download&id=${source.fileId}',
+      ];
+
+      HttpClientResponse? response;
+
+      for (final urlStr in urls) {
+        try {
+          final request = await client.getUrl(Uri.parse(urlStr));
+          request.headers.set('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+          request.headers.set('Accept', '*/*');
+          final res = await request.close();
+
+          if (res.statusCode == 200) {
+            response = res;
+            break;
+          } else if (res.statusCode == 302 || res.statusCode == 303 || res.statusCode == 307) {
+            final loc = res.headers.value(HttpHeaders.locationHeader);
+            if (loc != null && loc.isNotEmpty) {
+              final req2 = await client.getUrl(Uri.parse(loc));
+              req2.headers.set('User-Agent', 'Mozilla/5.0');
+              final res2 = await req2.close();
+              if (res2.statusCode == 200) {
+                response = res2;
+                break;
+              }
+            }
+          }
+        } catch (e) {
+          debugPrint('Drive attempt failed for $urlStr: $e');
+        }
+      }
+
+      if (response == null || response.statusCode != 200) {
+        debugPrint('All Drive download attempts failed for ${source.name}');
+        client.close();
         return null;
       }
 
-      final contentLength = response.contentLength ?? -1;
+      final contentLength = response.contentLength;
       int received = 0;
 
       final sink = file.openWrite();
-      await for (final chunk in response.stream) {
+      await for (final chunk in response) {
         sink.add(chunk);
         received += chunk.length;
         if (contentLength > 0) {
-          onProgress(received / contentLength);
+          onProgress((received / contentLength).clamp(0.0, 0.99));
+        } else {
+          onProgress((received / (45 * 1024 * 1024)).clamp(0.0, 0.99));
         }
       }
       await sink.close();
       client.close();
-      return file;
+
+      if (file.existsSync() && file.lengthSync() > 100000) {
+        onProgress(1.0);
+        return file;
+      } else {
+        if (file.existsSync()) file.deleteSync();
+        return null;
+      }
     } catch (e) {
-      debugPrint('Download error: $e');
+      debugPrint('Download error for ${source.name}: $e');
       if (file.existsSync()) file.deleteSync();
       return null;
     }
