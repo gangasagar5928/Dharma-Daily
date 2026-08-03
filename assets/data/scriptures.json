@@ -1,0 +1,1243 @@
+{
+  "bhagavad_gita": [
+    {
+      "chapter": 1,
+      "name": "Arjuna Vishada Yoga",
+      "name_meaning": "The Yoga of Arjuna's Grief",
+      "summary": "Arjuna surveys the Kurukshetra battlefield and sees relatives on both sides. Overwhelmed by grief and compassion, he drops his bow and refuses to fight — presenting arguments against war. This chapter sets up the entire philosophical dialogue that follows.",
+      "total_verses": 47,
+      "verses": [
+        {
+          "num": 1,
+          "sanskrit": "धृतराष्ट्र उवाच\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥",
+          "translation": "Dhritarashtra said: O Sanjaya, what did my sons and the sons of Pandu do after assembling at Kurukshetra, desirous of fighting?",
+          "meaning": "The blind king calls his sons 'mine' and separates them from the Pandavas — revealing bias before the battle begins. His blindness is both physical and moral. The question that opens the Gita also opens the inquiry into the nature of conflict."
+        },
+        {
+          "num": 47,
+          "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति।\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते॥",
+          "translation": "My limbs fail and my mouth is parched, my body quivers and my hair stands on end.",
+          "meaning": "Arjuna experiences what we now call acute stress response — the physical symptoms of overwhelming anxiety. The greatest warrior brought to his knees not by an enemy but by his own heart. This is the most human moment in the Gita."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "name": "Sankhya Yoga",
+      "name_meaning": "The Yoga of Knowledge",
+      "summary": "The philosophical core of the Gita. Krishna teaches the immortality of the Atman, the concept of svadharma (one's own duty), and introduces Karma Yoga — action without attachment to results. Describes the Sthitaprajna: the person of steady wisdom. Contains the most cited verses of the entire text.",
+      "total_verses": 72,
+      "verses": [
+        {
+          "num": 3,
+          "sanskrit": "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप॥",
+          "translation": "Do not yield to impotence, O Arjuna. It does not befit you. Shake off this faint-heartedness and arise.",
+          "meaning": "Krishna's first direct call — sharp, unambiguous. When you are paralysed by self-doubt or overwhelm, this is the antidote. Get up. It does not befit you to stay down."
+        },
+        {
+          "num": 14,
+          "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥",
+          "translation": "The contacts of the senses with their objects, O son of Kunti, give rise to cold and heat, pleasure and pain. They come and go; they are impermanent. Bear them, O Arjuna.",
+          "meaning": "Every experience — pleasure and pain — is temporary. Not as a reason to be detached from life, but as a reason not to be enslaved by either. Equanimity is trained by observing impermanence."
+        },
+        {
+          "num": 20,
+          "sanskrit": "न जायते म्रियते वा कदाचिन्\nनायं भूत्वा भविता वा न भूयः।\nअजो नित्यः शाश्वतोऽयं पुराणो\nन हन्यते हन्यमाने शरीरे॥",
+          "translation": "The soul is never born nor does it ever die. It has not come into being and will not come into being. Unborn, eternal, ever-existing, primeval — it is not slain when the body is slain.",
+          "meaning": "The foundational verse of Vedanta. Your deepest identity — the witness, the awareness — is beyond birth and death. Failures, losses, rejections cannot touch it."
+        },
+        {
+          "num": 47,
+          "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+          "translation": "You have a right to perform your actions, but never to the fruits thereof. Let not the fruits of action be your motive, nor let your attachment be to inaction.",
+          "meaning": "The most famous verse of the Gita. The original framework for high performance without burnout. Act fully; release the outcome. Not fatalism — freedom from outcome-anxiety while remaining fully engaged."
+        },
+        {
+          "num": 55,
+          "sanskrit": "प्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान्।\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते॥",
+          "translation": "One is called a person of steady wisdom when they give up all desires arising from the mind, and rest satisfied in the Self alone.",
+          "meaning": "The Sthitaprajna portrait — notable for what it is NOT: not an ascetic who feels nothing, but one who acts fully and is not compelled by anything against their will. The ideal state of functioning."
+        },
+        {
+          "num": 62,
+          "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते।\nसङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते॥",
+          "translation": "When a person dwells on the objects of the senses, attachment to them is born; from attachment, desire arises; from desire, anger is born.",
+          "meaning": "The chain of mental causation: dwelling → attachment → desire → anger → delusion → destruction of discrimination → fall. Modern cognitive behavioural therapy maps the exact same chain."
+        },
+        {
+          "num": 63,
+          "sanskrit": "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः।\nस्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति॥",
+          "translation": "From anger comes delusion; from delusion, failure of memory; from failure of memory, destruction of discrimination; and from destruction of discrimination, one perishes.",
+          "meaning": "Anger destroys the capacity for clear thinking. When you are very angry, you literally cannot access your stored wisdom — the prefrontal cortex goes offline. The Gita described this 2,500 years before neuroscience confirmed it."
+        },
+        {
+          "num": 70,
+          "sanskrit": "आपूर्यमाणमचलप्रतिष्ठं समुद्रमापः प्रविशन्ति यद्वत्।\nतद्वत्कामा यं प्रविशन्ति सर्वे स शान्तिमाप्नोति न कामकामी॥",
+          "translation": "As the ocean remains undisturbed when rivers flow into it, so one who is undisturbed even amidst all desires — that person alone attains peace, not one who strives for objects of desire.",
+          "meaning": "The ocean metaphor — vast enough that all rivers pour in without it overflowing or being changed. Peace is not the absence of incoming experience; it is a depth that cannot be disturbed by it."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "name": "Karma Yoga",
+      "name_meaning": "The Yoga of Action",
+      "summary": "Why one must act even after gaining knowledge. Krishna explains Yajna (selfless action as sacrifice), the concepts of duty and social responsibility, and why the wise person acts — not for personal gain but as an example and for the maintenance of the world.",
+      "total_verses": 43,
+      "verses": [
+        {
+          "num": 8,
+          "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः।\nशरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः॥",
+          "translation": "Perform your prescribed duty, for action is better than inaction. Even the maintenance of your body cannot be accomplished without action.",
+          "meaning": "The impossibility of true inaction. The Gita is not a text recommending withdrawal — it demands full engagement with the world, done rightly. Inaction is not neutral; it has consequences too."
+        },
+        {
+          "num": 21,
+          "sanskrit": "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः।\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते॥",
+          "translation": "Whatever action a great person performs, common people follow. And whatever standards they set by exemplary acts, all the world pursues.",
+          "meaning": "The leader's burden and responsibility. Your actions set standards for those who look up to you — whether you want them to or not. Leadership is not a role; it is a consequence of being observed."
+        },
+        {
+          "num": 27,
+          "sanskrit": "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः।\nअहङ्कारविमूढात्मा कर्ताहमिति मन्यते॥",
+          "translation": "All actions are carried out by the modes of material nature. But the one deluded by ego thinks: 'I am the doer.'",
+          "meaning": "The ego's illusion of doership. When you succeed, don't let ego inflate. When you fail, don't let it crush you. You are the instrument of effort, not the controller of outcomes."
+        },
+        {
+          "num": 35,
+          "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्।\nस्वधर्मे निधनं श्रेयः परधर्मो भयावहः॥",
+          "translation": "Better is one's own dharma, though imperfectly performed, than the dharma of another well performed. Better is death in one's own dharma; the dharma of another brings danger.",
+          "meaning": "Your authentic path — however imperfect — is more valuable than perfect performance of someone else's path. Be yourself, even badly, rather than a perfect imitation of another."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "name": "Jnana Karma Sanyasa Yoga",
+      "name_meaning": "The Yoga of Knowledge, Action, and Renunciation",
+      "summary": "Krishna reveals the ancient lineage of the Gita's teaching. Explains the Avatar principle — divine incarnation when dharma declines. Distinguishes between the actions of the liberated (who act in the world but are not bound by actions) and the actions of the ego-bound.",
+      "total_verses": 42,
+      "verses": [
+        {
+          "num": 7,
+          "sanskrit": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।\nअभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥",
+          "translation": "Whenever and wherever there is a decline in righteousness, O Arjuna, and a rise of unrighteousness — at that time I manifest myself.",
+          "meaning": "The Avatar principle. Every heroic story follows this pattern: darkness deepens, and something rises. That 'something' is often simply a person who chose to act when others looked away."
+        },
+        {
+          "num": 8,
+          "sanskrit": "परित्राणाय साधूनां विनाशाय च दुष्कृताम्।\nधर्मसंस्थापनार्थाय सम्भवामि युगे युगे॥",
+          "translation": "To protect the virtuous and destroy the wicked, and to firmly establish righteousness — I take birth age after age.",
+          "meaning": "Dharma is not destroyed permanently — it is restored, again and again, through those who choose to embody it. In every age, in every context, someone rises."
+        },
+        {
+          "num": 38,
+          "sanskrit": "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते।\nतत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति॥",
+          "translation": "In this world there is no purifier as great as knowledge. One who is perfected by yoga finds this within themselves in time.",
+          "meaning": "Knowledge — genuine understanding, not information — is the highest purifier. Not ritual, not caste, not ceremony. The pursuit of real understanding is the most sacred act."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "name": "Karma Sanyasa Yoga",
+      "name_meaning": "The Yoga of Renunciation of Action",
+      "summary": "Reconciles the path of action (Karma Yoga) with the path of knowledge (Jnana Yoga). True renunciation is inner, not outer — one who acts without ego-attachment has renounced more fully than one who merely withdraws from action.",
+      "total_verses": 29,
+      "verses": [
+        {
+          "num": 18,
+          "sanskrit": "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि।\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः॥",
+          "translation": "The wise see with equal vision a learned brahmin, a cow, an elephant, a dog, and an outcaste.",
+          "meaning": "The vision of the truly wise: the same consciousness shines in all forms. Discrimination based on birth, species, or status is the exact opposite of wisdom."
+        },
+        {
+          "num": 22,
+          "sanskrit": "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते।\nआद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः॥",
+          "translation": "The pleasures that are born of sensory contacts are sources of suffering. They have a beginning and an end. The wise do not delight in them.",
+          "meaning": "Not asceticism — but the recognition that pleasure dependent on external conditions is inherently unstable. The wise enjoy experience without being enslaved to it."
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "name": "Dhyana Yoga",
+      "name_meaning": "The Yoga of Meditation",
+      "summary": "Detailed practical instructions for meditation: posture, place, practice duration, and the qualities of success. Addresses the most common objection to meditation — the restless mind — and gives the two tools: practice and non-attachment.",
+      "total_verses": 47,
+      "verses": [
+        {
+          "num": 5,
+          "sanskrit": "उद्धरेदात्मनात्मानं नात्मानमवसादयेत्।\nआत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः॥",
+          "translation": "One must elevate oneself by one's own mind, and not degrade oneself. The mind is the best friend of the self, and also its worst enemy.",
+          "meaning": "No one else can make you focused, disciplined, or motivated. Your own mind is your greatest ally or biggest obstacle — and you choose which, every single day."
+        },
+        {
+          "num": 34,
+          "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्।\nतस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्॥",
+          "translation": "The mind is restless, turbulent, obstinate, and very strong, O Krishna. I think controlling it is as difficult as controlling the wind.",
+          "meaning": "Arjuna speaks for everyone who has tried to meditate. The mind's restlessness is not personal failure — it is its default nature. Training it is simply the work."
+        },
+        {
+          "num": 35,
+          "sanskrit": "असंशयं महाबाहो मनो दुर्निग्रहं चलम्।\nअभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते॥",
+          "translation": "Undoubtedly, O mighty-armed one, the mind is restless and difficult to curb. But it is controlled by practice and non-attachment.",
+          "meaning": "Abhyasa (consistent practice) + Vairagya (non-attachment to distractions). Not willpower alone — regular practice combined with genuinely not caring about every distraction that arises."
+        },
+        {
+          "num": 40,
+          "sanskrit": "पार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते।\nन हि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति॥",
+          "translation": "O Arjuna, neither in this world nor in the spiritual world is there destruction for one who does good. The doer of good never meets with evil.",
+          "meaning": "One of the most reassuring verses in the Gita. Good effort, even incomplete, is never wasted. The person who begins the spiritual path and does not complete it in this life continues from where they left off."
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "name": "Jnana Vijnana Yoga",
+      "name_meaning": "The Yoga of Knowledge and Wisdom",
+      "summary": "Krishna explains his nature as the ultimate reality behind all phenomena. Distinguishes between the lower nature (material world) and higher nature (consciousness itself). Describes four types of devotees and four types who approach the divine.",
+      "total_verses": 30,
+      "verses": [
+        {
+          "num": 7,
+          "sanskrit": "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय।\nमयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव॥",
+          "translation": "O Arjuna, there is nothing superior to Me. Everything rests upon Me as pearls are strung on a thread.",
+          "meaning": "The thread metaphor — consciousness as the invisible substrate through which all phenomena are strung. Remove the thread and the pearls scatter. Remove consciousness and nothing has existence."
+        },
+        {
+          "num": 19,
+          "sanskrit": "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते।\nवासुदेवः सर्वमिति स महात्मा सुदुर्लभः॥",
+          "translation": "After many births and deaths, one who is actually in knowledge surrenders unto Me, knowing Me to be the cause of all causes. Such a great soul is very rare.",
+          "meaning": "Wisdom is the fruit of long experience, not a single insight. The person who sees the divine in all of existence — including the difficult, the ordinary, and the mundane — is truly rare."
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "name": "Akshara Brahma Yoga",
+      "name_meaning": "The Yoga of the Imperishable Brahman",
+      "summary": "Answers eight philosophical questions: about Brahman, Adhyatma (the Self), Karma, and the states after death. The central teaching: the last thought at the moment of death determines the next state of consciousness. Therefore: practice now.",
+      "total_verses": 28,
+      "verses": [
+        {
+          "num": 7,
+          "sanskrit": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च।\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम्॥",
+          "translation": "Therefore, at all times think of Me, and at the same time carry out your duty. With your mind and intellect devoted to Me, you will come to Me without doubt.",
+          "meaning": "Integration of action and awareness — doing your duty fully while remaining anchored in the deepest perspective. Not divided attention but action from depth."
+        },
+        {
+          "num": 16,
+          "sanskrit": "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन।\nमामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते॥",
+          "translation": "From the highest planet in the material world down to the lowest, all are places of misery where repeated birth and death take place. But one who attains My abode, O son of Kunti, never takes birth again.",
+          "meaning": "Even the highest achievements in the material world are temporary. The only permanent attainment is liberation from compulsive cycling — the freedom that comes from genuine understanding."
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "name": "Raja Vidya Raja Guhya Yoga",
+      "name_meaning": "The Yoga of Royal Knowledge and Royal Secret",
+      "summary": "The 'most confidential knowledge.' Krishna reveals that the entire universe is sustained by him, yet he is not within it — the transcendent-immanent paradox. Emphasises Bhakti (devotion) and the remarkable verse that God accepts even a leaf offered with love.",
+      "total_verses": 34,
+      "verses": [
+        {
+          "num": 22,
+          "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते।\nतेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्॥",
+          "translation": "To those who worship Me with devotion, meditating on My transcendental form — I carry what they lack and preserve what they have.",
+          "meaning": "The divine's commitment to those who commit fully. Not as a transaction — as a natural consequence of genuine surrender. What you wholeheartedly give yourself to, gives back to you."
+        },
+        {
+          "num": 26,
+          "sanskrit": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति।\nतदहं भक्त्युपहृतमश्नामि प्रयतात्मनः॥",
+          "translation": "If one offers Me with love a leaf, a flower, a fruit, or water, I will accept it.",
+          "meaning": "The most democratic verse in the Gita. Not gold, temples, or elaborate rituals. A leaf. A flower. Offered with genuine love. The divine is moved by sincerity, not grandeur."
+        },
+        {
+          "num": 33,
+          "sanskrit": "किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा।\nअनित्यमसुखं लोकमिमं प्राप्य भजस्व माम्॥",
+          "translation": "How much more so then the righteous brahmins, devout kings, and saintly persons! Having come to this transient and joyless world, engage in loving service to Me.",
+          "meaning": "This world is impermanent and ultimately unsatisfying — not a reason for despair but for choosing the one thing that IS permanent: the orientation toward the highest."
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "name": "Vibhuti Yoga",
+      "name_meaning": "The Yoga of Divine Manifestations",
+      "summary": "Krishna describes how he manifests as the best, most excellent example of every category of existence. Among mountains I am Himalayas; among rivers the Ganga; among warriors Arjuna himself. A meditation on divine perfection in the world.",
+      "total_verses": 42,
+      "verses": [
+        {
+          "num": 20,
+          "sanskrit": "अहमात्मा गुडाकेश सर्वभूताशयस्थितः।\nअहमादिश्च मध्यं च भूतानामन्त एव च॥",
+          "translation": "I am the Self, O Arjuna, seated in the hearts of all creatures. I am the beginning, the middle, and the end of all beings.",
+          "meaning": "The consciousness within you reading these words — that is what Krishna is pointing to. Not a god far away, but the very awareness that makes experience possible."
+        },
+        {
+          "num": 41,
+          "sanskrit": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा।\nतत्तदेवावगच्छ त्वं मम तेजोंऽशसम्भवम्॥",
+          "translation": "Know that all beautiful, glorious, and powerful creations spring from a spark of My splendour.",
+          "meaning": "Wherever you see excellence — in art, science, sport, music, kindness — that is a glimpse of the infinite expressing itself. All genuine excellence is sacred."
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "name": "Vishwarupa Darshana Yoga",
+      "name_meaning": "The Vision of the Universal Form",
+      "summary": "The climactic chapter. Arjuna receives divine vision and sees Krishna's universal form — containing all worlds, all beings, all of time simultaneously. Both terrifying and magnificent beyond all description. The chapter that most explicitly reveals the Gita's cosmic scope.",
+      "total_verses": 55,
+      "verses": [
+        {
+          "num": 32,
+          "sanskrit": "कालोऽस्मि लोकक्षयकृत्प्रवृद्धो\nलोकान्समाहर्तुमिह प्रवृत्तः।",
+          "translation": "I am Time, the great destroyer of worlds, and I have come here to destroy all people.",
+          "meaning": "The verse quoted by Oppenheimer at the first nuclear test. Time destroys all structures — the question is only whether you align with its purpose or try to resist it. Everything temporary will end."
+        },
+        {
+          "num": 55,
+          "sanskrit": "मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः।\nनिर्वैरः सर्वभूतेषु यः स मामेति पाण्डव॥",
+          "translation": "One who is engaged in My work, who considers Me supreme, who is devoted to Me, free from attachment, and without enmity toward any being — comes to Me, O Arjuna.",
+          "meaning": "The final prescription of Chapter 11: engaged, devoted, unattached, and without enmity toward any living being. Not withdrawal, not hatred — full engaged love."
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "name": "Bhakti Yoga",
+      "name_meaning": "The Yoga of Devotion",
+      "summary": "Arjuna asks which is better — devotion to the personal divine or to the formless Absolute. Krishna's answer: both are valid; the personal form is more accessible. Lists the 20 qualities of the ideal devotee — remarkably free of ritual requirements.",
+      "total_verses": 20,
+      "verses": [
+        {
+          "num": 13,
+          "sanskrit": "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च।\nनिर्ममो निरहङ्कारः समदुःखसुखः क्षमी॥",
+          "translation": "One who bears ill will toward no creature, who is friendly and compassionate, free from possessiveness and ego, equal in happiness and distress, forgiving...",
+          "meaning": "The profile of the ideal devotee. Notice what's missing: no mention of ritual purity, caste, gender, or renunciation. The qualities are: friendship, non-possessiveness, equanimity, forgiveness."
+        },
+        {
+          "num": 15,
+          "sanskrit": "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः।\nहर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः॥",
+          "translation": "One by whom the world is not put into difficulty, and who is not disturbed by the world — free from joy and envy, fear and anxiety — is very dear to Me.",
+          "meaning": "The person who neither disturbs others nor is disturbed by them. Equanimity is not emotional flatness — it is profound stability. The world flows through them like wind through open windows."
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "name": "Kshetra Kshetrajna Vibhaga Yoga",
+      "name_meaning": "The Field and the Knower of the Field",
+      "summary": "The body is the 'field' (Kshetra); the soul is the 'knower of the field' (Kshetrajna). One of the most important ontological distinctions in the entire Gita — between matter (which is known) and consciousness (which knows).",
+      "total_verses": 35,
+      "verses": [
+        {
+          "num": 2,
+          "sanskrit": "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत।\nक्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम॥",
+          "translation": "Know Me also as the knower in all bodies, O Arjuna. Understanding the body and the knower of the body — that is called real knowledge.",
+          "meaning": "The same awareness looks out through different eyes. The knower is the same in every body. This is the root of the command to see yourself in all beings — literally."
+        },
+        {
+          "num": 33,
+          "sanskrit": "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः।\nक्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत॥",
+          "translation": "Just as the one sun illuminates the entire world, so the one Soul within illuminates the entire field (body), O Arjuna.",
+          "meaning": "One sun lights the entire world. One consciousness illuminates all experience within a single body. The parallel is precise: just as you don't need multiple suns, you don't have multiple selves."
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "name": "Gunatraya Vibhaga Yoga",
+      "name_meaning": "The Three Modes of Nature",
+      "summary": "Detailed analysis of the three Gunas: Sattva (clarity/goodness), Rajas (passion/activity), Tamas (inertia/ignorance). All of material existence — all behaviour, all experience — is a mixture of these three. Liberation is transcending all three.",
+      "total_verses": 27,
+      "verses": [
+        {
+          "num": 6,
+          "sanskrit": "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम्।\nसुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ॥",
+          "translation": "O sinless one, Sattva is purer than the others — illuminating and free from sickness. It binds through attachment to happiness and knowledge.",
+          "meaning": "Even Sattva (clarity) becomes a trap if you become attached to the pleasure of being 'good' or 'wise.' The Gita asks you to transcend even the highest Guna."
+        },
+        {
+          "num": 20,
+          "sanskrit": "गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान्।\nजन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते॥",
+          "translation": "When the embodied being transcends these three modes, it is freed from birth, death, old age, and distress, and attains immortality even in this life.",
+          "meaning": "The goal is not to perfect one Guna but to be free of all three — to rest in the witness that observes all three without being controlled by any."
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "name": "Purushottama Yoga",
+      "name_meaning": "The Yoga of the Supreme Person",
+      "summary": "The cosmic tree metaphor — the universe as an inverted Ashwattha tree with roots above, branches below. The chapter reveals the three aspects of existence: perishable matter, imperishable spirit, and the Supreme Person who pervades and transcends both.",
+      "total_verses": 20,
+      "verses": [
+        {
+          "num": 15,
+          "sanskrit": "सर्वस्य चाहं हृदि सन्निविष्टो\nमत्तः स्मृतिर्ज्ञानमपोहनं च।\nवेदैश्च सर्वैरहमेव वेद्यो\nवेदान्तकृद्वेदविदेव चाहम्॥",
+          "translation": "I am seated in everyone's heart. From Me come remembrance, knowledge, and forgetfulness. I am to be known by all the Vedas; I am the author of Vedanta and the knower of the Vedas.",
+          "meaning": "Memory, knowledge, forgetting — all arise from the same ground of awareness. Even the tradition that points to truth is an expression of what it points toward."
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "name": "Daivāsura Sampad Vibhāga Yoga",
+      "name_meaning": "Divine and Demonic Qualities",
+      "summary": "A psychological portrait of two types of people: those moving toward liberation (divine qualities — fearlessness, purity, compassion, truthfulness) and those moving toward bondage (demonic qualities — arrogance, self-delusion, cruelty). Remarkably modern in psychological insight.",
+      "total_verses": 24,
+      "verses": [
+        {
+          "num": 13,
+          "sanskrit": "इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम्।\nइदमस्तीदमपि मे भविष्यति पुनर्धनम्॥",
+          "translation": "'So much wealth do I have today, and I will gain more according to my schemes. So much is mine now, and it will increase in the future...'",
+          "meaning": "The portrait of the ego-driven mind — always calculating, accumulating, projecting. Wealth is not the problem; the compulsive relationship to it is. This mind can never have enough."
+        },
+        {
+          "num": 21,
+          "sanskrit": "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः।\nकामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्॥",
+          "translation": "There are three gateways to hell that destroy the self: lust, anger, and greed. Therefore, one should abandon these three.",
+          "meaning": "The three roots of self-destruction. Not sexual desire per se, but compulsive craving for any object. Not appropriate anger, but rage. Not prudent ambition, but insatiable greed. The Gita identifies these as gateways because they progressively eliminate one's capacity for clear judgment."
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "name": "Shraddhatraya Vibhaga Yoga",
+      "name_meaning": "The Threefold Division of Faith",
+      "summary": "How the three Gunas shape faith, worship, diet, charity, and austerity. Reveals that a person's character is expressed not just in what they believe but in what they eat, how they give, and what they consider worth sacrificing for. Introduces the concept of OM-TAT-SAT.",
+      "total_verses": 28,
+      "verses": [
+        {
+          "num": 3,
+          "sanskrit": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत।\nश्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः॥",
+          "translation": "O Arjuna, according to the modes of nature a person has acquired, they develop a particular kind of faith. A person consists of faith; as their faith is, so they are.",
+          "meaning": "You are what you believe in. Not what you say you believe — what you actually give your energy, attention, and time to. That is your real faith, whatever you call it."
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "name": "Moksha Sanyasa Yoga",
+      "name_meaning": "Liberation Through Renunciation",
+      "summary": "The culminating chapter — 78 verses summarising all teachings. Distinguishes true renunciation from mere withdrawal. Describes how the Gunas determine one's natural duties and how to act rightly in all conditions. Ends with the Charama Shloka — the final, most distilled instruction.",
+      "total_verses": 78,
+      "verses": [
+        {
+          "num": 66,
+          "sanskrit": "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज।\nअहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः॥",
+          "translation": "Abandon all varieties of dharma and simply surrender unto Me. I shall liberate you from all sinful reactions. Do not fear.",
+          "meaning": "The Charama Shloka — the final distilled instruction of the entire Gita. After 700 verses of philosophy, the last word is surrender. Let go of anxious calculation. Trust the process of sincere effort."
+        },
+        {
+          "num": 73,
+          "sanskrit": "अर्जुन उवाच\nनष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत।\nस्थितोऽस्मि गतसंदेहः करिष्ये वचनं तव॥",
+          "translation": "Arjuna said: My illusion is destroyed. By Your grace, O Krishna, I have regained my memory. I am now firm and free from doubt and am prepared to act according to Your instruction.",
+          "meaning": "The Gita ends not with renunciation but with decision. Arjuna picks up his bow. The teaching was never about withdrawal — it was about how to act fully, wisely, from the deepest centre of your being."
+        }
+      ]
+    }
+  ],
+  "yoga_sutras": {
+    "book_name": "Yoga Sutras of Patanjali",
+    "author": "Maharshi Patanjali",
+    "period": "200 BCE – 400 CE",
+    "introduction": "196 sutras (aphorisms) in 4 chapters. The foundational text of classical Yoga — not gymnastics, but the complete science of consciousness. The most precise psychological manual of the ancient world.",
+    "chapters": [
+      {
+        "chapter": 1,
+        "name": "Samadhi Pada",
+        "summary": "On the nature of yoga, the mind, and the highest states of consciousness.",
+        "sutras": [
+          {
+            "num": 1,
+            "text": "अथ योगानुशासनम्",
+            "translation": "Now begins the instruction in Yoga.",
+            "meaning": "'Atha' (now) signals readiness. You cannot begin studying the mind until you are prepared to look honestly at what you will find."
+          },
+          {
+            "num": 2,
+            "text": "योगश्चित्तवृत्तिनिरोधः",
+            "translation": "Yoga is the cessation of the fluctuations of the mind.",
+            "meaning": "The most precise definition of yoga ever written. Not a posture, not a breathing exercise — the complete stilling of the mind's constant movement. That is yoga."
+          },
+          {
+            "num": 3,
+            "text": "तदा द्रष्टुः स्वरूपेऽवस्थानम्",
+            "translation": "Then the seer abides in its own true nature.",
+            "meaning": "When the mind is still, what remains? The pure awareness that was always there, hidden behind the noise. This is the goal."
+          },
+          {
+            "num": 4,
+            "text": "वृत्तिसारूप्यमितरत्र",
+            "translation": "Otherwise, the seer appears to take on the form of the modifications of the mind.",
+            "meaning": "When the mind is not still, you identify with its content — with thoughts, emotions, fears. You forget you are the witness, not the thought."
+          },
+          {
+            "num": 12,
+            "text": "अभ्यासवैराग्याभ्यां तन्निरोधः",
+            "translation": "The cessation of mental fluctuations comes through practice and non-attachment.",
+            "meaning": "Practice alone creates strain. Non-attachment alone creates passivity. Together, they produce effortless steadiness — the two wings of a bird."
+          },
+          {
+            "num": 19,
+            "text": "भवप्रत्ययो विदेहप्रकृतिलयानाम्",
+            "translation": "For those who have merged with nature or are bodiless, the cause of continued existence is identification with the phenomenal world.",
+            "meaning": "Even the subtlest identification with phenomena — even the most refined mental states — perpetuates the cycle. Complete liberation requires releasing the last subtle attachment."
+          },
+          {
+            "num": 20,
+            "text": "श्रद्धावीर्यस्मृतिसमाधिप्रज्ञापूर्वक इतरेषाम्",
+            "translation": "For others, practice is preceded by faith, energy, memory, concentration, and discernment.",
+            "meaning": "The five resources required for genuine spiritual practice — none can be skipped, and all strengthen each other when genuinely cultivated."
+          }
+        ]
+      },
+      {
+        "chapter": 2,
+        "name": "Sadhana Pada",
+        "summary": "The practical chapter — Kriya Yoga, the five Kleshas (afflictions), and the famous eight limbs of Ashtanga Yoga.",
+        "sutras": [
+          {
+            "num": 1,
+            "text": "तपःस्वाध्यायेश्वरप्रणिधानानि क्रियायोगः",
+            "translation": "Austerity, self-study, and surrender to the Divine constitute Kriya Yoga.",
+            "meaning": "The active yoga: discipline your body (tapas), study your own mind (svadhyaya), release outcomes to a higher principle (Ishvara pranidhana). The practical foundation before deeper meditation is possible."
+          },
+          {
+            "num": 3,
+            "text": "अविद्यास्मितारागद्वेषाभिनिवेशाः क्लेशाः",
+            "translation": "The five afflictions are: ignorance, ego-identity, attachment, aversion, and clinging to life.",
+            "meaning": "The five roots of all human suffering. Desire and fear (raga and dvesha) are sandwiched between the ego that wants and the survival instinct that fears loss. All five spring from the first: ignorance of one's true nature."
+          },
+          {
+            "num": 46,
+            "text": "स्थिरसुखमासनम्",
+            "translation": "Posture should be steady and comfortable.",
+            "meaning": "The entire instruction on physical yoga posture in the Yoga Sutras — two words. Steady. Comfortable. The body is a vehicle for meditation, not an object of performance."
+          },
+          {
+            "num": 47,
+            "text": "प्रयत्नशैथिल्यानन्तसमापत्तिभ्याम्",
+            "translation": "By relaxation of effort and meditation on the infinite, posture is perfected.",
+            "meaning": "The paradox of posture mastery: you achieve it by releasing the effort to achieve it. This applies to all skills — peak performance comes through relaxed attention, not rigid forcing."
+          },
+          {
+            "num": 48,
+            "text": "ततो द्वन्द्वानभिघातः",
+            "translation": "From that, one is not disturbed by the pairs of opposites.",
+            "meaning": "When the body is fully at ease, the mind is freed from the constant fluctuation between physical comfort and discomfort. One less source of agitation."
+          },
+          {
+            "num": 49,
+            "text": "तस्मिन्सति श्वासप्रश्वासयोर्गतिविच्छेदः प्राणायामः",
+            "translation": "When that is accomplished, Pranayama is the regulation of the flow of inhalation and exhalation.",
+            "meaning": "Breath is the bridge between body and mind. Regulate the breath, and the mind follows. This is why pranayama is the natural gateway to meditation."
+          }
+        ]
+      },
+      {
+        "chapter": 3,
+        "name": "Vibhuti Pada",
+        "summary": "Powers (siddhis) arising from practice, and the three inner practices: Dharana (concentration), Dhyana (meditation), and Samadhi (absorption), collectively called Samyama.",
+        "sutras": [
+          {
+            "num": 1,
+            "text": "देशबन्धश्चित्तस्य धारणा",
+            "translation": "Dharana is the binding of consciousness to a single point or region.",
+            "meaning": "Concentration is a trainable skill, not a talent. Define a single object of attention and return to it again and again. This is the entire technique."
+          },
+          {
+            "num": 2,
+            "text": "तत्र प्रत्ययैकतानता ध्यानम्",
+            "translation": "Dhyana is the unbroken flow of awareness toward that object.",
+            "meaning": "When concentration becomes effortless and continuous — that is meditation. Not forcing the mind to stay, but the mind choosing to stay. A qualitative shift."
+          },
+          {
+            "num": 3,
+            "text": "तदेवार्थमात्रनिर्भासं स्वरूपशून्यमिव समाधिः",
+            "translation": "When only the object shines forth as if devoid of the meditator's own form — that is Samadhi.",
+            "meaning": "The meditator disappears. Only the object remains. This is what athletes call flow — total absorption where self-consciousness dissolves."
+          }
+        ]
+      },
+      {
+        "chapter": 4,
+        "name": "Kaivalya Pada",
+        "summary": "The chapter on liberation (Kaivalya — absolute freedom). The ultimate nature of the mind, consciousness, and the final dissolution of all conditioning.",
+        "sutras": [
+          {
+            "num": 34,
+            "text": "पुरुषार्थशून्यानां गुणानां प्रतिप्रसवः कैवल्यं स्वरूपप्रतिष्ठा वा चितिशक्तिरिति",
+            "translation": "Kaivalya is the return of the Gunas to their source when emptied of purpose of the Purusha; or, the establishment of the power of pure Consciousness in its own nature.",
+            "meaning": "The final sutra. Liberation is not an achievement — it is the recognition of what was always true. The noise of the Gunas settles; what remains is the pure awareness that was never absent."
+          }
+        ]
+      }
+    ]
+  },
+  "hanuman_chalisa": {
+    "name": "Hanuman Chalisa",
+    "author": "Goswami Tulsidas",
+    "period": "16th century CE",
+    "introduction": "40 chaupais (quatrains) and 2 dohas in Awadhi, by Tulsidas. The most widely recited devotional text in India. Hanuman represents the ideal devotee — complete surrender, boundless strength, total selflessness. Recited for courage, protection, and removing fear.",
+    "doha_opening": {
+      "text": "श्रीगुरु चरन सरोज रज निज मनु मुकुरु सुधारि।\nबरनउँ रघुबर बिमल जसु जो दायकु फल चारि॥",
+      "translation": "Having polished the mirror of my mind with the dust of my Guru's lotus feet, I narrate the pure glory of Ram, which bestows the four fruits of life.",
+      "meaning": "The teacher's grace purifies the instrument of expression. Nothing genuine can be created or transmitted without this purification."
+    },
+    "doha_pre": {
+      "text": "बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार।\nबल बुद्धि विद्या देहु मोहिं, हरहु कलेश विकार॥",
+      "translation": "Knowing myself to be ignorant, I remember you, O son of the Wind. Give me strength, wisdom, and knowledge; remove my miseries and faults.",
+      "meaning": "Humility as accurate self-assessment — not self-degradation, but the honest starting point that makes real learning possible."
+    },
+    "chaupais": [
+      {
+        "num": 1,
+        "text": "जय हनुमान ज्ञान गुन सागर। जय कपीस तिहुँ लोक उजागर॥",
+        "translation": "Victory to Hanuman, ocean of wisdom and virtue. Victory to the Lord of monkeys, illuminator of the three worlds.",
+        "meaning": "The opening salutation — Hanuman is knowledge and virtue embodied. His strength is in service of wisdom, not power for its own sake."
+      },
+      {
+        "num": 2,
+        "text": "राम दूत अतुलित बल धामा। अंजनि-पुत्र पवनसुत नामा॥",
+        "translation": "Ram's messenger, abode of incomparable strength. Known as son of Anjani and son of the Wind.",
+        "meaning": "His identity is defined first by his relationship and service — Ram's messenger. Strength second. Selfless service as the core identity."
+      },
+      {
+        "num": 3,
+        "text": "महावीर विक्रम बजरंगी। कुमति निवार सुमति के संगी॥",
+        "translation": "Great hero, courageous, with limbs like lightning. Remover of evil thought, companion of good wisdom.",
+        "meaning": "Hanuman's power is specifically directed at removing harmful mental patterns and cultivating clarity. His strength is psychological as much as physical."
+      },
+      {
+        "num": 4,
+        "text": "कंचन बरन बिराज सुबेसा। कानन कुंडल कुंचित केसा॥",
+        "translation": "Golden in colour, dressed splendidly. Wearing ear-rings, with curly hair.",
+        "meaning": "The golden hue represents inner purity expressing outwardly. Hanuman's radiance comes from within."
+      },
+      {
+        "num": 5,
+        "text": "हाथ बज्र औ ध्वजा बिराजै। काँधे मूँज जनेऊ साजै॥",
+        "translation": "He holds a thunderbolt and a flag. The sacred thread adorns his shoulder.",
+        "meaning": "Thunderbolt (weapon for protection) and flag (Ram's cause) — always prepared and always serving. Dual readiness."
+      },
+      {
+        "num": 6,
+        "text": "शंकर सुवन केसरी नंदन। तेज प्रताप महा जग वंदन॥",
+        "translation": "Son of Shiva, delighter of Kesari. Of great splendour, worshipped throughout the world.",
+        "meaning": "Hanuman bridges Shaiva and Vaishnava traditions — son of Shiva, devotee of Ram. Unity in apparent diversity."
+      },
+      {
+        "num": 7,
+        "text": "विद्यावान गुनी अति चातुर। राम काज करिबे को आतुर॥",
+        "translation": "Learned, virtuous, and supremely clever. Ever eager to serve Ram's cause.",
+        "meaning": "Intelligence + virtue + eagerness to serve — the combination that makes Hanuman unstoppable. Skill without selflessness is incomplete."
+      },
+      {
+        "num": 8,
+        "text": "प्रभु चरित्र सुनिबे को रसिया। राम लखन सीता मन बसिया॥",
+        "translation": "He delights in hearing the Lord's stories. Ram, Lakshman, and Sita dwell in his mind.",
+        "meaning": "Devotion as joy, not duty. Hanuman loves hearing Ram's stories — this is Bhakti in its purest form, the love that sustains itself."
+      },
+      {
+        "num": 9,
+        "text": "सूक्ष्म रूप धरि सियहिं दिखावा। बिकट रूप धरि लंक जरावा॥",
+        "translation": "He appeared in tiny form before Sita. He assumed a fearsome form to burn Lanka.",
+        "meaning": "Wisdom is knowing which form the situation requires — subtlety with Sita, ferocity with Lanka. Same energy, different expression."
+      },
+      {
+        "num": 10,
+        "text": "भीम रूप धरि असुर सँहारे। रामचंद्र के काज सँवारे॥",
+        "translation": "He took a terrible form to destroy the demons and accomplished Ram's mission.",
+        "meaning": "Power placed in service of dharma — not aggression, but the appropriate use of strength when gentleness is not enough."
+      },
+      {
+        "num": 11,
+        "text": "लाय सँजीवनि लखन जियाए। श्री रघुबीर हरषि उर लाए॥",
+        "translation": "He brought the Sanjeevani herb and revived Lakshman. Sri Ram embraced him joyfully.",
+        "meaning": "Hanuman flew through the night carrying a whole mountain when he could not identify the specific herb. When you cannot solve a problem precisely, bring everything you have."
+      },
+      {
+        "num": 12,
+        "text": "रघुपति कीन्ही बहुत बड़ाई। तुम मम प्रिय भरतहिं सम भाई॥",
+        "translation": "Raghupati praised him greatly: 'You are as dear to me as my brother Bharata.'",
+        "meaning": "The highest praise Ram ever gave — Hanuman is as dear as Bharata, Ram's own blood. Selfless service creates bonds deeper than biology."
+      },
+      {
+        "num": 13,
+        "text": "सहस बदन तुम्हरो जस गावैं। अस कहि श्रीपति कंठ लगावैं॥",
+        "translation": "A thousand mouths sing your glory. Saying this, Ram embraced him.",
+        "meaning": "Ram physically holding Hanuman — the Lord of all worlds embracing the servant. Genuine devotion draws the divine into direct contact."
+      },
+      {
+        "num": 14,
+        "text": "सनकादिक ब्रह्मादि मुनीसा। नारद सारद सहित अहीसा॥",
+        "translation": "The sages Sanaka, Brahma and other great saints. Narada, Sarada, Shesha — all sing your praise.",
+        "meaning": "Even the highest cosmic beings honour Hanuman. Selfless devotion is recognised across all traditions and levels of existence."
+      },
+      {
+        "num": 15,
+        "text": "जम कुबेर दिगपाल जहाँ ते। कबि कोबिद कहि सकैं कहाँ ते॥",
+        "translation": "Yama, Kubera, and the guardians of the directions — no poet or scholar can fully describe your glory.",
+        "meaning": "Language fails before the description of genuine devotion. The Chalisa acknowledges its own inadequacy before what Hanuman represents."
+      },
+      {
+        "num": 16,
+        "text": "तुम उपकार सुग्रीवहिं कीन्हा। राम मिलाय राज पद दीन्हा॥",
+        "translation": "You did great service to Sugriva, brought him to Ram, and gave him his kingdom.",
+        "meaning": "Hanuman as bridge-builder — he connected Sugriva to Ram, enabling the alliance that won the war. The greatest service is often connecting the right people to each other."
+      },
+      {
+        "num": 17,
+        "text": "तुम्हरो मंत्र विभीषण माना। लंकेश्वर भए सब जग जाना॥",
+        "translation": "Vibhishana heeded your counsel. He became king of Lanka — the whole world knows it.",
+        "meaning": "Advice given freely, without seeking recognition. The fruit of that advice changed the course of history."
+      },
+      {
+        "num": 18,
+        "text": "जुग सहस्र जोजन पर भानू। लील्यो ताहि मधुर फल जानू॥",
+        "translation": "You leapt thousands of yojanas to swallow the sun, thinking it a sweet fruit.",
+        "meaning": "The child Hanuman's leap toward the sun — fearlessness born from innocence, before he was told what was impossible. Remember this when someone tells you a goal is unreachable."
+      },
+      {
+        "num": 19,
+        "text": "प्रभु मुद्रिका मेलि मुख माहीं। जलधि लाँघि गए अचरज नाहीं॥",
+        "translation": "With Ram's ring in his mouth, he leapt across the ocean. This is no surprise.",
+        "meaning": "Carrying a token of Ram — a symbol of connection to something greater — gave Hanuman the ability to cross the impossible. When you act for something beyond yourself, the impossible becomes possible."
+      },
+      {
+        "num": 20,
+        "text": "दुर्गम काज जगत के जेते। सुगम अनुग्रह तुम्हरे तेते॥",
+        "translation": "All the difficult tasks of the world — by your grace, they become easy.",
+        "meaning": "Devotion doesn't remove obstacles; it changes your relationship to them. What seemed impossible becomes workable when approached with the right inner state."
+      },
+      {
+        "num": 21,
+        "text": "राम दुआरे तुम रखवारे। होत न आज्ञा बिनु पैसारे॥",
+        "translation": "You are the guardian at Ram's door. None enter without your permission.",
+        "meaning": "Hanuman as the gatekeeper — before reaching the deepest truth (Ram), one must pass through sincere devotion and right motivation. There are no shortcuts."
+      },
+      {
+        "num": 22,
+        "text": "सब सुख लहै तुम्हारी सरना। तुम रक्षक काहू को डर ना॥",
+        "translation": "All happiness is gained by taking refuge in you. With you as protector, there is no fear.",
+        "meaning": "The promise of refuge — not from difficulty, but from being overwhelmed by it. Courage, not immunity from challenge."
+      },
+      {
+        "num": 23,
+        "text": "आपन तेज सम्हारो आपै। तीनों लोक हाँक ते काँपै॥",
+        "translation": "You alone can control your own vast power. The three worlds tremble at your roar.",
+        "meaning": "Self-mastery — the ability to contain and direct your own energy — is more impressive than the raw energy itself."
+      },
+      {
+        "num": 24,
+        "text": "भूत पिसाच निकट नहिं आवै। महाबीर जब नाम सुनावै॥",
+        "translation": "Evil spirits do not come near when Hanuman's name is uttered.",
+        "meaning": "Psychologically: the consciousness Hanuman represents dissolves lower mental states — fear, obsessive thoughts, dark impulses. The 'demons' referred to are primarily within."
+      },
+      {
+        "num": 25,
+        "text": "नासै रोग हरै सब पीरा। जपत निरंतर हनुमत बीरा॥",
+        "translation": "Disease is destroyed and all pain removed by constantly chanting Hanuman's name.",
+        "meaning": "Repetitive mantra has measurable effects on the nervous system — reducing cortisol and stress markers. Ancient practice, modern validation."
+      },
+      {
+        "num": 26,
+        "text": "संकट ते हनुमान छुड़ावै। मन क्रम बचन ध्यान जो लावै॥",
+        "translation": "Hanuman delivers one from crisis — those who contemplate him in thought, deed, and word.",
+        "meaning": "The alignment of thought, action, and speech — when all three point in the same direction, there is no crisis that cannot be navigated."
+      },
+      {
+        "num": 27,
+        "text": "सब पर राम तपस्वी राजा। तिन के काज सकल तुम साजा॥",
+        "translation": "Ram is the king of ascetics over all. You accomplished all his tasks.",
+        "meaning": "Hanuman embodies perfect service — not servitude, but the free choice to dedicate all one's powers to a cause greater than oneself."
+      },
+      {
+        "num": 28,
+        "text": "और मनोरथ जो कोई लावै। सोइ अमित जीवन फल पावै॥",
+        "translation": "Whoever brings any desire to you, receives boundless fruits of life.",
+        "meaning": "When you bring everything — including your desires — to a higher purpose, something unexpected is given back in return."
+      },
+      {
+        "num": 29,
+        "text": "चारों जुग परताप तुम्हारा। है परसिद्ध जगत उजियारा॥",
+        "translation": "Your glory spans all four ages. Your fame illuminates the world.",
+        "meaning": "Hanuman's relevance is not historical. He represents principles — devotion, courage, selflessness — that are needed in every age."
+      },
+      {
+        "num": 30,
+        "text": "साधु संत के तुम रखवारे। असुर निकंदन राम दुलारे॥",
+        "translation": "You protect saints and sages. Destroyer of demons, beloved of Ram.",
+        "meaning": "The two faces of devotion: gentle protection of the sincere, fierce resistance of what threatens dharma."
+      },
+      {
+        "num": 31,
+        "text": "अष्ट सिद्धि नव निधि के दाता। अस बर दीन्ह जानकी माता॥",
+        "translation": "You are the bestower of the eight Siddhis and nine Nidhis — such was the boon given by Mother Sita.",
+        "meaning": "Sita blessed Hanuman with the power to grant all accomplishments because he served without seeking anything for himself. Selflessness becomes abundance."
+      },
+      {
+        "num": 32,
+        "text": "राम रसायन तुम्हरे पासा। सदा रहो रघुपति के दासा॥",
+        "translation": "You hold the elixir of Ram. Ever remain the servant of Raghupati.",
+        "meaning": "Ram is the elixir — the essence, the medicine for all that ails the soul. Hanuman holds it because he has surrendered completely to it."
+      },
+      {
+        "num": 33,
+        "text": "तुम्हरे भजन राम को पावै। जनम जनम के दुख बिसरावै॥",
+        "translation": "Through devotion to you, one attains Ram and forgets the sorrows of countless lifetimes.",
+        "meaning": "The path through Hanuman leads to Ram — Bhakti opens the door to the highest knowledge. They are not separate paths."
+      },
+      {
+        "num": 34,
+        "text": "अंत काल रघुबर पुर जाई। जहाँ जन्म हरिभक्त कहाई॥",
+        "translation": "At life's end one goes to Ram's abode. Wherever one is born, they are called a devotee of Hari.",
+        "meaning": "The fruit of sincere devotion: freedom from the compulsive cycle. Whatever form liberation takes, the orientation toward it is its own reward."
+      },
+      {
+        "num": 35,
+        "text": "और देवता चित्त न धरई। हनुमत सेइ सर्ब सुख करई॥",
+        "translation": "Keep no other deity in mind. Serving Hanuman alone gives all happiness.",
+        "meaning": "Single-pointed focus. Diluted devotion produces diluted results — this is a request for the mind's undivided attention."
+      },
+      {
+        "num": 36,
+        "text": "संकट कटै मिटै सब पीरा। जो सुमिरै हनुमत बलबीरा॥",
+        "translation": "Crises are cut and all pains vanish for one who remembers the mighty Hanuman.",
+        "meaning": "The courage, clarity, and equanimity that devotion cultivates genuinely makes crises navigable. Not magical — psychological."
+      },
+      {
+        "num": 37,
+        "text": "जय जय जय हनुमान गोसाईं। कृपा करहु गुरुदेव की नाईं॥",
+        "translation": "Victory, victory, victory to Hanuman, the Lord. Grant grace like a Guru.",
+        "meaning": "Hanuman as Guru — the teacher who shows by example what complete surrender and service look like in practice."
+      },
+      {
+        "num": 38,
+        "text": "जो सत बार पाठ कर कोई। छूटहि बंदि महा सुख होई॥",
+        "translation": "One who recites this a hundred times is freed from bondage and attains great happiness.",
+        "meaning": "Repetition as transformation — 100 recitations creates a new neural default pattern. Ancient wisdom about neuroplasticity."
+      },
+      {
+        "num": 39,
+        "text": "जो यह पढ़ै हनुमान चालीसा। होय सिद्धि साखी गौरीसा॥",
+        "translation": "Whoever reads this Hanuman Chalisa — Lord Shiva himself is the witness of their attainment.",
+        "meaning": "The highest cosmic authority as witness — Shiva, consciousness itself, validates genuine sincerity of devotion."
+      },
+      {
+        "num": 40,
+        "text": "तुलसीदास सदा हरि चेरा। कीजै नाथ हृदय महँ डेरा॥",
+        "translation": "Tulsidas is always a servant of Hari. O Lord, make my heart your dwelling.",
+        "meaning": "The author disappears into the aspiration. 'Make my heart your home' — the ultimate prayer: not for wealth, success, or power, but for inner presence."
+      }
+    ],
+    "doha_closing": {
+      "text": "पवन तनय संकट हरन, मंगल मूरति रूप।\nराम लखन सीता सहित, हृदय बसहु सुर भूप॥",
+      "translation": "O son of the Wind, remover of crises, embodiment of auspiciousness. Dwell in my heart with Ram, Lakshman, and Sita.",
+      "meaning": "The final request — not for wealth or power. For inner richness: the presence of Ram's entire family in the heart. This is the only wealth that cannot be taken away."
+    }
+  },
+  "upanishads": {
+    "name": "Principal Upanishads",
+    "introduction": "108 Upanishads total; 10-12 are considered principal. Philosophical core of the Vedas — conversations between teachers and students about the nature of reality, consciousness, and liberation. Composed 800–200 BCE. 'Upa-ni-shad' = sitting near the teacher to receive the highest knowledge.",
+    "texts": [
+      {
+        "name": "Isha Upanishad",
+        "affiliation": "Shukla Yajurveda",
+        "verses_total": 18,
+        "verses": [
+          {
+            "ref": "1",
+            "text": "ईशावास्यमिदं सर्वं यत्किञ्च जगत्यां जगत्।\nतेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम्॥",
+            "translation": "The Lord inhabits every living and moving thing in this universe. Enjoy what is given; do not covet that which belongs to others.",
+            "meaning": "The entire universe inhabited by the divine. Enjoy your share; do not covet. The root of both environmental ethics and economic justice in one verse."
+          },
+          {
+            "ref": "11",
+            "text": "विद्यां चाविद्यां च यस्तद्वेदोभयं सह।\nअविद्यया मृत्युं तीर्त्वा विद्ययामृतमश्नुते॥",
+            "translation": "One who knows both knowledge and ignorance together — by passing through ignorance, crosses death; by knowledge, attains immortality.",
+            "meaning": "You must understand your ignorance before knowledge becomes possible. Knowing what you don't know is the beginning of all genuine wisdom."
+          }
+        ]
+      },
+      {
+        "name": "Kena Upanishad",
+        "affiliation": "Samaveda",
+        "verses_total": 34,
+        "verses": [
+          {
+            "ref": "1.1",
+            "text": "केनेषितं पतति प्रेषितं मनः\nकेन प्राणः प्रथमः प्रैति युक्तः।",
+            "translation": "By what is the mind directed? By what is the life force impelled? By whose will do people speak? What power directs the eye and ear?",
+            "meaning": "The most fundamental question: what is the power behind consciousness itself? This question cannot be answered — it can only be lived into."
+          },
+          {
+            "ref": "1.2",
+            "text": "यन्मनसा न मनुते येनाहुर्मनो मतम्।\nतदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते॥",
+            "translation": "That which is not conceived by the mind, but by which the mind conceives — know that alone as Brahman.",
+            "meaning": "Brahman cannot be an object of thought — it is what makes thought possible. The eye cannot see itself. Consciousness cannot be known as an object; it can only be recognised as the knower."
+          }
+        ]
+      },
+      {
+        "name": "Mandukya Upanishad",
+        "affiliation": "Atharvaveda",
+        "verses_total": 12,
+        "verses": [
+          {
+            "ref": "1",
+            "text": "ॐ इत्येतदक्षरमिदं सर्वं, तस्योपव्याख्यानं भूतं भवद्भविष्यदिति सर्वमोंकार एव।",
+            "translation": "OM — this imperishable syllable is all this. Whatever exists — past, present, future — all is OM. And what transcends time — that too is OM.",
+            "meaning": "OM as the sound-symbol of all-encompassing reality. Not a word in any language but a vibration that precedes all language. The Mandukya is 12 verses and considered by many the most complete Upanishad."
+          },
+          {
+            "ref": "7",
+            "text": "नान्तःप्रज्ञं न बहिःप्रज्ञं नोभयतःप्रज्ञं न प्रज्ञानघनं न प्रज्ञं नाप्रज्ञम्।",
+            "translation": "Not inwardly conscious, not outwardly conscious, not both, not a mass of consciousness, not conscious, not unconscious.",
+            "meaning": "The fourth state (Turiya) — the witness of waking, dreaming, and deep sleep — can only be described by negation. Pure awareness. What remains when all descriptions are removed."
+          }
+        ]
+      },
+      {
+        "name": "Katha Upanishad",
+        "affiliation": "Krishna Yajurveda",
+        "verses_total": 120,
+        "verses": [
+          {
+            "ref": "1.2.20",
+            "text": "अणोरणीयान्महतो महीयानात्माऽस्य जन्तोर्निहितो गुहायाम्।\nतमक्रतुः पश्यति वीतशोको धातुप्रसादान्महिमानमात्मनः॥",
+            "translation": "The Atman is subtler than the subtle and greater than the great. It is hidden in the cave of the heart. One free from desire and sorrow sees the glory of the Atman.",
+            "meaning": "Smaller than the smallest, larger than the largest — the Atman has no size because it is not an object. Found not by searching outward but by stilling desire long enough to recognise what was always present."
+          },
+          {
+            "ref": "1.3.14",
+            "text": "उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत।\nक्षुरस्य धारा निशिता दुरत्यया दुर्गं पथस्तत्कवयो वदन्ति॥",
+            "translation": "Arise! Awake! Having reached the great teachers, understand. Like the sharpened edge of a razor is that path — the wise say it is hard to traverse.",
+            "meaning": "Perhaps the most urgent verse in all the Upanishads. Wake up. Find teachers. The path is real, it is possible, and it requires precision — the razor's edge metaphor is honest."
+          }
+        ]
+      },
+      {
+        "name": "Brihadaranyaka Upanishad",
+        "affiliation": "Shukla Yajurveda",
+        "verses_total": 435,
+        "verses": [
+          {
+            "ref": "1.4.10",
+            "text": "अहं ब्रह्मास्मि",
+            "translation": "I am Brahman.",
+            "meaning": "One of the four Mahavakyas — the great sayings of the Upanishads. Not a claim of ego inflation but of the dissolution of the false separate self. The recogniser and the recognised are one."
+          },
+          {
+            "ref": "3.9.28",
+            "text": "विज्ञानमानन्दं ब्रह्म",
+            "translation": "Brahman is pure consciousness, pure bliss.",
+            "meaning": "Consciousness is not a product of matter — it is the ultimate nature of reality. Bliss (Ananda) is not a feeling that comes and goes; it is the natural state when consciousness rests in its own nature."
+          }
+        ]
+      },
+      {
+        "name": "Chandogya Upanishad",
+        "affiliation": "Samaveda",
+        "verses_total": 627,
+        "verses": [
+          {
+            "ref": "6.8.7",
+            "text": "तत्त्वमसि",
+            "translation": "That thou art.",
+            "meaning": "One of the four Mahavakyas. 'That' (Brahman, universal consciousness) and 'thou' (the individual self) — are identical. The apparent separation is the fundamental ignorance that all spiritual practice addresses."
+          },
+          {
+            "ref": "3.14.1",
+            "text": "सर्वं खल्विदं ब्रह्म",
+            "translation": "All this is indeed Brahman.",
+            "meaning": "The third Mahavakya. The divine is not separate from the world — the world IS the divine, in form. The sacred is not in temples and retreats but in everything, everywhere, always."
+          }
+        ]
+      }
+    ]
+  },
+  "chanakya_niti": {
+    "name": "Chanakya Niti",
+    "author": "Acharya Chanakya (Kautilya / Vishnugupta)",
+    "period": "3rd century BCE",
+    "introduction": "Chanakya was the strategist who established the Maurya Empire, advisor to Emperor Chandragupta. His Arthashastra is the most comprehensive manual of statecraft ever written; Chanakya Niti contains his condensed wisdom on ethics, strategy, and human nature. Remarkably relevant to modern leadership and decision-making.",
+    "shlokas": [
+      {
+        "chapter": 1,
+        "num": 1,
+        "text": "अधीत्येदं यथाशास्त्रं नरो जानाति सत्तमः।\nधर्मोपदेशविख्यातं कार्याकार्यं शुभाशुभम्॥",
+        "translation": "Having studied this text as prescribed, a wise person learns what is dharmic and adharmic, what should be done and what should not, what is auspicious and what is inauspicious.",
+        "meaning": "Chanakya opens with a promise: this text will give you decision-making frameworks, not just facts. The goal is practical wisdom."
+      },
+      {
+        "chapter": 1,
+        "num": 6,
+        "text": "सुखस्य मूलं धर्मः। धर्मस्य मूलं अर्थः।\nअर्थस्य मूलं राज्यम्। राज्यस्य मूलं इन्द्रियजयः॥",
+        "translation": "The root of happiness is dharma. The root of dharma is wealth rightly used. The root of wealth is a well-governed state. The root of governance is mastery of the senses.",
+        "meaning": "Chanakya traces everything back to one thing: self-control. Every system, every achievement, every lasting happiness begins with mastery of your own impulses."
+      },
+      {
+        "chapter": 2,
+        "num": 1,
+        "text": "आयुः कर्म च वित्तं च विद्या निधनमेव च।\nपञ्चैतानि हि सृज्यन्ते गर्भस्थस्यैव देहिनः॥",
+        "translation": "Lifespan, occupation, wealth, learning, and time of death — these five are fixed for the embodied soul even while in the womb.",
+        "meaning": "The parameters of your life are given. What you do within them is entirely up to you. This is not fatalism — it is the framework for intelligent effort."
+      },
+      {
+        "chapter": 2,
+        "num": 11,
+        "text": "दुर्जनः परिहर्तव्यो विद्यालंकृतोऽपि सन्।\nमणिना भूषितः सर्पः किमसौ न भयंकरः॥",
+        "translation": "A wicked person should be avoided even if adorned with learning. A serpent adorned with a jewel — is it not still dangerous?",
+        "meaning": "Credentials, fame, and intelligence do not eliminate character defects — they amplify them. Choose your associations based on character, not on achievement."
+      },
+      {
+        "chapter": 3,
+        "num": 5,
+        "text": "कः कालः कानि मित्राणि को देशः कौ व्ययागमौ।\nकश्चाहं का च मे शक्तिरिति चिन्त्यं मुहुर्मुहुः॥",
+        "translation": "Who is time? Who are my allies? What is my ground? What are my costs and income? Who am I? What is my capacity? — contemplate these again and again.",
+        "meaning": "Chanakya's six questions for strategic self-assessment. Not once — repeatedly. Your answers change as your situation changes; the questions remain constant."
+      },
+      {
+        "chapter": 4,
+        "num": 18,
+        "text": "प्रियवाक्यप्रदानेन सर्वे तुष्यन्ति जन्तवः।\nतस्मात्तदेव वक्तव्यं वचने का दरिद्रता॥",
+        "translation": "All beings are pleased by kind words. Therefore one should speak kindly — what poverty is there in words?",
+        "meaning": "Kind speech costs nothing and gains everything. Chanakya, the hardest of realists, recognised that language is social currency — and pleasant words are the most efficient investment."
+      },
+      {
+        "chapter": 5,
+        "num": 14,
+        "text": "गुणैरुत्तमतां याति नोच्चैरासनसंस्थितः।\nप्रासादशिखरस्थोऽपि काकः किं गरुडायते॥",
+        "translation": "One becomes excellent through qualities, not by sitting in a high seat. A crow sitting atop a palace — does it become an eagle?",
+        "meaning": "Position is not character. Status is not virtue. A crow on a palace is still a crow. Genuine excellence comes from internal qualities, not external position."
+      },
+      {
+        "chapter": 6,
+        "num": 2,
+        "text": "इन्द्रियाणि च संयम्य बकवत्पण्डितो नरः।\nदेशकालबलं ज्ञात्वा सर्वकार्याणि साधयेत्॥",
+        "translation": "Restraining the senses like a heron, knowing the strength of time, place, and force — the wise person accomplishes all tasks.",
+        "meaning": "The heron's patience — waiting completely still until the exact right moment. Chanakya advocates patience combined with precise timing, not recklessness or passivity."
+      },
+      {
+        "chapter": 8,
+        "num": 1,
+        "text": "अनालोच्य व्ययं कर्ता ह्यनाथः कलहप्रियः।\nआत्मोपकाररहितश्च शीघ्रमेव विनश्यति॥",
+        "translation": "One who spends without thinking, who is dependent, quarrelsome, and indifferent to self-improvement — perishes quickly.",
+        "meaning": "Chanakya's four accelerants of failure: financial recklessness, dependence, habitual conflict, and refusal to grow. Recognising even one of these in yourself is the beginning of correction."
+      },
+      {
+        "chapter": 10,
+        "num": 14,
+        "text": "कस्यापि सुखदुःखे हि समे कुर्वन्निरन्तरम्।\nस्वदेहं नाशयन्त्येते नरका यान्ति निश्चितम्॥",
+        "translation": "Those who constantly cause equal happiness and misery to others, destroying their own body in the process — certainly go to hell.",
+        "meaning": "The moral cost of being a source of chaos and suffering in others' lives is borne by the one who creates it. What you consistently do to others shapes what you become."
+      }
+    ]
+  },
+  "vivekachudamani": {
+    "name": "Vivekachudamani",
+    "author": "Adi Shankaracharya",
+    "period": "8th century CE",
+    "introduction": "'The Crest Jewel of Discrimination' — 580 verses on Advaita Vedanta (non-dual philosophy) by Adi Shankaracharya, who at age 16 had already mastered the entire Vedic canon. He consolidated the philosophy that consciousness (Brahman) and the individual self (Atman) are ultimately one. This text is the most accessible introduction to that philosophy.",
+    "verses": [
+      {
+        "num": 2,
+        "text": "जन्तूनां नरजन्म दुर्लभमतः पुंस्त्वं ततो विप्रता\nतस्माद्वैदिकधर्ममार्गपरता विद्वत्त्वमस्मात्परम्।",
+        "translation": "Among living beings, human birth is rare. Among humans, the capacity to seek wisdom is rarer. Among those, actually pursuing it with sincerity is rarest of all.",
+        "meaning": "You already have the rarest gift: a curious mind with access to the entire sum of human knowledge. Most people never realise what they are sitting on. Use it."
+      },
+      {
+        "num": 3,
+        "text": "दुर्लभं त्रयमेवैतद्देवानुग्रहहेतुकम्।\nमनुष्यत्वं मुमुक्षुत्वं महापुरुषसंश्रयः॥",
+        "translation": "Three things are extremely rare and are obtained only by divine grace: human birth, the desire for liberation, and the guidance of a great teacher.",
+        "meaning": "If you have all three — a human birth, a genuine desire to understand, and access to good teachers — you have received the most rare combination of gifts. Do not waste it."
+      },
+      {
+        "num": 13,
+        "text": "मोक्षस्य हेतुः प्रथमो निगद्यते\nवैराग्यमत्यन्तमिहामुत्र च।\nततः शमादिः षटकः सुसाधनं\nततस्त्वमुमुक्षुतैव च॥",
+        "translation": "The first cause of liberation is said to be extreme dispassion toward everything impermanent in this world and the next. Then the six disciplines beginning with Sama (quietude of mind). Then the intense desire for liberation.",
+        "meaning": "The three prerequisites for liberation: dispassion (not caring about temporary pleasures), discipline (six inner practices), and genuine longing for freedom. Not rules — a description of the internal state required."
+      },
+      {
+        "num": 20,
+        "text": "वदन्तु शास्त्राणि यजन्तु देवान्\nकुर्वन्तु कर्माणि भजन्तु देवताः।\nआत्मैक्यबोधेन विना विमुक्तिर्\nन सिध्यति ब्रह्मशतान्तरेऽपि॥",
+        "translation": "Let scriptures be studied, gods worshipped, rituals performed, deities propitiated — without the knowledge of identity with the Self, liberation cannot be achieved even in a hundred lives of Brahma.",
+        "meaning": "Shankaracharya is radical: no external practice, however elaborate, produces liberation. Only the direct recognition of one's own nature as pure consciousness achieves it. Rituals prepare the ground; they are not the fruit."
+      },
+      {
+        "num": 251,
+        "text": "ब्रह्म सत्यं जगन्मिथ्या जीवो ब्रह्मैव नापरः।\nअनेन वेद्यं सच्छास्त्रमिति वेदान्तडिण्डिमः॥",
+        "translation": "Brahman is real; the world is appearance; the individual self is none other than Brahman. This is the proclamation of Vedanta.",
+        "meaning": "The three fundamental assertions of Advaita: (1) Pure consciousness is the only reality. (2) The world as a separate, independent entity is an appearance — not unreal, but not ultimately separate from consciousness. (3) You — at the deepest level — are that consciousness."
+      }
+    ]
+  },
+  "vedas": {
+    "name": "चार वेद (The Four Vedas)",
+    "introduction": "सृष्टि के अनादि वैदिक ज्ञान का मूल स्रोत — ऋग्वेद, यजुर्वेद, सामवेद एवं अथर्ववेद।",
+    "texts": [
+      {
+        "id": "rigveda",
+        "name": "ऋग्वेद (Rigveda)",
+        "name_hi": "ऋग्वेद संहिता",
+        "subtitle": "ज्ञान एवं देवताओं की स्तुतियों का प्राचीनतम वेद",
+        "vedic_period": "१५०० - १००० ईसा पूर्व",
+        "total_mandalas": 10,
+        "total_suktas": 1028,
+        "summary": "१० मण्डलों तथा १०२८ सूक्तों में विभाजित देवताओं की ऋचाओं एवं दर्शन का महान ग्रन्थ।",
+        "drive_url": "https://archive.org/download/rigved/rigved.pdf"
+      },
+      {
+        "id": "yajurveda",
+        "name": "यजुर्वेद (Yajurveda)",
+        "name_hi": "यजुर्वेद संहिता",
+        "subtitle": "यज्ञ, कर्मकांड एवं मंत्रों का वेद",
+        "vedic_period": "१२०० - १००० ईसा पूर्व",
+        "total_mandalas": 40,
+        "total_suktas": 1975,
+        "summary": "शुक्ल एवं कृष्ण शाखाओं में विभक्त यज्ञीय कर्मकांड एवं आध्यात्मिक साधना का आधार।",
+        "drive_url": "https://archive.org/download/yajurved/yajurved.pdf"
+      },
+      {
+        "id": "samaveda",
+        "name": "सामवेद (Samaveda)",
+        "name_hi": "सामवेद संहिता",
+        "subtitle": "संगीत, गायन एवं भक्ति की संगीतमय ऋचाएं",
+        "vedic_period": "१२०० - १००० ईसा पूर्व",
+        "total_mandalas": 2,
+        "total_suktas": 1875,
+        "summary": "वैदिक गायन एवं भारतीय शास्त्रीय संगीत का मूल जनक ग्रन्थ।",
+        "drive_url": "https://archive.org/download/samved/samved.pdf"
+      },
+      {
+        "id": "atharvaveda",
+        "name": "अथर्ववेद (Atharvaveda)",
+        "name_hi": "अथर्ववेद संहिता",
+        "subtitle": "आयुर्वेद, विज्ञान, गृहस्थ धर्म एवं समाज व्यवस्था",
+        "vedic_period": "१००० - ८०० ईसा पूर्व",
+        "total_mandalas": 20,
+        "total_suktas": 730,
+        "summary": "२० काण्डों में रचित चिकित्सा, औषधि, नक्षत्र विज्ञान एवं व्यावहारिक धर्म का मर्म।",
+        "drive_url": "https://archive.org/download/arthved-part-1/arthved-part-1.pdf"
+      }
+    ]
+  },
+  "puranas": {
+    "name": "अष्टादश पुराण (18 Mahapuranas)",
+    "introduction": "सृष्टि, इतिहास, आख्यान, धर्मशास्त्र एवं भक्ति का अगाध सागर।",
+    "texts": [
+      {
+        "id": "bhagavat_puran",
+        "name": "श्रीमद्भागवत पुराण",
+        "subtitle": "भगवान श्रीकृष्ण लीला एवं भक्ति का सर्वोपरि पुराण",
+        "verses_count": 18000
+      },
+      {
+        "id": "shiva_puran",
+        "name": "शिव पुराण",
+        "subtitle": "भगवान शिव की महिमा एवं ज्योतिर्लिंग कथा",
+        "verses_count": 24000
+      },
+      {
+        "id": "vishnu_puran",
+        "name": "विष्णु पुराण",
+        "subtitle": "सृष्टि चक्र एवं दशावतार कथा",
+        "verses_count": 23000
+      },
+      {
+        "id": "garuda_puran",
+        "name": "गरुड़ पुराण",
+        "subtitle": "कर्मफल, धर्म-नीति एवं मृत्युोत्तर रहस्य",
+        "verses_count": 19000
+      },
+      {
+        "id": "padma_puran",
+        "name": "पद्म पुराण",
+        "subtitle": "तीर्थ माहात्म्य एवं सृष्टि रचना",
+        "verses_count": 55000
+      },
+      {
+        "id": "skanda_puran",
+        "name": "स्कन्द पुराण",
+        "subtitle": "सबसे बड़ा पुराण, शिव-कार्तिकेय चरित्र",
+        "verses_count": 81100
+      },
+      {
+        "id": "agni_puran",
+        "name": "अग्नि पुराण",
+        "subtitle": "ज्ञानकोश, धर्मशास्त्र, आयुर्वेद एवं धनुर्वेद",
+        "verses_count": 15400
+      },
+      {
+        "id": "bhavishya_puran",
+        "name": "भविष्य पुराण",
+        "subtitle": "भावी राजाओं एवं कलयुग के भविष्यवाणियां",
+        "verses_count": 14500
+      },
+      {
+        "id": "markandeya_puran",
+        "name": "मार्कण्डेय पुराण (दुर्गा सप्तशती)",
+        "subtitle": "देवी माहात्म्य एवं नवदुर्गा चरित्र",
+        "verses_count": 9000
+      },
+      {
+        "id": "matsya_puran",
+        "name": "मत्स्य पुराण",
+        "subtitle": "मत्स्यावतार एवं जलप्रलय की गाथा",
+        "verses_count": 14000
+      },
+      {
+        "id": "brahma_puran",
+        "name": "ब्रह्म पुराण",
+        "subtitle": "आदि पुराण, सूर्य उपासना एवं जगन्नाथ माहात्म्य",
+        "verses_count": 10000
+      },
+      {
+        "id": "brahmanda_puran",
+        "name": "ब्रह्माण्ड पुराण (ललिता सहस्रनाम)",
+        "subtitle": "ब्रह्मांड उत्पत्ति एवं ललिता सहस्रनाम",
+        "verses_count": 12000
+      },
+      {
+        "id": "brahma_vaivarta_puran",
+        "name": "ब्रह्मवैवर्त पुराण",
+        "subtitle": "राधा-कृष्ण लीला एवं गोलोक वर्णन",
+        "verses_count": 18000
+      },
+      {
+        "id": "kurma_puran",
+        "name": "कूर्म पुराण",
+        "subtitle": "कूर्मावतार एवं ईश्वर गीता",
+        "verses_count": 17000
+      },
+      {
+        "id": "linga_puran",
+        "name": "लिङ्ग पुराण",
+        "subtitle": "शिवलिंग प्राकट्य एवं पञ्चाक्षर मंत्र",
+        "verses_count": 11000
+      },
+      {
+        "id": "narada_puran",
+        "name": "नारद पुराण",
+        "subtitle": "वेदांग वर्णन एवं नारदीय धर्म",
+        "verses_count": 25000
+      },
+      {
+        "id": "varaha_puran",
+        "name": "वराह पुराण",
+        "subtitle": "वराहावतार एवं पृथ्वी उद्धार",
+        "verses_count": 24000
+      },
+      {
+        "id": "vamana_puran",
+        "name": "वामन पुराण",
+        "subtitle": "वामनावतार एवं बलि उद्धार कथा",
+        "verses_count": 10000
+      }
+    ]
+  }
+}
