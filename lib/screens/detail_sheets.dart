@@ -49,6 +49,148 @@ void showPuranSheet(BuildContext context, PuranText puran) {
   );
 }
 
+void showNotificationSheet(BuildContext context) {
+  showModalBottomSheet(
+    context: context,
+    isScrollControlled: true,
+    backgroundColor: Colors.transparent,
+    builder: (context) => const NotificationDetailSheet(),
+  );
+}
+
+class NotificationDetailSheet extends StatefulWidget {
+  const NotificationDetailSheet({super.key});
+
+  @override
+  State<NotificationDetailSheet> createState() => _NotificationDetailSheetState();
+}
+
+class _NotificationDetailSheetState extends State<NotificationDetailSheet> {
+  bool _dailyShlokaAlert = true;
+  bool _panchangTithiAlert = true;
+  bool _festivalAlert = true;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.75,
+      decoration: BoxDecoration(
+        color: Theme.of(context).scaffoldBackgroundColor,
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+      ),
+      child: Column(
+        children: [
+          Container(
+            margin: const EdgeInsets.only(top: 12, bottom: 8),
+            width: 40,
+            height: 4,
+            decoration: BoxDecoration(
+              color: Colors.grey.withValues(alpha: 0.4),
+              borderRadius: BorderRadius.circular(2),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Row(
+              children: [
+                const Icon(Icons.notifications_active, color: Colors.amber, size: 24),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    'Dharma Daily Notifications',
+                    style: GoogleFonts.cinzel(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
+                  ),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.close),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ),
+          ),
+          const Divider(height: 1),
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                _buildNotificationCard(
+                  title: '🌅 Morning Panchang & Tithi Reminder',
+                  subtitle: 'Daily 06:00 AM notification for Tithi, Rahu Kaal & Muhurta',
+                  value: _panchangTithiAlert,
+                  onChanged: (val) => setState(() => _panchangTithiAlert = val),
+                ),
+                const SizedBox(height: 12),
+                _buildNotificationCard(
+                  title: '📜 Daily Shloka & Wisdom Verse',
+                  subtitle: 'Daily 08:00 AM notification featuring Bhagavad Gita wisdom',
+                  value: _dailyShlokaAlert,
+                  onChanged: (val) => setState(() => _dailyShlokaAlert = val),
+                ),
+                const SizedBox(height: 12),
+                _buildNotificationCard(
+                  title: '🚩 Upcoming Hindu Festival Alerts',
+                  subtitle: '1-day advance reminder for Vrats, Ekadashi & Major Festivals',
+                  value: _festivalAlert,
+                  onChanged: (val) => setState(() => _festivalAlert = val),
+                ),
+                const SizedBox(height: 24),
+                Container(
+                  padding: const EdgeInsets.all(14),
+                  decoration: BoxDecoration(
+                    color: Colors.amber.withValues(alpha: 0.1),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.amber.withValues(alpha: 0.3)),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.check_circle, color: Colors.amber),
+                      const SizedBox(width: 12),
+                      const Expanded(
+                        child: Text(
+                          'Notifications are active and set according to local system time.',
+                          style: TextStyle(fontSize: 13, height: 1.3),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildNotificationCard({
+    required String title,
+    required String subtitle,
+    required bool value,
+    required ValueChanged<bool> onChanged,
+  }) {
+    return Card(
+      elevation: 2,
+      child: SwitchListTile(
+        title: Text(
+          title,
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+        ),
+        subtitle: Text(
+          subtitle,
+          style: const TextStyle(fontSize: 12, color: Colors.grey),
+        ),
+        value: value,
+        activeColor: Colors.amber,
+        onChanged: onChanged,
+      ),
+    );
+  }
+}
+
 class ScriptureDetailSheet extends StatefulWidget {
   final ScriptureItem scripture;
   const ScriptureDetailSheet({super.key, required this.scripture});

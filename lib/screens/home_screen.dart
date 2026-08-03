@@ -26,15 +26,9 @@ class HomeScreen extends StatelessWidget {
             children: [
               // Custom Top Header Banner
               TopHeaderBanner(
-                onMenuTap: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Dharma Daily Menu'),
-                      duration: Duration(seconds: 2),
-                    ),
-                  );
-                },
+                onMenuTap: () => Scaffold.of(context).openDrawer(),
                 onSearchTap: () => onNavigateTab(2), // Navigate to Library search
+                onNotificationTap: () => showNotificationSheet(context),
               ),
 
               // Today's Panchang Summary Card

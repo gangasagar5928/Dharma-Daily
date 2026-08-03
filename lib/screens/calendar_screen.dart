@@ -19,7 +19,14 @@ class _CalendarScreenState extends State<CalendarScreen> {
   @override
   void initState() {
     super.initState();
-    _selectedDate = DateTime(2026, 1, 1);
+    final now = DateTime.now();
+    final start = DateTime(2026, 1, 1);
+    final end = DateTime(2026, 12, 31);
+    if (now.isAfter(start) && now.isBefore(end)) {
+      _selectedDate = DateTime(now.year, now.month, now.day);
+    } else {
+      _selectedDate = start;
+    }
     _selectedRegion = PrefsService.region;
   }
 
