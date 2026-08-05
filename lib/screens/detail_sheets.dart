@@ -663,8 +663,8 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                     await DriveSourcesService().load();
                     final sources = DriveSourcesService().vedas;
                     final source = sources.firstWhere(
-                      (s) => s.id == v.id,
-                      orElse: () => sources.isNotEmpty ? sources.first : const DriveSource(id: 'rigved', name: 'ऋग्वेद', nameEn: 'Rigveda', fileId: '1ULeopB6k19pC9OhoW7pXwiK1WunSbE34'),
+                      (s) => s.id == v.id || s.id.replaceAll('_', '-') == v.id.replaceAll('_', '-'),
+                      orElse: () => sources.firstWhere((s) => s.id == 'rigveda', orElse: () => sources.first),
                     );
                     if (context.mounted) {
                       Navigator.push(
@@ -895,8 +895,8 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                     await DriveSourcesService().load();
                     final sources = DriveSourcesService().puranas;
                     final source = sources.firstWhere(
-                      (s) => s.id == p.id,
-                      orElse: () => sources.isNotEmpty ? sources.first : const DriveSource(id: 'bhagwat-puran', name: 'श्रीमद्भागवत पुराण', nameEn: 'Shrimad Bhagavat Purana', fileId: '1Fi2X70V8_FO5NBBoi4tespwt0cloHTWA'),
+                      (s) => s.id == p.id || s.id.replaceAll('_', '-') == p.id.replaceAll('_', '-'),
+                      orElse: () => sources.firstWhere((s) => s.id == 'bhagavat_puran', orElse: () => sources.first),
                     );
                     if (context.mounted) {
                       Navigator.push(
