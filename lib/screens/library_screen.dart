@@ -280,59 +280,88 @@ class _LibraryScreenState extends State<LibraryScreen> with SingleTickerProvider
   }
 
   Widget _buildTraditionList(BuildContext context, List<Tradition> traditions) {
-    if (traditions.isEmpty) {
-      return const Center(child: Text('No traditions found.'));
-    }
+    final categories = ['All', 'Daily Rituals', 'Pooja & Upasana', 'Vedic Science', 'Lifestyle'];
 
-    return ListView.separated(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      itemCount: traditions.length,
-      separatorBuilder: (_, __) => const SizedBox(height: 12),
-      itemBuilder: (context, index) {
-        final t = traditions[index];
-        return Card(
-          child: ListTile(
-            contentPadding: const EdgeInsets.all(16),
-            leading: Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: Colors.blue.withOpacity(0.15),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: const Icon(Icons.nature_people_outlined, color: Colors.blueAccent, size: 28),
-            ),
-            title: Text(
-              '${t.titleHi} (${t.title})',
-              style: GoogleFonts.notoSansDevanagari(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            subtitle: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: 4),
-                Text(t.subtitleHi, style: const TextStyle(fontSize: 13, color: Colors.grey)),
-                const SizedBox(height: 6),
-                Row(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                      decoration: BoxDecoration(
-                        color: Colors.blue.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                      child: const Text('द्विभाषी (Hindi & English)', style: TextStyle(fontSize: 11, color: Colors.blueAccent)),
-                    ),
-                  ],
+    return Column(
+      children: [
+        SizedBox(
+          height: 44,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+            itemCount: categories.length,
+            itemBuilder: (context, index) {
+              final cat = categories[index];
+              final isSelected = _selectedCategory == cat;
+              return Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: ChoiceChip(
+                  label: Text(cat, style: const TextStyle(fontSize: 12)),
+                  selected: isSelected,
+                  selectedColor: Colors.blue.withValues(alpha: 0.3),
+                  onSelected: (val) {
+                    if (val) setState(() => _selectedCategory = cat);
+                  },
                 ),
-              ],
-            ),
-            trailing: const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.grey),
-            onTap: () => showTraditionSheet(context, t),
+              );
+            },
           ),
-        );
-      },
+        ),
+        Expanded(
+          child: traditions.isEmpty
+              ? const Center(child: Text('No traditions found.'))
+              : ListView.separated(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  itemCount: traditions.length,
+                  separatorBuilder: (_, __) => const SizedBox(height: 12),
+                  itemBuilder: (context, index) {
+                    final t = traditions[index];
+                    return Card(
+                      child: ListTile(
+                        contentPadding: const EdgeInsets.all(16),
+                        leading: Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.blue.withValues(alpha: 0.15),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Icon(Icons.nature_people_outlined, color: Colors.blueAccent, size: 28),
+                        ),
+                        title: Text(
+                          '${t.titleHi} (${t.title})',
+                          style: GoogleFonts.notoSansDevanagari(
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        subtitle: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const SizedBox(height: 4),
+                            Text(t.subtitleHi, style: const TextStyle(fontSize: 13, color: Colors.grey)),
+                            const SizedBox(height: 6),
+                            Row(
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue.withValues(alpha: 0.1),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: const Text('द्विभाषी (Hindi & English)', style: TextStyle(fontSize: 11, color: Colors.blueAccent)),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.grey),
+                        onTap: () => showTraditionSheet(context, t),
+                      ),
+                    );
+                  },
+                ),
+        ),
+      ],
     );
   }
 }

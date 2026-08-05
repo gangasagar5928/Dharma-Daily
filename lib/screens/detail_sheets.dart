@@ -66,9 +66,17 @@ class NotificationDetailSheet extends StatefulWidget {
 }
 
 class _NotificationDetailSheetState extends State<NotificationDetailSheet> {
-  bool _dailyShlokaAlert = true;
-  bool _panchangTithiAlert = true;
-  bool _festivalAlert = true;
+  late bool _dailyShlokaAlert;
+  late bool _panchangTithiAlert;
+  late bool _festivalAlert;
+
+  @override
+  void initState() {
+    super.initState();
+    _dailyShlokaAlert = PrefsService.shlokaAlert;
+    _panchangTithiAlert = PrefsService.panchangAlert;
+    _festivalAlert = PrefsService.festivalAlert;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -121,21 +129,30 @@ class _NotificationDetailSheetState extends State<NotificationDetailSheet> {
                   title: '🌅 Morning Panchang & Tithi Reminder',
                   subtitle: 'Daily 06:00 AM notification for Tithi, Rahu Kaal & Muhurta',
                   value: _panchangTithiAlert,
-                  onChanged: (val) => setState(() => _panchangTithiAlert = val),
+                  onChanged: (val) async {
+                    await PrefsService.setPanchangAlert(val);
+                    setState(() => _panchangTithiAlert = val);
+                  },
                 ),
                 const SizedBox(height: 12),
                 _buildNotificationCard(
                   title: '📜 Daily Shloka & Wisdom Verse',
                   subtitle: 'Daily 08:00 AM notification featuring Bhagavad Gita wisdom',
                   value: _dailyShlokaAlert,
-                  onChanged: (val) => setState(() => _dailyShlokaAlert = val),
+                  onChanged: (val) async {
+                    await PrefsService.setShlokaAlert(val);
+                    setState(() => _dailyShlokaAlert = val);
+                  },
                 ),
                 const SizedBox(height: 12),
                 _buildNotificationCard(
                   title: '🚩 Upcoming Hindu Festival Alerts',
                   subtitle: '1-day advance reminder for Vrats, Ekadashi & Major Festivals',
                   value: _festivalAlert,
-                  onChanged: (val) => setState(() => _festivalAlert = val),
+                  onChanged: (val) async {
+                    await PrefsService.setFestivalAlert(val);
+                    setState(() => _festivalAlert = val);
+                  },
                 ),
                 const SizedBox(height: 24),
                 Container(
@@ -646,7 +663,7 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                     await DriveSourcesService().load();
                     final sources = DriveSourcesService().vedas;
                     final source = sources.firstWhere(
-                      (s) => s.id.contains(v.id) || v.id.contains(s.id),
+                      (s) => s.id == v.id,
                       orElse: () => sources.isNotEmpty ? sources.first : const DriveSource(id: 'rigved', name: 'ऋग्वेद', nameEn: 'Rigveda', fileId: '1ULeopB6k19pC9OhoW7pXwiK1WunSbE34'),
                     );
                     if (context.mounted) {
@@ -878,7 +895,7 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                     await DriveSourcesService().load();
                     final sources = DriveSourcesService().puranas;
                     final source = sources.firstWhere(
-                      (s) => s.id.contains(p.id) || p.id.contains(s.id),
+                      (s) => s.id == p.id,
                       orElse: () => sources.isNotEmpty ? sources.first : const DriveSource(id: 'bhagwat-puran', name: 'श्रीमद्भागवत पुराण', nameEn: 'Shrimad Bhagavat Purana', fileId: '1Fi2X70V8_FO5NBBoi4tespwt0cloHTWA'),
                     );
                     if (context.mounted) {

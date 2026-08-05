@@ -5,6 +5,7 @@ import 'theme.dart';
 import 'screens/home_screen.dart';
 import 'screens/calendar_screen.dart';
 import 'screens/library_screen.dart';
+import 'screens/drive_pdf_screen.dart';
 import 'screens/detail_sheets.dart';
 
 void main() async {
@@ -13,8 +14,44 @@ void main() async {
   runApp(const DharmaDailyApp());
 }
 
-class DharmaDailyApp extends StatelessWidget {
+class DharmaDailyApp extends StatefulWidget {
   const DharmaDailyApp({super.key});
+
+  static _DharmaDailyAppState? of(BuildContext context) =>
+      context.findAncestorStateOfType<_DharmaDailyAppState>();
+
+  @override
+  State<DharmaDailyApp> createState() => _DharmaDailyAppState();
+}
+
+class _DharmaDailyAppState extends State<DharmaDailyApp> {
+  late ThemeMode _themeMode;
+
+  @override
+  void initState() {
+    super.initState();
+    _themeMode = _getThemeModeFromIndex(PrefsService.themeModeIndex);
+  }
+
+  ThemeMode _getThemeModeFromIndex(int index) {
+    switch (index) {
+      case 0:
+        return ThemeMode.system;
+      case 2:
+        return ThemeMode.light;
+      case 1:
+      default:
+        return ThemeMode.dark;
+    }
+  }
+
+  void setThemeMode(ThemeMode mode) {
+    setState(() => _themeMode = mode);
+    int index = 1;
+    if (mode == ThemeMode.system) index = 0;
+    if (mode == ThemeMode.light) index = 2;
+    PrefsService.setThemeModeIndex(index);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +60,7 @@ class DharmaDailyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.dark,
+      themeMode: _themeMode,
       home: const MainNavigationScreen(),
     );
   }
@@ -39,10 +76,16 @@ class MainNavigationScreen extends StatefulWidget {
 class _MainNavigationScreenState extends State<MainNavigationScreen> {
   int _currentIndex = 0;
   bool _isLoading = true;
+  late final List<Widget> _screens;
 
   @override
   void initState() {
     super.initState();
+    _screens = [
+      HomeScreen(onNavigateTab: _onNavigateTab),
+      const CalendarScreen(),
+      const LibraryScreen(),
+    ];
     _loadData();
   }
 
@@ -90,12 +133,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         ),
       );
     }
-
-    final screens = [
-      HomeScreen(onNavigateTab: _onNavigateTab),
-      const CalendarScreen(),
-      const LibraryScreen(),
-    ];
 
     return Scaffold(
       drawer: Drawer(
@@ -188,7 +225,10 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 title: const Text('Google Drive PDF Reader', style: TextStyle(color: Colors.white)),
                 onTap: () {
                   Navigator.pop(context);
-                  _onNavigateTab(2);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const DriveLibraryScreen()),
+                  );
                 },
               ),
               const Divider(color: Colors.white24),
@@ -214,7 +254,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
       ),
       body: IndexedStack(
         index: _currentIndex,
-        children: screens,
+        children: _screens,
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,

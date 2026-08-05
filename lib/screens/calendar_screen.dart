@@ -19,14 +19,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
   @override
   void initState() {
     super.initState();
-    final now = DateTime.now();
-    final start = DateTime(2026, 1, 1);
-    final end = DateTime(2026, 12, 31);
-    if (now.isAfter(start) && now.isBefore(end)) {
-      _selectedDate = DateTime(now.year, now.month, now.day);
-    } else {
-      _selectedDate = start;
-    }
+    _selectedDate = DateTime.now();
     _selectedRegion = PrefsService.region;
   }
 
@@ -65,8 +58,8 @@ class _CalendarScreenState extends State<CalendarScreen> {
               padding: const EdgeInsets.symmetric(vertical: 8),
               child: CalendarDatePicker(
                 initialDate: _selectedDate,
-                firstDate: DateTime(2026, 1, 1),
-                lastDate: DateTime(2026, 12, 31),
+                firstDate: DateTime(2024, 1, 1),
+                lastDate: DateTime(2030, 12, 31),
                 onDateChanged: (date) {
                   setState(() => _selectedDate = date);
                 },
@@ -97,9 +90,27 @@ class _CalendarScreenState extends State<CalendarScreen> {
             if (panchang != null)
               _FullPanchangExpander(panchang: panchang)
             else
-              const Padding(
-                padding: EdgeInsets.all(32.0),
-                child: Text('No Panchang data available for selected date.'),
+              Card(
+                margin: const EdgeInsets.all(16),
+                child: Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Column(
+                    children: [
+                      const Icon(Icons.calendar_today, size: 48, color: Colors.amber),
+                      const SizedBox(height: 12),
+                      Text(
+                        'Panchang for ${DateFormat('d MMMM yyyy').format(_selectedDate)}',
+                        style: GoogleFonts.cinzel(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      const SizedBox(height: 8),
+                      const Text(
+                        'Detailed ephemeris calculation for this date requires the upcoming year data pack.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.grey, fontSize: 13),
+                      ),
+                    ],
+                  ),
+                ),
               ),
           ],
         ),
@@ -148,7 +159,7 @@ class _FullPanchangExpander extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: Colors.amber.withOpacity(0.15),
+                    color: Colors.amber.withValues(alpha: 0.15),
                     shape: BoxShape.circle,
                   ),
                   child: const Icon(Icons.wb_sunny, color: Colors.amber, size: 28),
@@ -161,7 +172,7 @@ class _FullPanchangExpander extends StatelessWidget {
               Wrap(
                 spacing: 8,
                 children: panchang.special.map((s) => Chip(
-                  backgroundColor: Colors.amber.withOpacity(0.2),
+                  backgroundColor: Colors.amber.withValues(alpha: 0.2),
                   label: Text(s, style: const TextStyle(color: Colors.amber, fontWeight: FontWeight.bold, fontSize: 12)),
                 )).toList(),
               ),

@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
-        android:label="dharma_daily"
+        android:label="Dharma Daily"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

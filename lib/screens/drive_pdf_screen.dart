@@ -71,19 +71,24 @@ class PdfCacheManager {
   }) async {
     final dir = await getApplicationDocumentsDirectory();
     final cacheDir = Directory('${dir.path}/dharma_pdfs');
-    if (!cacheDir.existsSync()) cacheDir.createSync(recursive: true);
+    if (!await cacheDir.exists()) {
+      await cacheDir.create(recursive: true);
+    }
 
     final file = File('${cacheDir.path}/${source.cacheFileName}');
 
-    if (file.existsSync() && file.lengthSync() > 100000) {
-      onProgress(1.0);
-      return file;
+    if (await file.exists()) {
+      final len = await file.length();
+      if (len > 100000) {
+        onProgress(1.0);
+        return file;
+      }
     }
 
-    try {
-      final client = HttpClient();
-      client.autoUncompress = true;
+    final client = HttpClient();
+    client.autoUncompress = true;
 
+    try {
       final urls = [
         'https://drive.usercontent.google.com/download?id=${source.fileId}&export=download&confirm=t',
         'https://drive.google.com/uc?export=download&id=${source.fileId}&confirm=t',
@@ -121,7 +126,6 @@ class PdfCacheManager {
 
       if (response == null || response.statusCode != 200) {
         debugPrint('All Drive download attempts failed for ${source.name}');
-        client.close();
         return null;
       }
 
@@ -139,19 +143,27 @@ class PdfCacheManager {
         }
       }
       await sink.close();
-      client.close();
 
-      if (file.existsSync() && file.lengthSync() > 100000) {
-        onProgress(1.0);
-        return file;
+      if (await file.exists()) {
+        final len = await file.length();
+        if (len > 100000) {
+          onProgress(1.0);
+          return file;
+        } else {
+          await file.delete();
+          return null;
+        }
       } else {
-        if (file.existsSync()) file.deleteSync();
         return null;
       }
     } catch (e) {
       debugPrint('Download error for ${source.name}: $e');
-      if (file.existsSync()) file.deleteSync();
+      if (await file.exists()) {
+        await file.delete();
+      }
       return null;
+    } finally {
+      client.close();
     }
   }
 
@@ -163,7 +175,9 @@ class PdfCacheManager {
   static Future<void> clearCache(DriveSource source) async {
     final dir = await getApplicationDocumentsDirectory();
     final file = File('${dir.path}/dharma_pdfs/${source.cacheFileName}');
-    if (file.existsSync()) file.deleteSync();
+    if (await file.exists()) {
+      await file.delete();
+    }
   }
 }
 

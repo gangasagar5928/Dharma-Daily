@@ -24,6 +24,8 @@ class DataService {
 
   bool _isLoaded = false;
   bool get isLoaded => _isLoaded;
+  String? _loadError;
+  String? get loadError => _loadError;
 
   Future<void> loadAllData() async {
     if (_isLoaded) return;
@@ -32,16 +34,19 @@ class DataService {
       // 1. Panchang
       try {
         final panchangStr = await rootBundle.loadString('assets/data/panchang_2026.json');
-        final List<dynamic> panchangJson = json.decode(panchangStr);
+        final dynamic panchangDecoded = await compute(jsonDecode, panchangStr);
+        final List<dynamic> panchangJson = panchangDecoded as List<dynamic>;
         _panchangDays = panchangJson.map((e) => PanchangDay.fromJson(e)).toList();
       } catch (e) {
         debugPrint('Error loading Panchang: $e');
+        _loadError = 'Failed to load Panchang data.';
       }
 
       // 2. Festivals
       try {
         final festivalsStr = await rootBundle.loadString('assets/data/festivals.json');
-        final List<dynamic> festivalsJson = json.decode(festivalsStr);
+        final dynamic festivalsDecoded = await compute(jsonDecode, festivalsStr);
+        final List<dynamic> festivalsJson = festivalsDecoded as List<dynamic>;
         _festivals = festivalsJson.map((e) => Festival.fromJson(e)).toList();
       } catch (e) {
         debugPrint('Error loading Festivals: $e');
@@ -50,7 +55,8 @@ class DataService {
       // 3. Traditions
       try {
         final traditionsStr = await rootBundle.loadString('assets/data/traditions.json');
-        final List<dynamic> traditionsJson = json.decode(traditionsStr);
+        final dynamic traditionsDecoded = await compute(jsonDecode, traditionsStr);
+        final List<dynamic> traditionsJson = traditionsDecoded as List<dynamic>;
         _traditions = traditionsJson.map((e) => Tradition.fromJson(e)).toList();
       } catch (e) {
         debugPrint('Error loading Traditions: $e');
@@ -59,7 +65,8 @@ class DataService {
       // 4. Scriptures
       try {
         final scripturesStr = await rootBundle.loadString('assets/data/scriptures.json');
-        final Map<String, dynamic> scripturesJson = json.decode(scripturesStr);
+        final dynamic scripturesDecoded = await compute(jsonDecode, scripturesStr);
+        final Map<String, dynamic> scripturesJson = scripturesDecoded as Map<String, dynamic>;
         _scriptures = _parseScriptures(scripturesJson);
       } catch (e) {
         debugPrint('Error loading Scriptures: $e');
@@ -68,7 +75,8 @@ class DataService {
       // 5. Full Offline Vedas
       try {
         final vedasStr = await rootBundle.loadString('assets/data/vedas_full.json');
-        final List<dynamic> vedasJson = json.decode(vedasStr);
+        final dynamic vedasDecoded = await compute(jsonDecode, vedasStr);
+        final List<dynamic> vedasJson = vedasDecoded as List<dynamic>;
         _vedas = vedasJson.map((e) => VedaText.fromJson(e)).toList();
       } catch (e) {
         debugPrint('Error loading Vedas full: $e');
@@ -77,7 +85,8 @@ class DataService {
       // 6. Full Offline Purans
       try {
         final puranasStr = await rootBundle.loadString('assets/data/puranas_full.json');
-        final List<dynamic> puranasJson = json.decode(puranasStr);
+        final dynamic puranasDecoded = await compute(jsonDecode, puranasStr);
+        final List<dynamic> puranasJson = puranasDecoded as List<dynamic>;
         _puranas = puranasJson.map((e) => PuranText.fromJson(e)).toList();
       } catch (e) {
         debugPrint('Error loading Purans full: $e');
@@ -86,6 +95,7 @@ class DataService {
       _isLoaded = true;
     } catch (e) {
       debugPrint('Error loading data: $e');
+      _loadError = e.toString();
     }
   }
 
