@@ -78,21 +78,31 @@ The Panchang engine utilizes a **Hybrid Ephemeris & Drik Siddhanta Engine**:
 ### 2. Drik Siddhanta Mathematical Formulas
 
 $$\begin{aligned}
-\text{\textbf{Elongation (E)}} &= (\lambda_{\text{Moon}} - \lambda_{\text{Sun}}) \pmod{360^\circ} \\[6pt]
+\text{\textbf{Solar Longitude}} &= \lambda_{\text{Sun}} \in [0^\circ, 360^\circ) \\[6pt]
+\text{\textbf{Lunar Longitude}} &= \lambda_{\text{Moon}} \in [0^\circ, 360^\circ) \\[6pt]
+\text{\textbf{Lunar Elongation (E)}} &= (\lambda_{\text{Moon}} - \lambda_{\text{Sun}}) \pmod{360^\circ} \\[6pt]
 \text{\textbf{Tithi Index}} &= \left\lfloor \frac{E}{12^\circ} \right\rfloor + 1 \quad (1 \le \text{Tithi} \le 30) \\[6pt]
-\text{\textbf{Nakshatra Index}} &= \left\lfloor \frac{\lambda_{\text{Moon}}}{13^\circ 20'} \right\rfloor + 1 \quad (1 \le \text{Nakshatra} \le 27) \\[6pt]
+\text{\textbf{Karana Index}} &= \left\lfloor \frac{E}{6^\circ} \right\rfloor + 1 \quad (1 \le \text{Karana} \le 60) \\[6pt]
+\text{\textbf{Nakshatra Index}} &= \left\lfloor \frac{\lambda_{\text{Moon}}}{13^\circ 20'} \right\rfloor + 1 = \left\lfloor \frac{\lambda_{\text{Moon}}}{13.3333^\circ} \right\rfloor + 1 \quad (1 \le \text{Nakshatra} \le 27) \\[6pt]
 \text{\textbf{Yoga Index}} &= \left\lfloor \frac{(\lambda_{\text{Sun}} + \lambda_{\text{Moon}}) \pmod{360^\circ}}{13^\circ 20'} \right\rfloor + 1 \quad (1 \le \text{Yoga} \le 27)
 \end{aligned}$$
 
 ### 3. Rahu Kaal Octant Calculation
-Dynamic daytime division into 8 equal octants ($\Delta T = \frac{T_{\text{sunset}} - T_{\text{sunrise}}}{8}$), mapped to weekday octant multipliers:
-- **Sunday:** $8^{\text{th}}$ octant
-- **Monday:** $2^{\text{nd}}$ octant
-- **Tuesday:** $7^{\text{th}}$ octant
-- **Wednesday:** $5^{\text{th}}$ octant
-- **Thursday:** $6^{\text{th}}$ octant
-- **Friday:** $4^{\text{th}}$ octant
-- **Saturday:** $3^{\text{rd}}$ octant
+Daytime duration ($T_{\text{day}} = T_{\text{sunset}} - T_{\text{sunrise}}$) is divided into 8 equal octants ($\Delta T = \frac{T_{\text{day}}}{8}$). Rahu Kaal occurs during octant index $k$:
+
+$$\begin{aligned}
+\text{\textbf{Rahu Kaal Start}} &= T_{\text{sunrise}} + (k - 1) \cdot \Delta T \\[4pt]
+\text{\textbf{Rahu Kaal End}} &= T_{\text{sunrise}} + k \cdot \Delta T
+\end{aligned}$$
+
+**Octant Index ($k$) Mapping by Weekday:**
+- **Monday:** $k = 2$ ($2^{\text{nd}}$ octant, approx. 07:30 - 09:00 AM)
+- **Tuesday:** $k = 7$ ($7^{\text{th}}$ octant, approx. 03:00 - 04:30 PM)
+- **Wednesday:** $k = 5$ ($5^{\text{th}}$ octant, approx. 12:00 - 01:30 PM)
+- **Thursday:** $k = 6$ ($6^{\text{th}}$ octant, approx. 01:30 - 03:00 PM)
+- **Friday:** $k = 4$ ($4^{\text{th}}$ octant, approx. 10:30 - 12:00 AM)
+- **Saturday:** $k = 3$ ($3^{\text{rd}}$ octant, approx. 09:00 - 10:30 AM)
+- **Sunday:** $k = 8$ ($8^{\text{th}}$ octant, approx. 04:30 - 06:00 PM)
 
 ### 4. Regional Amanta vs. Purnimanta System
 - **North Indian (Purnimanta):** Month ends on Purnima (Full Moon).
