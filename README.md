@@ -73,36 +73,34 @@ The Panchang engine utilizes a **Hybrid Ephemeris & Drik Siddhanta Engine**:
 
 ### 1. Data Origin & Precalculated Ephemeris
 - **Ephemeris Dataset:** 455-day dataset covering **Vikram Samvat 2083** (Jan 1, 2026 to Mar 31, 2027) generated from Swiss Ephemeris Drik Siddhanta astronomical data.
-- **Geocentric Ecliptic Longitudes:** Contains exact daily Solar ($\lambda_{\text{Sun}}$) and Lunar ($\lambda_{\text{Moon}}$) geocentric longitudes in degrees ($0^\circ \text{ to } 360^\circ$).
+- **Geocentric Ecliptic Longitudes:** Contains exact daily Solar (`λ_sun`) and Lunar (`λ_moon`) geocentric longitudes in degrees (`0° to 360°`).
 
 ### 2. Drik Siddhanta Mathematical Formulas
 
-$$\begin{aligned}
-\text{\textbf{Solar Longitude}} &= \lambda_{\text{Sun}} \in [0^\circ, 360^\circ) \\[6pt]
-\text{\textbf{Lunar Longitude}} &= \lambda_{\text{Moon}} \in [0^\circ, 360^\circ) \\[6pt]
-\text{\textbf{Lunar Elongation (E)}} &= (\lambda_{\text{Moon}} - \lambda_{\text{Sun}}) \pmod{360^\circ} \\[6pt]
-\text{\textbf{Tithi Index}} &= \left\lfloor \frac{E}{12^\circ} \right\rfloor + 1 \quad (1 \le \text{Tithi} \le 30) \\[6pt]
-\text{\textbf{Karana Index}} &= \left\lfloor \frac{E}{6^\circ} \right\rfloor + 1 \quad (1 \le \text{Karana} \le 60) \\[6pt]
-\text{\textbf{Nakshatra Index}} &= \left\lfloor \frac{\lambda_{\text{Moon}}}{13^\circ 20'} \right\rfloor + 1 = \left\lfloor \frac{\lambda_{\text{Moon}}}{13.3333^\circ} \right\rfloor + 1 \quad (1 \le \text{Nakshatra} \le 27) \\[6pt]
-\text{\textbf{Yoga Index}} &= \left\lfloor \frac{(\lambda_{\text{Sun}} + \lambda_{\text{Moon}}) \pmod{360^\circ}}{13^\circ 20'} \right\rfloor + 1 \quad (1 \le \text{Yoga} \le 27)
-\end{aligned}$$
+| Element | Formula | Range / Definition |
+| :--- | :--- | :--- |
+| **Lunar Elongation (E)** | `E = (λ_moon - λ_sun) mod 360°` | `0° ≤ E < 360°` |
+| **Tithi Index** | `Tithi = ⌊ E / 12° ⌋ + 1` | `1 ≤ Tithi ≤ 30` |
+| **Karana Index** | `Karana = ⌊ E / 6° ⌋ + 1` | `1 ≤ Karana ≤ 60` (Half Tithi) |
+| **Nakshatra Index** | `Nakshatra = ⌊ λ_moon / 13.3333° ⌋ + 1` | `1 ≤ Nakshatra ≤ 27` (13° 20' per Nakshatra) |
+| **Yoga Index** | `Yoga = ⌊ (λ_sun + λ_moon) mod 360° / 13.3333° ⌋ + 1` | `1 ≤ Yoga ≤ 27` (13° 20' per Yoga) |
 
 ### 3. Rahu Kaal Octant Calculation
-Daytime duration ($T_{\text{day}} = T_{\text{sunset}} - T_{\text{sunrise}}$) is divided into 8 equal octants ($\Delta T = \frac{T_{\text{day}}}{8}$). Rahu Kaal occurs during octant index $k$:
+Daytime duration (`T_day = T_sunset - T_sunrise`) is divided into 8 equal octants (`ΔT = T_day / 8`). Rahu Kaal occurs during octant index `k`:
 
-$$\begin{aligned}
-\text{\textbf{Rahu Kaal Start}} &= T_{\text{sunrise}} + (k - 1) \cdot \Delta T \\[4pt]
-\text{\textbf{Rahu Kaal End}} &= T_{\text{sunrise}} + k \cdot \Delta T
-\end{aligned}$$
+```text
+Rahu Kaal Start = T_sunrise + (k - 1) × ΔT
+Rahu Kaal End   = T_sunrise + k × ΔT
+```
 
-**Octant Index ($k$) Mapping by Weekday:**
-- **Monday:** $k = 2$ ($2^{\text{nd}}$ octant, approx. 07:30 - 09:00 AM)
-- **Tuesday:** $k = 7$ ($7^{\text{th}}$ octant, approx. 03:00 - 04:30 PM)
-- **Wednesday:** $k = 5$ ($5^{\text{th}}$ octant, approx. 12:00 - 01:30 PM)
-- **Thursday:** $k = 6$ ($6^{\text{th}}$ octant, approx. 01:30 - 03:00 PM)
-- **Friday:** $k = 4$ ($4^{\text{th}}$ octant, approx. 10:30 - 12:00 AM)
-- **Saturday:** $k = 3$ ($3^{\text{rd}}$ octant, approx. 09:00 - 10:30 AM)
-- **Sunday:** $k = 8$ ($8^{\text{th}}$ octant, approx. 04:30 - 06:00 PM)
+**Weekday Octant Index (k) Mapping:**
+- **Monday:** `k = 2` (2nd octant, approx. 07:30 – 09:00 AM)
+- **Tuesday:** `k = 7` (7th octant, approx. 03:00 – 04:30 PM)
+- **Wednesday:** `k = 5` (5th octant, approx. 12:00 – 01:30 PM)
+- **Thursday:** `k = 6` (6th octant, approx. 01:30 – 03:00 PM)
+- **Friday:** `k = 4` (4th octant, approx. 10:30 – 12:00 AM)
+- **Saturday:** `k = 3` (3rd octant, approx. 09:00 – 10:30 AM)
+- **Sunday:** `k = 8` (8th octant, approx. 04:30 – 06:00 PM)
 
 ### 4. Regional Amanta vs. Purnimanta System
 - **North Indian (Purnimanta):** Month ends on Purnima (Full Moon).
