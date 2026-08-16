@@ -207,7 +207,7 @@ class _NotificationDetailSheetState extends State<NotificationDetailSheet> {
           style: const TextStyle(fontSize: 12, color: Colors.grey),
         ),
         value: value,
-        activeColor: Colors.amber,
+        activeThumbColor: Colors.amber,
         onChanged: onChanged,
       ),
     );

@@ -156,7 +156,7 @@ class _LibraryScreenState extends State<LibraryScreen>
             leading: Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Colors.amber.withOpacity(0.15),
+                color: const Color(0x26FFC107),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Icon(Icons.menu_book, color: Colors.amber, size: 28),
@@ -207,7 +207,7 @@ class _LibraryScreenState extends State<LibraryScreen>
             leading: Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Colors.deepOrange.withOpacity(0.15),
+                color: const Color(0x26FF5722),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Icon(Icons.history_edu,
@@ -261,7 +261,7 @@ class _LibraryScreenState extends State<LibraryScreen>
             leading: Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Colors.purple.withOpacity(0.15),
+                color: const Color(0x269C27B0),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Icon(Icons.auto_stories,
