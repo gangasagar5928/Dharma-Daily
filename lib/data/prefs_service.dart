@@ -66,4 +66,23 @@ class PrefsService {
       _prefs.getInt('theme_mode') ?? 1; // Default Dark
   static Future<void> setThemeModeIndex(int index) async =>
       await _prefs.setInt('theme_mode', index);
+  // Reading Progress Persistence
+  static String getLastReadScripture() =>
+      _prefs.getString('last_read_scripture') ?? 'bhagavad_gita';
+
+  static int getLastReadChapter(String scriptureId) =>
+      _prefs.getInt('last_chapter_$scriptureId') ?? 1;
+
+  static int getLastReadVerse(String scriptureId) =>
+      _prefs.getInt('last_verse_$scriptureId') ?? 1;
+
+  static Future<void> saveReadingProgress({
+    required String scriptureId,
+    required int chapter,
+    required int verse,
+  }) async {
+    await _prefs.setString('last_read_scripture', scriptureId);
+    await _prefs.setInt('last_chapter_$scriptureId', chapter);
+    await _prefs.setInt('last_verse_$scriptureId', verse);
+  }
 }
