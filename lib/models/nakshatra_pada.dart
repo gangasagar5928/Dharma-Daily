@@ -20,11 +20,33 @@ class NakshatraPada {
     final pada = (totalPadas % 4) + 1;
 
     const nakshatras = [
-      'Ashwini', 'Bharani', 'Krittika', 'Rohini', 'Mrigashira', 'Ardra',
-      'Punarvasu', 'Pushya', 'Ashlesha', 'Magha', 'Purva Phalguni',
-      'Uttara Phalguni', 'Hasta', 'Chitra', 'Swati', 'Vishakha', 'Anuradha',
-      'Jyeshtha', 'Mula', 'Purva Ashadha', 'Uttara Ashadha', 'Shravana',
-      'Dhanishta', 'Shatabhisha', 'Purva Bhadrapada', 'Uttara Bhadrapada', 'Revati'
+      'Ashwini',
+      'Bharani',
+      'Krittika',
+      'Rohini',
+      'Mrigashira',
+      'Ardra',
+      'Punarvasu',
+      'Pushya',
+      'Ashlesha',
+      'Magha',
+      'Purva Phalguni',
+      'Uttara Phalguni',
+      'Hasta',
+      'Chitra',
+      'Swati',
+      'Vishakha',
+      'Anuradha',
+      'Jyeshtha',
+      'Mula',
+      'Purva Ashadha',
+      'Uttara Ashadha',
+      'Shravana',
+      'Dhanishta',
+      'Shatabhisha',
+      'Purva Bhadrapada',
+      'Uttara Bhadrapada',
+      'Revati',
     ];
 
     final name = nakshatras[nakshatraIndex % 27];

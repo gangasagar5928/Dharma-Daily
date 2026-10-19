@@ -8,9 +8,7 @@ void main() {
     // covered by data_test.dart and panchang_test.dart.
     await tester.pumpWidget(
       const MaterialApp(
-        home: Scaffold(
-          body: Center(child: Text('Dharma Daily')),
-        ),
+        home: Scaffold(body: Center(child: Text('Dharma Daily'))),
       ),
     );
     expect(find.text('Dharma Daily'), findsOneWidget);

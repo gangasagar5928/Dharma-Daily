@@ -43,13 +43,17 @@ class _CalendarScreenState extends State<CalendarScreen> {
             },
             itemBuilder: (context) => const [
               PopupMenuItem(
-                  value: 'North India',
-                  child: Text('North India (Purnimanta)')),
+                value: 'North India',
+                child: Text('North India (Purnimanta)'),
+              ),
               PopupMenuItem(
-                  value: 'South India', child: Text('South India (Amanta)')),
+                value: 'South India',
+                child: Text('South India (Amanta)'),
+              ),
               PopupMenuItem(
-                  value: 'Gujarat & West',
-                  child: Text('Gujarat & Western India')),
+                value: 'Gujarat & West',
+                child: Text('Gujarat & Western India'),
+              ),
             ],
           ),
         ],
@@ -74,8 +78,10 @@ class _CalendarScreenState extends State<CalendarScreen> {
 
             // Region Indicator Badge
             Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 8.0,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -84,10 +90,15 @@ class _CalendarScreenState extends State<CalendarScreen> {
                     style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Chip(
-                    avatar:
-                        const Icon(Icons.place, size: 14, color: Colors.amber),
-                    label: Text(_selectedRegion,
-                        style: const TextStyle(fontSize: 11)),
+                    avatar: const Icon(
+                      Icons.place,
+                      size: 14,
+                      color: Colors.amber,
+                    ),
+                    label: Text(
+                      _selectedRegion,
+                      style: const TextStyle(fontSize: 11),
+                    ),
                     padding: EdgeInsets.zero,
                   ),
                 ],
@@ -104,13 +115,18 @@ class _CalendarScreenState extends State<CalendarScreen> {
                   padding: const EdgeInsets.all(24.0),
                   child: Column(
                     children: [
-                      const Icon(Icons.calendar_today,
-                          size: 48, color: Colors.amber),
+                      const Icon(
+                        Icons.calendar_today,
+                        size: 48,
+                        color: Colors.amber,
+                      ),
                       const SizedBox(height: 12),
                       Text(
                         'Panchang for ${DateFormat('d MMMM yyyy').format(_selectedDate)}',
                         style: GoogleFonts.cinzel(
-                            fontSize: 16, fontWeight: FontWeight.bold),
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       const SizedBox(height: 8),
                       const Text(
@@ -172,8 +188,11 @@ class _FullPanchangExpander extends StatelessWidget {
                     color: Colors.amber.withValues(alpha: 0.15),
                     shape: BoxShape.circle,
                   ),
-                  child:
-                      const Icon(Icons.wb_sunny, color: Colors.amber, size: 28),
+                  child: const Icon(
+                    Icons.wb_sunny,
+                    color: Colors.amber,
+                    size: 28,
+                  ),
                 ),
               ],
             ),
@@ -183,14 +202,19 @@ class _FullPanchangExpander extends StatelessWidget {
               Wrap(
                 spacing: 8,
                 children: panchang.special
-                    .map((s) => Chip(
-                          backgroundColor: Colors.amber.withValues(alpha: 0.2),
-                          label: Text(s,
-                              style: const TextStyle(
-                                  color: Colors.amber,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12)),
-                        ))
+                    .map(
+                      (s) => Chip(
+                        backgroundColor: Colors.amber.withValues(alpha: 0.2),
+                        label: Text(
+                          s,
+                          style: const TextStyle(
+                            color: Colors.amber,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    )
                     .toList(),
               ),
             ],
@@ -198,55 +222,86 @@ class _FullPanchangExpander extends StatelessWidget {
             const Divider(height: 28),
 
             // Grid of Attributes
-            Text('CORE PANCHANG ELEMENTS',
-                style: GoogleFonts.cinzel(
-                    fontSize: 13,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.grey)),
+            Text(
+              'CORE PANCHANG ELEMENTS',
+              style: GoogleFonts.cinzel(
+                fontSize: 13,
+                fontWeight: FontWeight.bold,
+                color: Colors.grey,
+              ),
+            ),
             const SizedBox(height: 12),
             _buildDetailRow(
-                context, 'Tithi Name', panchang.tithiName, Icons.brightness_6),
+              context,
+              'Tithi Name',
+              panchang.tithiName,
+              Icons.brightness_6,
+            ),
             _buildDetailRow(
-                context, 'Nakshatra', panchang.nakshatra, Icons.star_outline),
+              context,
+              'Nakshatra',
+              panchang.nakshatra,
+              Icons.star_outline,
+            ),
             _buildDetailRow(
-                context, 'Yoga', panchang.yoga, Icons.self_improvement),
+              context,
+              'Yoga',
+              panchang.yoga,
+              Icons.self_improvement,
+            ),
             _buildDetailRow(context, 'Karan', panchang.karan, Icons.timelapse),
 
             const Divider(height: 28),
 
             // Auspicious & Inauspicious Muhurtas
-            Text('MUHURTA & TIMINGS',
-                style: GoogleFonts.cinzel(
-                    fontSize: 13,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.grey)),
+            Text(
+              'MUHURTA & TIMINGS',
+              style: GoogleFonts.cinzel(
+                fontSize: 13,
+                fontWeight: FontWeight.bold,
+                color: Colors.grey,
+              ),
+            ),
             const SizedBox(height: 12),
-            _buildDetailRow(context, 'Rahu Kaal (Inauspicious)',
-                panchang.rahuKaal, Icons.warning_amber_rounded,
-                isAlert: true),
-            _buildDetailRow(context, 'Abhijit Muhurta (Auspicious)',
-                panchang.abhijitMuhurta, Icons.check_circle_outline,
-                isGood: true),
+            _buildDetailRow(
+              context,
+              'Rahu Kaal (Inauspicious)',
+              panchang.rahuKaal,
+              Icons.warning_amber_rounded,
+              isAlert: true,
+            ),
+            _buildDetailRow(
+              context,
+              'Abhijit Muhurta (Auspicious)',
+              panchang.abhijitMuhurta,
+              Icons.check_circle_outline,
+              isGood: true,
+            ),
 
             const Divider(height: 28),
 
             // Solar & Lunar Ephemeris
-            Text('ASTRONOMICAL COORDINATES',
-                style: GoogleFonts.cinzel(
-                    fontSize: 13,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.grey)),
+            Text(
+              'ASTRONOMICAL COORDINATES',
+              style: GoogleFonts.cinzel(
+                fontSize: 13,
+                fontWeight: FontWeight.bold,
+                color: Colors.grey,
+              ),
+            ),
             const SizedBox(height: 12),
             _buildDetailRow(
-                context,
-                'Sun Longitude',
-                '${panchang.sunLon.toStringAsFixed(2)}°',
-                Icons.wb_sunny_outlined),
+              context,
+              'Sun Longitude',
+              '${panchang.sunLon.toStringAsFixed(2)}°',
+              Icons.wb_sunny_outlined,
+            ),
             _buildDetailRow(
-                context,
-                'Moon Longitude',
-                '${panchang.moonLon.toStringAsFixed(2)}°',
-                Icons.nightlight_round),
+              context,
+              'Moon Longitude',
+              '${panchang.moonLon.toStringAsFixed(2)}°',
+              Icons.nightlight_round,
+            ),
           ],
         ),
       ),
@@ -254,8 +309,13 @@ class _FullPanchangExpander extends StatelessWidget {
   }
 
   Widget _buildDetailRow(
-      BuildContext context, String label, String value, IconData icon,
-      {bool isAlert = false, bool isGood = false}) {
+    BuildContext context,
+    String label,
+    String value,
+    IconData icon, {
+    bool isAlert = false,
+    bool isGood = false,
+  }) {
     Color valueColor = Colors.white;
     if (isAlert) valueColor = Colors.redAccent;
     if (isGood) valueColor = Colors.greenAccent;
@@ -264,11 +324,13 @@ class _FullPanchangExpander extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 6.0),
       child: Row(
         children: [
-          Icon(icon,
-              size: 18,
-              color: isAlert
-                  ? Colors.redAccent
-                  : (isGood ? Colors.greenAccent : Colors.amber)),
+          Icon(
+            icon,
+            size: 18,
+            color: isAlert
+                ? Colors.redAccent
+                : (isGood ? Colors.greenAccent : Colors.amber),
+          ),
           const SizedBox(width: 12),
           Text(label, style: const TextStyle(fontSize: 14, color: Colors.grey)),
           const Spacer(),

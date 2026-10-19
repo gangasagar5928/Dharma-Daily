@@ -45,12 +45,18 @@ class AppTheme {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       ),
       textTheme: GoogleFonts.outfitTextTheme(baseTextTheme).copyWith(
-        displayLarge:
-            GoogleFonts.cinzel(color: accentGold, fontWeight: FontWeight.bold),
+        displayLarge: GoogleFonts.cinzel(
+          color: accentGold,
+          fontWeight: FontWeight.bold,
+        ),
         headlineMedium: GoogleFonts.cinzel(
-            color: Colors.white, fontWeight: FontWeight.w600),
-        titleLarge:
-            GoogleFonts.cinzel(color: accentGold, fontWeight: FontWeight.w600),
+          color: Colors.white,
+          fontWeight: FontWeight.w600,
+        ),
+        titleLarge: GoogleFonts.cinzel(
+          color: accentGold,
+          fontWeight: FontWeight.w600,
+        ),
         bodyLarge: GoogleFonts.outfit(color: Colors.white70, fontSize: 16),
         bodyMedium: GoogleFonts.outfit(color: Colors.white60, fontSize: 14),
       ),
@@ -97,11 +103,17 @@ class AppTheme {
       ),
       textTheme: GoogleFonts.outfitTextTheme(baseTextTheme).copyWith(
         displayLarge: GoogleFonts.cinzel(
-            color: primarySaffron, fontWeight: FontWeight.bold),
+          color: primarySaffron,
+          fontWeight: FontWeight.bold,
+        ),
         headlineMedium: GoogleFonts.cinzel(
-            color: Colors.black87, fontWeight: FontWeight.w600),
+          color: Colors.black87,
+          fontWeight: FontWeight.w600,
+        ),
         titleLarge: GoogleFonts.cinzel(
-            color: primarySaffron, fontWeight: FontWeight.w600),
+          color: primarySaffron,
+          fontWeight: FontWeight.w600,
+        ),
         bodyLarge: GoogleFonts.outfit(color: Colors.black87, fontSize: 16),
         bodyMedium: GoogleFonts.outfit(color: Colors.black54, fontSize: 14),
       ),

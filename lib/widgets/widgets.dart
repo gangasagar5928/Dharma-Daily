@@ -74,20 +74,16 @@ class TopHeaderBanner extends StatelessWidget {
                   InkWell(
                     onTap: onMenuTap,
                     borderRadius: BorderRadius.circular(12),
-                    child: const SizedBox(
-                      width: 56,
-                      height: double.infinity,
-                    ),
+                    child: const SizedBox(width: 56, height: double.infinity),
                   ),
 
                   // Middle Area (Title & Verses)
-                  const Expanded(
-                    child: SizedBox.expand(),
-                  ),
+                  const Expanded(child: SizedBox.expand()),
 
                   // Notification Touch Area
                   InkWell(
-                    onTap: onNotificationTap ??
+                    onTap:
+                        onNotificationTap ??
                         () {
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(
@@ -97,20 +93,14 @@ class TopHeaderBanner extends StatelessWidget {
                           );
                         },
                     borderRadius: BorderRadius.circular(12),
-                    child: const SizedBox(
-                      width: 44,
-                      height: double.infinity,
-                    ),
+                    child: const SizedBox(width: 44, height: double.infinity),
                   ),
 
                   // Search Touch Area
                   InkWell(
                     onTap: onSearchTap,
                     borderRadius: BorderRadius.circular(12),
-                    child: const SizedBox(
-                      width: 44,
-                      height: double.infinity,
-                    ),
+                    child: const SizedBox(width: 44, height: double.infinity),
                   ),
                 ],
               ),
@@ -153,17 +143,11 @@ class SectionHeader extends StatelessWidget {
                 ),
               ),
               if (subtitle != null)
-                Text(
-                  subtitle!,
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
+                Text(subtitle!, style: Theme.of(context).textTheme.bodyMedium),
             ],
           ),
           if (onSeeAll != null)
-            TextButton(
-              onPressed: onSeeAll,
-              child: const Text('See All'),
-            ),
+            TextButton(onPressed: onSeeAll, child: const Text('See All')),
         ],
       ),
     );
@@ -208,8 +192,11 @@ class SimplePanchangCard extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const Icon(Icons.calendar_today_outlined,
-                          color: Colors.amber, size: 20),
+                      const Icon(
+                        Icons.calendar_today_outlined,
+                        color: Colors.amber,
+                        size: 20,
+                      ),
                       const SizedBox(width: 8),
                       Text(
                         '${panchang.weekday}, ${panchang.date}',
@@ -221,13 +208,14 @@ class SimplePanchangCard extends StatelessWidget {
                     ],
                   ),
                   Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 4,
+                    ),
                     decoration: BoxDecoration(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .primary
-                          .withValues(alpha: 0.2),
+                      color: Theme.of(
+                        context,
+                      ).colorScheme.primary.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
@@ -257,7 +245,10 @@ class SimplePanchangCard extends StatelessWidget {
                   _buildPanchangItem(context, 'Yoga', panchang.yoga),
                   _buildPanchangItem(context, 'Rahu Kaal', panchang.rahuKaal),
                   _buildPanchangItem(
-                      context, 'Abhijit', panchang.abhijitMuhurta),
+                    context,
+                    'Abhijit',
+                    panchang.abhijitMuhurta,
+                  ),
                 ],
               ),
             ],
@@ -270,10 +261,7 @@ class SimplePanchangCard extends StatelessWidget {
   Widget _buildPanchangItem(BuildContext context, String label, String value) {
     return Column(
       children: [
-        Text(
-          label,
-          style: const TextStyle(fontSize: 11, color: Colors.grey),
-        ),
+        Text(label, style: const TextStyle(fontSize: 11, color: Colors.grey)),
         const SizedBox(height: 2),
         Text(
           value,
@@ -315,8 +303,11 @@ class HeroTraditionCard extends StatelessWidget {
                       color: Colors.amber.withValues(alpha: 0.2),
                       shape: BoxShape.circle,
                     ),
-                    child: const Icon(Icons.auto_awesome,
-                        color: Colors.amber, size: 24),
+                    child: const Icon(
+                      Icons.auto_awesome,
+                      color: Colors.amber,
+                      size: 24,
+                    ),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -353,29 +344,41 @@ class HeroTraditionCard extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 8,
+                      vertical: 4,
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.blue.withValues(alpha: 0.15),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Row(
                       children: [
-                        Icon(Icons.science_outlined,
-                            size: 14, color: Colors.blueAccent),
+                        Icon(
+                          Icons.science_outlined,
+                          size: 14,
+                          color: Colors.blueAccent,
+                        ),
                         SizedBox(width: 4),
-                        Text('Scientific Logic Inside',
-                            style: TextStyle(
-                                fontSize: 11, color: Colors.blueAccent)),
+                        Text(
+                          'Scientific Logic Inside',
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: Colors.blueAccent,
+                          ),
+                        ),
                       ],
                     ),
                   ),
                   const Spacer(),
-                  const Text('Read Ritual Details →',
-                      style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.amber,
-                          fontWeight: FontWeight.bold)),
+                  const Text(
+                    'Read Ritual Details →',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.amber,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -390,11 +393,7 @@ class FestivalCard extends StatelessWidget {
   final Festival festival;
   final VoidCallback onTap;
 
-  const FestivalCard({
-    super.key,
-    required this.festival,
-    required this.onTap,
-  });
+  const FestivalCard({super.key, required this.festival, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -437,7 +436,10 @@ class FestivalCard extends StatelessWidget {
               Text(
                 festival.significance,
                 style: const TextStyle(
-                    fontSize: 12, color: Colors.grey, height: 1.3),
+                  fontSize: 12,
+                  color: Colors.grey,
+                  height: 1.3,
+                ),
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
               ),

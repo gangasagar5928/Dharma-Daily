@@ -1,18 +1,6 @@
-enum ChoghadiyaType {
-  amrit,
-  shubh,
-  labh,
-  char,
-  rog,
-  kaal,
-  udveg,
-}
+enum ChoghadiyaType { amrit, shubh, labh, char, rog, kaal, udveg }
 
-enum ChoghadiyaNature {
-  auspicious,
-  neutral,
-  inauspicious,
-}
+enum ChoghadiyaNature { auspicious, neutral, inauspicious }
 
 class ChoghadiyaPeriod {
   final ChoghadiyaType type;

@@ -1,7 +1,10 @@
 class DevanagariSearch {
   static String normalize(String input) {
     return input
-        .replaceAll(RegExp(r'[ऀ-ः]'), '') // signs (chandrabindu, anusvara, visarga)
+        .replaceAll(
+          RegExp(r'[ऀ-ः]'),
+          '',
+        ) // signs (chandrabindu, anusvara, visarga)
         .replaceAll(RegExp(r'[ऺ-ॏ]'), '') // vowel signs / virama
         .replaceAll(RegExp(r'[॑-॔]'), '') // vedic accents (udatta, anudatta)
         .replaceAll(RegExp(r'[\s\.,।॥\-]'), '')

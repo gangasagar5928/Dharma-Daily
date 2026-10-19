@@ -33,12 +33,14 @@ class DataService {
     try {
       // 1. Panchang
       try {
-        final panchangStr =
-            await rootBundle.loadString('assets/data/panchang_2026.json');
+        final panchangStr = await rootBundle.loadString(
+          'assets/data/panchang_2026.json',
+        );
         final dynamic panchangDecoded = await compute(jsonDecode, panchangStr);
         final List<dynamic> panchangJson = panchangDecoded as List<dynamic>;
-        _panchangDays =
-            panchangJson.map((e) => PanchangDay.fromJson(e)).toList();
+        _panchangDays = panchangJson
+            .map((e) => PanchangDay.fromJson(e))
+            .toList();
       } catch (e) {
         debugPrint('Error loading Panchang: $e');
         _loadError = 'Failed to load Panchang data.';
@@ -46,10 +48,13 @@ class DataService {
 
       // 2. Festivals
       try {
-        final festivalsStr =
-            await rootBundle.loadString('assets/data/festivals.json');
-        final dynamic festivalsDecoded =
-            await compute(jsonDecode, festivalsStr);
+        final festivalsStr = await rootBundle.loadString(
+          'assets/data/festivals.json',
+        );
+        final dynamic festivalsDecoded = await compute(
+          jsonDecode,
+          festivalsStr,
+        );
         final List<dynamic> festivalsJson = festivalsDecoded as List<dynamic>;
         _festivals = festivalsJson.map((e) => Festival.fromJson(e)).toList();
       } catch (e) {
@@ -58,10 +63,13 @@ class DataService {
 
       // 3. Traditions
       try {
-        final traditionsStr =
-            await rootBundle.loadString('assets/data/traditions.json');
-        final dynamic traditionsDecoded =
-            await compute(jsonDecode, traditionsStr);
+        final traditionsStr = await rootBundle.loadString(
+          'assets/data/traditions.json',
+        );
+        final dynamic traditionsDecoded = await compute(
+          jsonDecode,
+          traditionsStr,
+        );
         final List<dynamic> traditionsJson = traditionsDecoded as List<dynamic>;
         _traditions = traditionsJson.map((e) => Tradition.fromJson(e)).toList();
       } catch (e) {
@@ -70,10 +78,13 @@ class DataService {
 
       // 4. Scriptures
       try {
-        final scripturesStr =
-            await rootBundle.loadString('assets/data/scriptures.json');
-        final dynamic scripturesDecoded =
-            await compute(jsonDecode, scripturesStr);
+        final scripturesStr = await rootBundle.loadString(
+          'assets/data/scriptures.json',
+        );
+        final dynamic scripturesDecoded = await compute(
+          jsonDecode,
+          scripturesStr,
+        );
         final Map<String, dynamic> scripturesJson =
             scripturesDecoded as Map<String, dynamic>;
         _scriptures = _parseScriptures(scripturesJson);
@@ -83,8 +94,9 @@ class DataService {
 
       // 5. Full Offline Vedas
       try {
-        final vedasStr =
-            await rootBundle.loadString('assets/data/vedas_full.json');
+        final vedasStr = await rootBundle.loadString(
+          'assets/data/vedas_full.json',
+        );
         final dynamic vedasDecoded = await compute(jsonDecode, vedasStr);
         final List<dynamic> vedasJson = vedasDecoded as List<dynamic>;
         _vedas = vedasJson.map((e) => VedaText.fromJson(e)).toList();
@@ -94,8 +106,9 @@ class DataService {
 
       // 6. Full Offline Purans
       try {
-        final puranasStr =
-            await rootBundle.loadString('assets/data/puranas_full.json');
+        final puranasStr = await rootBundle.loadString(
+          'assets/data/puranas_full.json',
+        );
         final dynamic puranasDecoded = await compute(jsonDecode, puranasStr);
         final List<dynamic> puranasJson = puranasDecoded as List<dynamic>;
         _puranas = puranasJson.map((e) => PuranText.fromJson(e)).toList();
@@ -118,17 +131,19 @@ class DataService {
       final List<dynamic> chaptersJson = json['bhagavad_gita'];
       final chapters = chaptersJson.map((c) => Chapter.fromJson(c)).toList();
       final flatVerses = chapters.expand((c) => c.verses).toList();
-      items.add(ScriptureItem(
-        id: 'bhagavad_gita',
-        title: 'Bhagavad Gita',
-        subtitle: 'The Divine Song of Wisdom (700 Shlokas)',
-        author: 'Sage Vyasa',
-        period: 'Ancient Vedic Era',
-        introduction:
-            'The 700-verse Hindu scripture that is part of the epic Mahabharata, imparting timeless spiritual wisdom on duty, yoga, and devotion.',
-        chapters: chapters,
-        flatVerses: flatVerses,
-      ));
+      items.add(
+        ScriptureItem(
+          id: 'bhagavad_gita',
+          title: 'Bhagavad Gita',
+          subtitle: 'The Divine Song of Wisdom (700 Shlokas)',
+          author: 'Sage Vyasa',
+          period: 'Ancient Vedic Era',
+          introduction:
+              'The 700-verse Hindu scripture that is part of the epic Mahabharata, imparting timeless spiritual wisdom on duty, yoga, and devotion.',
+          chapters: chapters,
+          flatVerses: flatVerses,
+        ),
+      );
     }
 
     // 2. Yoga Sutras
@@ -138,13 +153,15 @@ class DataService {
       final chapters = chList.map((c) {
         final sutras = (c['sutras'] as List<dynamic>?) ?? [];
         final verses = sutras
-            .map((s) => Verse(
-                  number: (s['sutra_number'] as num?)?.toInt() ?? 0,
-                  sanskrit: s['sanskrit'] ?? s['text'] ?? '',
-                  transliteration: s['transliteration'] ?? '',
-                  translation: s['translation'] ?? '',
-                  meaning: s['explanation'] ?? s['meaning'] ?? '',
-                ))
+            .map(
+              (s) => Verse(
+                number: (s['sutra_number'] as num?)?.toInt() ?? 0,
+                sanskrit: s['sanskrit'] ?? s['text'] ?? '',
+                transliteration: s['transliteration'] ?? '',
+                translation: s['translation'] ?? '',
+                meaning: s['explanation'] ?? s['meaning'] ?? '',
+              ),
+            )
             .toList();
         return Chapter(
           number: (c['chapter'] as num?)?.toInt() ?? 1,
@@ -155,17 +172,20 @@ class DataService {
           verses: verses,
         );
       }).toList();
-      items.add(ScriptureItem(
-        id: 'yoga_sutras',
-        title: sys['book_name'] ?? 'Yoga Sutras of Patanjali',
-        subtitle: 'The Foundation of Ashtanga Yoga (196 Sutras)',
-        author: sys['author'] ?? 'Maharishi Patanjali',
-        period: sys['period'] ?? 'c. 400 CE',
-        introduction: sys['introduction'] ??
-            'A collection of 196 Sanskrit sutras on the theory and practice of Yoga.',
-        chapters: chapters,
-        flatVerses: chapters.expand((c) => c.verses).toList(),
-      ));
+      items.add(
+        ScriptureItem(
+          id: 'yoga_sutras',
+          title: sys['book_name'] ?? 'Yoga Sutras of Patanjali',
+          subtitle: 'The Foundation of Ashtanga Yoga (196 Sutras)',
+          author: sys['author'] ?? 'Maharishi Patanjali',
+          period: sys['period'] ?? 'c. 400 CE',
+          introduction:
+              sys['introduction'] ??
+              'A collection of 196 Sanskrit sutras on the theory and practice of Yoga.',
+          chapters: chapters,
+          flatVerses: chapters.expand((c) => c.verses).toList(),
+        ),
+      );
     }
 
     // 3. Hanuman Chalisa
@@ -175,30 +195,34 @@ class DataService {
 
       void parseAndAddVerse(dynamic data, int defaultNum) {
         if (data is Map<String, dynamic>) {
-          verses.add(Verse(
-            number: (data['doha_number'] ??
-                    data['chaupai_number'] ??
-                    defaultNum) as int? ??
-                defaultNum,
-            sanskrit: data['sanskrit'] ?? data['text'] ?? '',
-            transliteration: data['transliteration'] ?? '',
-            translation: data['translation'] ?? '',
-            meaning: data['meaning'] ?? data['explanation'] ?? '',
-          ));
+          verses.add(
+            Verse(
+              number:
+                  (data['doha_number'] ?? data['chaupai_number'] ?? defaultNum)
+                      as int? ??
+                  defaultNum,
+              sanskrit: data['sanskrit'] ?? data['text'] ?? '',
+              transliteration: data['transliteration'] ?? '',
+              translation: data['translation'] ?? '',
+              meaning: data['meaning'] ?? data['explanation'] ?? '',
+            ),
+          );
         } else if (data is List) {
           int count = defaultNum;
           for (var item in data) {
             if (item is Map<String, dynamic>) {
-              verses.add(Verse(
-                number: (item['doha_number'] ??
-                        item['chaupai_number'] ??
-                        count++) as int? ??
-                    count,
-                sanskrit: item['sanskrit'] ?? item['text'] ?? '',
-                transliteration: item['transliteration'] ?? '',
-                translation: item['translation'] ?? '',
-                meaning: item['meaning'] ?? item['explanation'] ?? '',
-              ));
+              verses.add(
+                Verse(
+                  number:
+                      (item['doha_number'] ?? item['chaupai_number'] ?? count++)
+                          as int? ??
+                      count,
+                  sanskrit: item['sanskrit'] ?? item['text'] ?? '',
+                  transliteration: item['transliteration'] ?? '',
+                  translation: item['translation'] ?? '',
+                  meaning: item['meaning'] ?? item['explanation'] ?? '',
+                ),
+              );
             }
           }
         }
@@ -211,26 +235,29 @@ class DataService {
       if (hc.containsKey('doha_closing'))
         parseAndAddVerse(hc['doha_closing'], 44);
 
-      items.add(ScriptureItem(
-        id: 'hanuman_chalisa',
-        title: hc['name'] ?? 'Hanuman Chalisa',
-        subtitle: '40 Hymns of Devotion & Courage',
-        author: hc['author'] ?? 'Goswami Tulsidas',
-        period: hc['period'] ?? '16th Century',
-        introduction: hc['introduction'] ??
-            'A devotional hymn addressed to Lord Hanuman, recited daily by millions for strength and peace.',
-        chapters: [
-          Chapter(
-            number: 1,
-            name: 'Complete Stotram',
-            nameMeaning: 'Dohas & 40 Chaupais',
-            summary: 'Full 40 verse devotional prayer',
-            totalVerses: verses.length,
-            verses: verses,
-          )
-        ],
-        flatVerses: verses,
-      ));
+      items.add(
+        ScriptureItem(
+          id: 'hanuman_chalisa',
+          title: hc['name'] ?? 'Hanuman Chalisa',
+          subtitle: '40 Hymns of Devotion & Courage',
+          author: hc['author'] ?? 'Goswami Tulsidas',
+          period: hc['period'] ?? '16th Century',
+          introduction:
+              hc['introduction'] ??
+              'A devotional hymn addressed to Lord Hanuman, recited daily by millions for strength and peace.',
+          chapters: [
+            Chapter(
+              number: 1,
+              name: 'Complete Stotram',
+              nameMeaning: 'Dohas & 40 Chaupais',
+              summary: 'Full 40 verse devotional prayer',
+              totalVerses: verses.length,
+              verses: verses,
+            ),
+          ],
+          flatVerses: verses,
+        ),
+      );
     }
 
     // 4. Upanishads
@@ -251,17 +278,20 @@ class DataService {
         );
       }).toList();
 
-      items.add(ScriptureItem(
-        id: 'upanishads',
-        title: up['name'] ?? 'Principal Upanishads',
-        subtitle: 'Core Philosophical Texts of Vedanta',
-        author: 'Ancient Rishis',
-        period: '800 - 500 BCE',
-        introduction: up['introduction'] ??
-            'Philosophical texts exploring Brahman, Atman, and the nature of ultimate reality.',
-        chapters: chapters,
-        flatVerses: chapters.expand((c) => c.verses).toList(),
-      ));
+      items.add(
+        ScriptureItem(
+          id: 'upanishads',
+          title: up['name'] ?? 'Principal Upanishads',
+          subtitle: 'Core Philosophical Texts of Vedanta',
+          author: 'Ancient Rishis',
+          period: '800 - 500 BCE',
+          introduction:
+              up['introduction'] ??
+              'Philosophical texts exploring Brahman, Atman, and the nature of ultimate reality.',
+          chapters: chapters,
+          flatVerses: chapters.expand((c) => c.verses).toList(),
+        ),
+      );
     }
 
     // 5. Chanakya Niti
@@ -269,26 +299,29 @@ class DataService {
       final Map<String, dynamic> cn = json['chanakya_niti'];
       final List<dynamic> shlokas = (cn['shlokas'] as List<dynamic>?) ?? [];
       final verses = shlokas.map((s) => Verse.fromJson(s)).toList();
-      items.add(ScriptureItem(
-        id: 'chanakya_niti',
-        title: cn['name'] ?? 'Chanakya Niti',
-        subtitle: 'Maxims on Governance, Ethics & Life',
-        author: cn['author'] ?? 'Chanakya (Kautilya)',
-        period: cn['period'] ?? 'c. 300 BCE',
-        introduction: cn['introduction'] ??
-            'Practical maxims on political science, personal strategy, and ethical living.',
-        chapters: [
-          Chapter(
-            number: 1,
-            name: 'Essential Niti Shlokas',
-            nameMeaning: 'Practical Wisdom',
-            summary: 'Selected Niti maxims',
-            totalVerses: verses.length,
-            verses: verses,
-          )
-        ],
-        flatVerses: verses,
-      ));
+      items.add(
+        ScriptureItem(
+          id: 'chanakya_niti',
+          title: cn['name'] ?? 'Chanakya Niti',
+          subtitle: 'Maxims on Governance, Ethics & Life',
+          author: cn['author'] ?? 'Chanakya (Kautilya)',
+          period: cn['period'] ?? 'c. 300 BCE',
+          introduction:
+              cn['introduction'] ??
+              'Practical maxims on political science, personal strategy, and ethical living.',
+          chapters: [
+            Chapter(
+              number: 1,
+              name: 'Essential Niti Shlokas',
+              nameMeaning: 'Practical Wisdom',
+              summary: 'Selected Niti maxims',
+              totalVerses: verses.length,
+              verses: verses,
+            ),
+          ],
+          flatVerses: verses,
+        ),
+      );
     }
 
     // 6. Vivekachudamani
@@ -296,26 +329,29 @@ class DataService {
       final Map<String, dynamic> vc = json['vivekachudamani'];
       final List<dynamic> vList = (vc['verses'] as List<dynamic>?) ?? [];
       final verses = vList.map((v) => Verse.fromJson(v)).toList();
-      items.add(ScriptureItem(
-        id: 'vivekachudamani',
-        title: vc['name'] ?? 'Vivekachudamani',
-        subtitle: 'Crest-Jewel of Discrimination',
-        author: vc['author'] ?? 'Adi Shankaracharya',
-        period: vc['period'] ?? '8th Century CE',
-        introduction: vc['introduction'] ??
-            'A seminal Advaita Vedanta text expounding discrimination between the Real and Unreal.',
-        chapters: [
-          Chapter(
-            number: 1,
-            name: 'Key Advaita Verses',
-            nameMeaning: 'Wisdom of Non-Duality',
-            summary: 'Selected verses on Self-Realization',
-            totalVerses: verses.length,
-            verses: verses,
-          )
-        ],
-        flatVerses: verses,
-      ));
+      items.add(
+        ScriptureItem(
+          id: 'vivekachudamani',
+          title: vc['name'] ?? 'Vivekachudamani',
+          subtitle: 'Crest-Jewel of Discrimination',
+          author: vc['author'] ?? 'Adi Shankaracharya',
+          period: vc['period'] ?? '8th Century CE',
+          introduction:
+              vc['introduction'] ??
+              'A seminal Advaita Vedanta text expounding discrimination between the Real and Unreal.',
+          chapters: [
+            Chapter(
+              number: 1,
+              name: 'Key Advaita Verses',
+              nameMeaning: 'Wisdom of Non-Duality',
+              summary: 'Selected verses on Self-Realization',
+              totalVerses: verses.length,
+              verses: verses,
+            ),
+          ],
+          flatVerses: verses,
+        ),
+      );
     }
 
     return items;
@@ -351,8 +387,9 @@ class DataService {
 
   List<Festival> getUpcomingFestivals({int limit = 5}) {
     final todayStr = DateTime.now().toIso8601String().substring(0, 10);
-    final upcoming =
-        _festivals.where((f) => f.date.compareTo(todayStr) >= 0).toList();
+    final upcoming = _festivals
+        .where((f) => f.date.compareTo(todayStr) >= 0)
+        .toList();
     if (upcoming.isEmpty) return _festivals.take(limit).toList();
     return upcoming.take(limit).toList();
   }
@@ -382,8 +419,9 @@ class DataService {
         meaning: 'Sacred ancient chant',
       );
     }
-    final dayOfYear =
-        DateTime.now().difference(DateTime(DateTime.now().year, 1, 1)).inDays;
+    final dayOfYear = DateTime.now()
+        .difference(DateTime(DateTime.now().year, 1, 1))
+        .inDays;
     final index = dayOfYear % gita.flatVerses.length;
     return gita.flatVerses[index];
   }

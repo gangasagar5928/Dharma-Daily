@@ -49,10 +49,6 @@ class RahuKaalHelper {
         ? sunset
         : sunrise.add(Duration(milliseconds: partMs * period));
 
-    return RahuKaalWindow(
-      startTime: start,
-      endTime: end,
-      periodIndex: period,
-    );
+    return RahuKaalWindow(startTime: start, endTime: end, periodIndex: period);
   }
 }

@@ -20,11 +20,11 @@ class DriveSource {
   });
 
   factory DriveSource.fromJson(Map<String, dynamic> json) => DriveSource(
-        id: json['id'] as String,
-        name: json['name'] as String,
-        nameEn: json['name_en'] as String,
-        fileId: json['file_id'] as String,
-      );
+    id: json['id'] as String,
+    name: json['name'] as String,
+    nameEn: json['name_en'] as String,
+    fileId: json['file_id'] as String,
+  );
 
   String get downloadUrl =>
       'https://drive.usercontent.google.com/download?id=$fileId&export=download&confirm=t';
@@ -49,8 +49,9 @@ class DriveSourcesService {
     try {
       final str = await rootBundle.loadString('assets/data/drive_sources.json');
       final json = jsonDecode(str) as Map<String, dynamic>;
-      _vedas =
-          (json['vedas'] as List).map((e) => DriveSource.fromJson(e)).toList();
+      _vedas = (json['vedas'] as List)
+          .map((e) => DriveSource.fromJson(e))
+          .toList();
       _puranas = (json['puranas'] as List)
           .map((e) => DriveSource.fromJson(e))
           .toList();
@@ -97,8 +98,10 @@ class PdfCacheManager {
       for (final urlStr in urls) {
         try {
           final request = await client.getUrl(Uri.parse(urlStr));
-          request.headers.set('User-Agent',
-              'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+          request.headers.set(
+            'User-Agent',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          );
           request.headers.set('Accept', '*/*');
           final res = await request.close();
 
@@ -271,8 +274,10 @@ class _DrivePdfScreenState extends State<DrivePdfScreen> {
         actions: [
           if (!_isLoading && !_hasError)
             IconButton(
-              icon:
-                  const Icon(Icons.delete_sweep_outlined, color: Colors.amber),
+              icon: const Icon(
+                Icons.delete_sweep_outlined,
+                color: Colors.amber,
+              ),
               tooltip: 'Clear cache & re-download',
               onPressed: () async {
                 await PdfCacheManager.clearCache(widget.source);
@@ -300,7 +305,9 @@ class _DrivePdfScreenState extends State<DrivePdfScreen> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                    color: Colors.amber.withValues(alpha: 0.3), width: 2),
+                  color: Colors.amber.withValues(alpha: 0.3),
+                  width: 2,
+                ),
               ),
               child: Stack(
                 alignment: Alignment.center,
@@ -524,10 +531,7 @@ class _DriveLibraryScreenState extends State<DriveLibraryScreen>
         backgroundColor: const Color(0xFF1A0A00),
         title: const Text(
           'Sacred Literature',
-          style: TextStyle(
-            color: Colors.amber,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(color: Colors.amber, fontWeight: FontWeight.bold),
         ),
         bottom: TabBar(
           controller: _tabController,
@@ -564,9 +568,7 @@ class _DriveLibraryScreenState extends State<DriveLibraryScreen>
           isCached: isCached,
           onTap: () => Navigator.push(
             context,
-            MaterialPageRoute(
-              builder: (_) => DrivePdfScreen(source: source),
-            ),
+            MaterialPageRoute(builder: (_) => DrivePdfScreen(source: source)),
           ).then((_) => setState(() {})),
         );
       },

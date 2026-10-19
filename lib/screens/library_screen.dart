@@ -37,8 +37,8 @@ class _LibraryScreenState extends State<LibraryScreen>
     final filteredScriptures = ds.scriptures.where((s) {
       final matchesSearch =
           s.title.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-              s.subtitle.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-              s.author.toLowerCase().contains(_searchQuery.toLowerCase());
+          s.subtitle.toLowerCase().contains(_searchQuery.toLowerCase()) ||
+          s.author.toLowerCase().contains(_searchQuery.toLowerCase());
       return matchesSearch;
     }).toList();
 
@@ -56,9 +56,9 @@ class _LibraryScreenState extends State<LibraryScreen>
     final filteredTraditions = ds.traditions.where((t) {
       final matchesSearch =
           t.title.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-              t.titleHi.contains(_searchQuery) ||
-              t.subtitle.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-              t.category.toLowerCase().contains(_searchQuery.toLowerCase());
+          t.titleHi.contains(_searchQuery) ||
+          t.subtitle.toLowerCase().contains(_searchQuery.toLowerCase()) ||
+          t.category.toLowerCase().contains(_searchQuery.toLowerCase());
       final matchesCat =
           _selectedCategory == 'All' || t.category == _selectedCategory;
       return matchesSearch && matchesCat;
@@ -85,8 +85,10 @@ class _LibraryScreenState extends State<LibraryScreen>
           indicatorColor: Colors.amber,
           labelColor: Colors.amber,
           unselectedLabelColor: Colors.grey,
-          labelStyle:
-              GoogleFonts.cinzel(fontWeight: FontWeight.bold, fontSize: 14),
+          labelStyle: GoogleFonts.cinzel(
+            fontWeight: FontWeight.bold,
+            fontSize: 14,
+          ),
           tabs: const [
             Tab(text: 'Scriptures'),
             Tab(text: 'चार वेद (Vedas)'),
@@ -104,11 +106,14 @@ class _LibraryScreenState extends State<LibraryScreen>
               decoration: InputDecoration(
                 hintText: 'Search scriptures, Vedas, Purans, or traditions...',
                 prefixIcon: const Icon(Icons.search, color: Colors.amber),
-                border:
-                    OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
                 filled: true,
-                contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 12,
+                ),
               ),
               onChanged: (val) => setState(() => _searchQuery = val),
             ),
@@ -139,7 +144,9 @@ class _LibraryScreenState extends State<LibraryScreen>
   }
 
   Widget _buildScriptureList(
-      BuildContext context, List<ScriptureItem> scriptures) {
+    BuildContext context,
+    List<ScriptureItem> scriptures,
+  ) {
     if (scriptures.isEmpty) {
       return const Center(child: Text('No scriptures match your search.'));
     }
@@ -172,8 +179,10 @@ class _LibraryScreenState extends State<LibraryScreen>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 4),
-                Text(s.subtitle,
-                    style: const TextStyle(color: Colors.amber, fontSize: 13)),
+                Text(
+                  s.subtitle,
+                  style: const TextStyle(color: Colors.amber, fontSize: 13),
+                ),
                 const SizedBox(height: 6),
                 Text(
                   '${s.author} • ${s.chapters.length} Chapters • ${s.flatVerses.length} Verses',
@@ -181,8 +190,11 @@ class _LibraryScreenState extends State<LibraryScreen>
                 ),
               ],
             ),
-            trailing: const Icon(Icons.arrow_forward_ios,
-                size: 16, color: Colors.grey),
+            trailing: const Icon(
+              Icons.arrow_forward_ios,
+              size: 16,
+              color: Colors.grey,
+            ),
             onTap: () => showScriptureSheet(context, s),
           ),
         );
@@ -210,8 +222,11 @@ class _LibraryScreenState extends State<LibraryScreen>
                 color: const Color(0x26FF5722),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: const Icon(Icons.history_edu,
-                  color: Colors.deepOrange, size: 28),
+              child: const Icon(
+                Icons.history_edu,
+                color: Colors.deepOrange,
+                size: 28,
+              ),
             ),
             title: Text(
               v.nameHi,
@@ -225,18 +240,25 @@ class _LibraryScreenState extends State<LibraryScreen>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 4),
-                Text(v.subtitle,
-                    style: const TextStyle(fontSize: 13, color: Colors.grey)),
+                Text(
+                  v.subtitle,
+                  style: const TextStyle(fontSize: 13, color: Colors.grey),
+                ),
                 const SizedBox(height: 6),
                 Text(
                   '${v.totalMandalas} मण्डल / काण्ड • ${v.totalSuktas} ऋचाएं (Verses)',
-                  style:
-                      const TextStyle(fontSize: 12, color: Colors.amberAccent),
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Colors.amberAccent,
+                  ),
                 ),
               ],
             ),
-            trailing:
-                const Icon(Icons.picture_as_pdf, size: 22, color: Colors.amber),
+            trailing: const Icon(
+              Icons.picture_as_pdf,
+              size: 22,
+              color: Colors.amber,
+            ),
             onTap: () => showVedaSheet(context, v),
           ),
         );
@@ -264,8 +286,11 @@ class _LibraryScreenState extends State<LibraryScreen>
                 color: const Color(0x269C27B0),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: const Icon(Icons.auto_stories,
-                  color: Colors.purpleAccent, size: 28),
+              child: const Icon(
+                Icons.auto_stories,
+                color: Colors.purpleAccent,
+                size: 28,
+              ),
             ),
             title: Text(
               p.name,
@@ -278,18 +303,25 @@ class _LibraryScreenState extends State<LibraryScreen>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 4),
-                Text(p.subtitle,
-                    style: const TextStyle(fontSize: 13, color: Colors.grey)),
+                Text(
+                  p.subtitle,
+                  style: const TextStyle(fontSize: 13, color: Colors.grey),
+                ),
                 const SizedBox(height: 6),
                 Text(
                   '${p.versesCount} श्लोक (Verses)',
-                  style:
-                      const TextStyle(fontSize: 12, color: Colors.purpleAccent),
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Colors.purpleAccent,
+                  ),
                 ),
               ],
             ),
-            trailing: const Icon(Icons.cloud_download,
-                size: 20, color: Colors.purpleAccent),
+            trailing: const Icon(
+              Icons.cloud_download,
+              size: 20,
+              color: Colors.purpleAccent,
+            ),
             onTap: () => showPuranSheet(context, p),
           ),
         );
@@ -303,7 +335,7 @@ class _LibraryScreenState extends State<LibraryScreen>
       'Daily Rituals',
       'Pooja & Upasana',
       'Vedic Science',
-      'Lifestyle'
+      'Lifestyle',
     ];
 
     return Column(
@@ -335,8 +367,10 @@ class _LibraryScreenState extends State<LibraryScreen>
           child: traditions.isEmpty
               ? const Center(child: Text('No traditions found.'))
               : ListView.separated(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 8,
+                  ),
                   itemCount: traditions.length,
                   separatorBuilder: (_, __) => const SizedBox(height: 12),
                   itemBuilder: (context, index) {
@@ -350,8 +384,11 @@ class _LibraryScreenState extends State<LibraryScreen>
                             color: Colors.blue.withValues(alpha: 0.15),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: const Icon(Icons.nature_people_outlined,
-                              color: Colors.blueAccent, size: 28),
+                          child: const Icon(
+                            Icons.nature_people_outlined,
+                            color: Colors.blueAccent,
+                            size: 28,
+                          ),
                         ),
                         title: Text(
                           '${t.titleHi} (${t.title})',
@@ -364,31 +401,42 @@ class _LibraryScreenState extends State<LibraryScreen>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const SizedBox(height: 4),
-                            Text(t.subtitleHi,
-                                style: const TextStyle(
-                                    fontSize: 13, color: Colors.grey)),
+                            Text(
+                              t.subtitleHi,
+                              style: const TextStyle(
+                                fontSize: 13,
+                                color: Colors.grey,
+                              ),
+                            ),
                             const SizedBox(height: 6),
                             Row(
                               children: [
                                 Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 6, vertical: 2),
+                                    horizontal: 6,
+                                    vertical: 2,
+                                  ),
                                   decoration: BoxDecoration(
                                     color: Colors.blue.withValues(alpha: 0.1),
                                     borderRadius: BorderRadius.circular(4),
                                   ),
                                   child: const Text(
-                                      'द्विभाषी (Hindi & English)',
-                                      style: TextStyle(
-                                          fontSize: 11,
-                                          color: Colors.blueAccent)),
+                                    'द्विभाषी (Hindi & English)',
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      color: Colors.blueAccent,
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
                           ],
                         ),
-                        trailing: const Icon(Icons.arrow_forward_ios,
-                            size: 16, color: Colors.grey),
+                        trailing: const Icon(
+                          Icons.arrow_forward_ios,
+                          size: 16,
+                          color: Colors.grey,
+                        ),
                         onTap: () => showTraditionSheet(context, t),
                       ),
                     );

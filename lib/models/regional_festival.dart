@@ -1,10 +1,4 @@
-enum IndianRegion {
-  panIndia,
-  northIndia,
-  southIndia,
-  eastIndia,
-  westIndia,
-}
+enum IndianRegion { panIndia, northIndia, southIndia, eastIndia, westIndia }
 
 class RegionalFestivalFilter {
   static List<String> getRegionFestivals(IndianRegion region) {

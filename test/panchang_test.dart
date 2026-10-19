@@ -7,9 +7,9 @@ void main() {
 
   setUpAll(() {
     // Use dart:io File — rootBundle is unavailable in unit test context.
-    days = jsonDecode(
-      File('assets/data/panchang_2026.json').readAsStringSync(),
-    ) as List<dynamic>;
+    days =
+        jsonDecode(File('assets/data/panchang_2026.json').readAsStringSync())
+            as List<dynamic>;
   });
 
   group('Panchang Astronomical Calculation Verification', () {
@@ -53,8 +53,11 @@ void main() {
     test('Verify Rahu Kaal string is non-empty for all days', () {
       for (final day in days) {
         final rahuKaal = day['rahu_kaal'] as String? ?? '';
-        expect(rahuKaal.isNotEmpty, true,
-            reason: 'rahu_kaal empty on ${day['date']}');
+        expect(
+          rahuKaal.isNotEmpty,
+          true,
+          reason: 'rahu_kaal empty on ${day['date']}',
+        );
       }
     });
   });

@@ -198,53 +198,72 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               ),
               ListTile(
                 leading: const Icon(Icons.home_outlined, color: Colors.amber),
-                title: const Text('Home Dashboard',
-                    style: TextStyle(color: Colors.white)),
+                title: const Text(
+                  'Home Dashboard',
+                  style: TextStyle(color: Colors.white),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   _onNavigateTab(0);
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.calendar_month_outlined,
-                    color: Colors.amber),
-                title: const Text('Panchang Calendar 2026',
-                    style: TextStyle(color: Colors.white)),
+                leading: const Icon(
+                  Icons.calendar_month_outlined,
+                  color: Colors.amber,
+                ),
+                title: const Text(
+                  'Panchang Calendar 2026',
+                  style: TextStyle(color: Colors.white),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   _onNavigateTab(1);
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.auto_stories_outlined,
-                    color: Colors.amber),
-                title: const Text('Sacred Scriptures & Vedas',
-                    style: TextStyle(color: Colors.white)),
+                leading: const Icon(
+                  Icons.auto_stories_outlined,
+                  color: Colors.amber,
+                ),
+                title: const Text(
+                  'Sacred Scriptures & Vedas',
+                  style: TextStyle(color: Colors.white),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   _onNavigateTab(2);
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.cloud_download_outlined,
-                    color: Colors.amber),
-                title: const Text('Google Drive PDF Reader',
-                    style: TextStyle(color: Colors.white)),
+                leading: const Icon(
+                  Icons.cloud_download_outlined,
+                  color: Colors.amber,
+                ),
+                title: const Text(
+                  'Google Drive PDF Reader',
+                  style: TextStyle(color: Colors.white),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (_) => const DriveLibraryScreen()),
+                      builder: (_) => const DriveLibraryScreen(),
+                    ),
                   );
                 },
               ),
               const Divider(color: Colors.white24),
               ListTile(
-                leading: const Icon(Icons.notifications_active_outlined,
-                    color: Colors.amber),
-                title: const Text('Spiritual Reminders & Alerts',
-                    style: TextStyle(color: Colors.white)),
+                leading: const Icon(
+                  Icons.notifications_active_outlined,
+                  color: Colors.amber,
+                ),
+                title: const Text(
+                  'Spiritual Reminders & Alerts',
+                  style: TextStyle(color: Colors.white),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   showNotificationSheet(context);
@@ -262,10 +281,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           ),
         ),
       ),
-      body: IndexedStack(
-        index: _currentIndex,
-        children: _screens,
-      ),
+      body: IndexedStack(index: _currentIndex, children: _screens),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) => setState(() => _currentIndex = index),

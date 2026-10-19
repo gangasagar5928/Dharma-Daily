@@ -102,8 +102,11 @@ class _NotificationDetailSheetState extends State<NotificationDetailSheet> {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Row(
               children: [
-                const Icon(Icons.notifications_active,
-                    color: Colors.amber, size: 24),
+                const Icon(
+                  Icons.notifications_active,
+                  color: Colors.amber,
+                  size: 24,
+                ),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
@@ -165,8 +168,9 @@ class _NotificationDetailSheetState extends State<NotificationDetailSheet> {
                   decoration: BoxDecoration(
                     color: Colors.amber.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
-                    border:
-                        Border.all(color: Colors.amber.withValues(alpha: 0.3)),
+                    border: Border.all(
+                      color: Colors.amber.withValues(alpha: 0.3),
+                    ),
                   ),
                   child: Row(
                     children: [
@@ -267,8 +271,10 @@ class _ScriptureDetailSheetState extends State<ScriptureDetailSheet> {
                       ),
                       Text(
                         widget.scripture.subtitle,
-                        style:
-                            const TextStyle(fontSize: 13, color: Colors.grey),
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: Colors.grey,
+                        ),
                       ),
                     ],
                   ),
@@ -294,8 +300,10 @@ class _ScriptureDetailSheetState extends State<ScriptureDetailSheet> {
                   final isSelected = index == _selectedChapterIndex;
                   final ch = widget.scripture.chapters[index];
                   return Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 4,
+                      vertical: 6,
+                    ),
                     child: ChoiceChip(
                       label: Text('Ch ${ch.number}: ${ch.name}'),
                       selected: isSelected,
@@ -335,10 +343,13 @@ class _ScriptureDetailSheetState extends State<ScriptureDetailSheet> {
                                 children: [
                                   Container(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 8, vertical: 2),
+                                      horizontal: 8,
+                                      vertical: 2,
+                                    ),
                                     decoration: BoxDecoration(
-                                      color:
-                                          Colors.amber.withValues(alpha: 0.2),
+                                      color: Colors.amber.withValues(
+                                        alpha: 0.2,
+                                      ),
                                       borderRadius: BorderRadius.circular(6),
                                     ),
                                     child: Text(
@@ -362,7 +373,8 @@ class _ScriptureDetailSheetState extends State<ScriptureDetailSheet> {
                                     ),
                                     onPressed: () async {
                                       await PrefsService.toggleBookmark(
-                                          verseKey);
+                                        verseKey,
+                                      );
                                       setState(() {});
                                     },
                                   ),
@@ -403,16 +415,16 @@ class _ScriptureDetailSheetState extends State<ScriptureDetailSheet> {
                                 Container(
                                   padding: const EdgeInsets.all(10),
                                   decoration: BoxDecoration(
-                                    color: Theme.of(context)
-                                        .colorScheme
-                                        .primary
+                                    color: Theme.of(context).colorScheme.primary
                                         .withValues(alpha: 0.08),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Text(
                                     verse.meaning,
                                     style: const TextStyle(
-                                        fontSize: 13, height: 1.4),
+                                      fontSize: 13,
+                                      height: 1.4,
+                                    ),
                                   ),
                                 ),
                               ],
@@ -448,10 +460,12 @@ class _TraditionDetailSheetState extends State<TraditionDetailSheet> {
     final title = _language == 'hi' ? t.titleHi : t.title;
     final subtitle = _language == 'hi' ? t.subtitleHi : t.subtitle;
     final shortStory = _language == 'hi' ? t.shortStoryHi : t.shortStory;
-    final historicalOrigin =
-        _language == 'hi' ? t.historicalOriginHi : t.historicalOrigin;
-    final scientificLogic =
-        _language == 'hi' ? t.scientificLogicHi : t.scientificLogic;
+    final historicalOrigin = _language == 'hi'
+        ? t.historicalOriginHi
+        : t.historicalOrigin;
+    final scientificLogic = _language == 'hi'
+        ? t.scientificLogicHi
+        : t.scientificLogic;
 
     return Container(
       height: MediaQuery.of(context).size.height * 0.88,
@@ -488,15 +502,19 @@ class _TraditionDetailSheetState extends State<TraditionDetailSheet> {
                       ),
                       Text(
                         subtitle,
-                        style:
-                            const TextStyle(fontSize: 13, color: Colors.grey),
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: Colors.grey,
+                        ),
                       ),
                     ],
                   ),
                 ),
                 IconButton(
-                  icon: Icon(isFav ? Icons.favorite : Icons.favorite_border,
-                      color: Colors.red),
+                  icon: Icon(
+                    isFav ? Icons.favorite : Icons.favorite_border,
+                    color: Colors.red,
+                  ),
                   onPressed: () async {
                     await PrefsService.toggleFavoriteTradition(t.id);
                     setState(() {});
@@ -518,9 +536,10 @@ class _TraditionDetailSheetState extends State<TraditionDetailSheet> {
               children: [
                 const Icon(Icons.translate, size: 18, color: Colors.amber),
                 const SizedBox(width: 8),
-                const Text('Language / भाषा:',
-                    style:
-                        TextStyle(fontSize: 13, fontWeight: FontWeight.bold)),
+                const Text(
+                  'Language / भाषा:',
+                  style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                ),
                 const Spacer(),
                 ChoiceChip(
                   label: const Text('हिंदी (Hindi)'),
@@ -548,49 +567,61 @@ class _TraditionDetailSheetState extends State<TraditionDetailSheet> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _buildSectionTitle(_language == 'hi'
-                      ? 'परंपरा एवं अभ्यास (Overview)'
-                      : 'Overview & Practice'),
+                  _buildSectionTitle(
+                    _language == 'hi'
+                        ? 'परंपरा एवं अभ्यास (Overview)'
+                        : 'Overview & Practice',
+                  ),
                   Text(
                     shortStory,
                     style: TextStyle(
                       fontSize: 15,
                       height: 1.5,
-                      fontFamily:
-                          _language == 'hi' ? 'NotoSansDevanagari' : null,
+                      fontFamily: _language == 'hi'
+                          ? 'NotoSansDevanagari'
+                          : null,
                     ),
                   ),
                   const SizedBox(height: 20),
-                  _buildSectionTitle(_language == 'hi'
-                      ? 'ऐतिहासिक उद्गम (Historical Origin)'
-                      : 'Historical Origin'),
+                  _buildSectionTitle(
+                    _language == 'hi'
+                        ? 'ऐतिहासिक उद्गम (Historical Origin)'
+                        : 'Historical Origin',
+                  ),
                   Text(
                     historicalOrigin,
                     style: TextStyle(
                       fontSize: 14,
                       height: 1.5,
                       color: Colors.grey,
-                      fontFamily:
-                          _language == 'hi' ? 'NotoSansDevanagari' : null,
+                      fontFamily: _language == 'hi'
+                          ? 'NotoSansDevanagari'
+                          : null,
                     ),
                   ),
                   const SizedBox(height: 20),
-                  _buildSectionTitle(_language == 'hi'
-                      ? 'वैज्ञानिक एवं स्वास्थ्य तर्क (Scientific Logic)'
-                      : 'Scientific & Health Logic'),
+                  _buildSectionTitle(
+                    _language == 'hi'
+                        ? 'वैज्ञानिक एवं स्वास्थ्य तर्क (Scientific Logic)'
+                        : 'Scientific & Health Logic',
+                  ),
                   Container(
                     padding: const EdgeInsets.all(14),
                     decoration: BoxDecoration(
                       color: Colors.blue.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
-                      border:
-                          Border.all(color: Colors.blue.withValues(alpha: 0.3)),
+                      border: Border.all(
+                        color: Colors.blue.withValues(alpha: 0.3),
+                      ),
                     ),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Icon(Icons.science,
-                            color: Colors.blueAccent, size: 22),
+                        const Icon(
+                          Icons.science,
+                          color: Colors.blueAccent,
+                          size: 22,
+                        ),
                         const SizedBox(width: 12),
                         Expanded(
                           child: Text(
@@ -609,14 +640,19 @@ class _TraditionDetailSheetState extends State<TraditionDetailSheet> {
                   ),
                   const SizedBox(height: 20),
                   if (t.source.isNotEmpty) ...[
-                    _buildSectionTitle(_language == 'hi'
-                        ? 'शास्त्र प्रमाण (Scriptural Source)'
-                        : 'Scriptural Reference'),
-                    Text(t.source,
-                        style: const TextStyle(
-                            fontSize: 13,
-                            fontStyle: FontStyle.italic,
-                            color: Colors.amber)),
+                    _buildSectionTitle(
+                      _language == 'hi'
+                          ? 'शास्त्र प्रमाण (Scriptural Source)'
+                          : 'Scriptural Reference',
+                    ),
+                    Text(
+                      t.source,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        fontStyle: FontStyle.italic,
+                        color: Colors.amber,
+                      ),
+                    ),
                   ],
                 ],
               ),
@@ -656,8 +692,9 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
   @override
   Widget build(BuildContext context) {
     final v = widget.veda;
-    final currentSection =
-        v.sections.isNotEmpty ? v.sections[_selectedSectionIndex] : null;
+    final currentSection = v.sections.isNotEmpty
+        ? v.sections[_selectedSectionIndex]
+        : null;
 
     return Container(
       height: MediaQuery.of(context).size.height * 0.9,
@@ -694,8 +731,10 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                       ),
                       Text(
                         v.subtitle,
-                        style:
-                            const TextStyle(fontSize: 13, color: Colors.grey),
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: Colors.grey,
+                        ),
                       ),
                     ],
                   ),
@@ -711,14 +750,17 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                           s.id == v.id ||
                           s.id.replaceAll('_', '-') ==
                               v.id.replaceAll('_', '-'),
-                      orElse: () => sources.firstWhere((s) => s.id == 'rigveda',
-                          orElse: () => sources.first),
+                      orElse: () => sources.firstWhere(
+                        (s) => s.id == 'rigveda',
+                        orElse: () => sources.first,
+                      ),
                     );
                     if (context.mounted) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (_) => DrivePdfScreen(source: source)),
+                          builder: (_) => DrivePdfScreen(source: source),
+                        ),
                       );
                     }
                   },
@@ -744,11 +786,15 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                   final isSelected = index == _selectedSectionIndex;
                   final sec = v.sections[index];
                   return Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 4,
+                      vertical: 6,
+                    ),
                     child: ChoiceChip(
-                      label: Text(sec.sectionName,
-                          style: const TextStyle(fontSize: 12)),
+                      label: Text(
+                        sec.sectionName,
+                        style: const TextStyle(fontSize: 12),
+                      ),
                       selected: isSelected,
                       onSelected: (val) {
                         if (val) setState(() => _selectedSectionIndex = index);
@@ -772,7 +818,8 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                       color: Colors.amber.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
-                          color: Colors.amber.withValues(alpha: 0.3)),
+                        color: Colors.amber.withValues(alpha: 0.3),
+                      ),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -780,18 +827,27 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                         Row(
                           children: [
                             Chip(
-                              avatar: const Icon(Icons.history_edu,
-                                  size: 14, color: Colors.amber),
-                              label: Text('काल: ${v.vedicPeriod}',
-                                  style: const TextStyle(fontSize: 11)),
+                              avatar: const Icon(
+                                Icons.history_edu,
+                                size: 14,
+                                color: Colors.amber,
+                              ),
+                              label: Text(
+                                'काल: ${v.vedicPeriod}',
+                                style: const TextStyle(fontSize: 11),
+                              ),
                             ),
                             const SizedBox(width: 8),
                             Chip(
-                              avatar: const Icon(Icons.format_list_numbered,
-                                  size: 14, color: Colors.amber),
+                              avatar: const Icon(
+                                Icons.format_list_numbered,
+                                size: 14,
+                                color: Colors.amber,
+                              ),
                               label: Text(
-                                  '${v.totalMandalas} मण्डल • ${v.totalSuktas} सूक्त',
-                                  style: const TextStyle(fontSize: 11)),
+                                '${v.totalMandalas} मण्डल • ${v.totalSuktas} सूक्त',
+                                style: const TextStyle(fontSize: 11),
+                              ),
                             ),
                           ],
                         ),
@@ -799,7 +855,9 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                         Text(
                           v.summary,
                           style: GoogleFonts.notoSansDevanagari(
-                              fontSize: 14, height: 1.4),
+                            fontSize: 14,
+                            height: 1.4,
+                          ),
                         ),
                       ],
                     ),
@@ -811,15 +869,18 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                     Text(
                       currentSection.sectionName,
                       style: GoogleFonts.cinzel(
-                          fontSize: 17,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.amber),
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber,
+                      ),
                     ),
                     const SizedBox(height: 4),
                     Text(
                       currentSection.summaryHi,
                       style: GoogleFonts.notoSansDevanagari(
-                          fontSize: 13, color: Colors.grey),
+                        fontSize: 13,
+                        color: Colors.grey,
+                      ),
                     ),
                     const SizedBox(height: 16),
 
@@ -835,7 +896,9 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                             children: [
                               Container(
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: 8, vertical: 2),
+                                  horizontal: 8,
+                                  vertical: 2,
+                                ),
                                 decoration: BoxDecoration(
                                   color: Colors.amber.withValues(alpha: 0.2),
                                   borderRadius: BorderRadius.circular(6),
@@ -843,9 +906,10 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                                 child: Text(
                                   'मंत्र ${mantra.number}',
                                   style: const TextStyle(
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.amber),
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.amber,
+                                  ),
                                 ),
                               ),
                               const SizedBox(height: 12),
@@ -864,34 +928,45 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
                                 SelectableText(
                                   mantra.transliteration,
                                   style: const TextStyle(
-                                      fontSize: 13,
-                                      fontStyle: FontStyle.italic,
-                                      color: Colors.grey),
+                                    fontSize: 13,
+                                    fontStyle: FontStyle.italic,
+                                    color: Colors.grey,
+                                  ),
                                 ),
                               ],
                               const Divider(height: 20),
-                              Text('अर्थ (Hindi):',
-                                  style: GoogleFonts.cinzel(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.amber)),
+                              Text(
+                                'अर्थ (Hindi):',
+                                style: GoogleFonts.cinzel(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.amber,
+                                ),
+                              ),
                               const SizedBox(height: 4),
                               SelectableText(
                                 mantra.translationHi,
                                 style: GoogleFonts.notoSansDevanagari(
-                                    fontSize: 14, height: 1.4),
+                                  fontSize: 14,
+                                  height: 1.4,
+                                ),
                               ),
                               if (mantra.translationEn.isNotEmpty) ...[
                                 const SizedBox(height: 8),
-                                Text('English Translation:',
-                                    style: const TextStyle(
-                                        fontSize: 12, color: Colors.grey)),
+                                Text(
+                                  'English Translation:',
+                                  style: const TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.grey,
+                                  ),
+                                ),
                                 const SizedBox(height: 2),
                                 SelectableText(
                                   mantra.translationEn,
                                   style: const TextStyle(
-                                      fontSize: 13,
-                                      fontStyle: FontStyle.italic),
+                                    fontSize: 13,
+                                    fontStyle: FontStyle.italic,
+                                  ),
                                 ),
                               ],
                             ],
@@ -924,8 +999,9 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
   @override
   Widget build(BuildContext context) {
     final p = widget.puran;
-    final currentSection =
-        p.sections.isNotEmpty ? p.sections[_selectedSectionIndex] : null;
+    final currentSection = p.sections.isNotEmpty
+        ? p.sections[_selectedSectionIndex]
+        : null;
 
     return Container(
       height: MediaQuery.of(context).size.height * 0.9,
@@ -962,15 +1038,19 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                       ),
                       Text(
                         p.subtitle,
-                        style:
-                            const TextStyle(fontSize: 13, color: Colors.grey),
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: Colors.grey,
+                        ),
                       ),
                     ],
                   ),
                 ),
                 IconButton(
-                  icon: const Icon(Icons.picture_as_pdf,
-                      color: Colors.purpleAccent),
+                  icon: const Icon(
+                    Icons.picture_as_pdf,
+                    color: Colors.purpleAccent,
+                  ),
                   tooltip: 'Read Full PDF Scan (Google Drive)',
                   onPressed: () async {
                     await DriveSourcesService().load();
@@ -981,14 +1061,16 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                           s.id.replaceAll('_', '-') ==
                               p.id.replaceAll('_', '-'),
                       orElse: () => sources.firstWhere(
-                          (s) => s.id == 'bhagavat_puran',
-                          orElse: () => sources.first),
+                        (s) => s.id == 'bhagavat_puran',
+                        orElse: () => sources.first,
+                      ),
                     );
                     if (context.mounted) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (_) => DrivePdfScreen(source: source)),
+                          builder: (_) => DrivePdfScreen(source: source),
+                        ),
                       );
                     }
                   },
@@ -1014,11 +1096,15 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                   final isSelected = index == _selectedSectionIndex;
                   final sec = p.sections[index];
                   return Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 4,
+                      vertical: 6,
+                    ),
                     child: ChoiceChip(
-                      label:
-                          Text(sec.title, style: const TextStyle(fontSize: 12)),
+                      label: Text(
+                        sec.title,
+                        style: const TextStyle(fontSize: 12),
+                      ),
                       selected: isSelected,
                       onSelected: (val) {
                         if (val) setState(() => _selectedSectionIndex = index);
@@ -1042,7 +1128,8 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                       color: Colors.purple.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
-                          color: Colors.purple.withValues(alpha: 0.3)),
+                        color: Colors.purple.withValues(alpha: 0.3),
+                      ),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -1050,18 +1137,27 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                         Row(
                           children: [
                             Chip(
-                              avatar: const Icon(Icons.auto_stories,
-                                  size: 14, color: Colors.purpleAccent),
-                              label: Text('${p.versesCount} श्लोक',
-                                  style: const TextStyle(fontSize: 11)),
+                              avatar: const Icon(
+                                Icons.auto_stories,
+                                size: 14,
+                                color: Colors.purpleAccent,
+                              ),
+                              label: Text(
+                                '${p.versesCount} श्लोक',
+                                style: const TextStyle(fontSize: 11),
+                              ),
                             ),
                             const SizedBox(width: 8),
                             Chip(
-                              avatar: const Icon(Icons.account_tree,
-                                  size: 14, color: Colors.purpleAccent),
+                              avatar: const Icon(
+                                Icons.account_tree,
+                                size: 14,
+                                color: Colors.purpleAccent,
+                              ),
                               label: Text(
-                                  '${p.skandhasCount} स्कन्ध/खण्ड • ${p.chaptersCount} अध्याय',
-                                  style: const TextStyle(fontSize: 11)),
+                                '${p.skandhasCount} स्कन्ध/खण्ड • ${p.chaptersCount} अध्याय',
+                                style: const TextStyle(fontSize: 11),
+                              ),
                             ),
                           ],
                         ),
@@ -1069,7 +1165,9 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                         Text(
                           p.overviewHi,
                           style: GoogleFonts.notoSansDevanagari(
-                              fontSize: 14, height: 1.4),
+                            fontSize: 14,
+                            height: 1.4,
+                          ),
                         ),
                       ],
                     ),
@@ -1095,11 +1193,14 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                             ),
                             const SizedBox(height: 12),
                             if (currentSection.keyShloka.isNotEmpty) ...[
-                              Text('मूल श्लोक:',
-                                  style: GoogleFonts.cinzel(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.amber)),
+                              Text(
+                                'मूल श्लोक:',
+                                style: GoogleFonts.cinzel(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.amber,
+                                ),
+                              ),
                               const SizedBox(height: 4),
                               Container(
                                 padding: const EdgeInsets.all(12),
@@ -1119,16 +1220,21 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
                               ),
                               const SizedBox(height: 14),
                             ],
-                            Text('पौराणिक कथा एवं सार (Hindi Katha):',
-                                style: GoogleFonts.cinzel(
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.purpleAccent)),
+                            Text(
+                              'पौराणिक कथा एवं सार (Hindi Katha):',
+                              style: GoogleFonts.cinzel(
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.purpleAccent,
+                              ),
+                            ),
                             const SizedBox(height: 6),
                             SelectableText(
                               currentSection.kathaHi,
                               style: GoogleFonts.notoSansDevanagari(
-                                  fontSize: 15, height: 1.5),
+                                fontSize: 15,
+                                height: 1.5,
+                              ),
                             ),
                           ],
                         ),
@@ -1187,8 +1293,10 @@ class FestivalDetailSheet extends StatelessWidget {
                       ),
                       Text(
                         'Date: ${f.date}',
-                        style:
-                            const TextStyle(fontSize: 13, color: Colors.grey),
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: Colors.grey,
+                        ),
                       ),
                     ],
                   ),
@@ -1208,13 +1316,20 @@ class FestivalDetailSheet extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   _buildSectionTitle(context, 'Significance'),
-                  Text(f.significance,
-                      style: const TextStyle(fontSize: 15, height: 1.5)),
+                  Text(
+                    f.significance,
+                    style: const TextStyle(fontSize: 15, height: 1.5),
+                  ),
                   const SizedBox(height: 20),
                   _buildSectionTitle(context, 'The Story & Mythology'),
-                  Text(f.story,
-                      style: const TextStyle(
-                          fontSize: 14, height: 1.5, color: Colors.grey)),
+                  Text(
+                    f.story,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      height: 1.5,
+                      color: Colors.grey,
+                    ),
+                  ),
                   const SizedBox(height: 20),
                   if (f.teenTakeaway.isNotEmpty) ...[
                     _buildSectionTitle(context, 'Youth & Modern Takeaway'),
@@ -1224,13 +1339,17 @@ class FestivalDetailSheet extends StatelessWidget {
                         color: Colors.amber.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
-                            color: Colors.amber.withValues(alpha: 0.3)),
+                          color: Colors.amber.withValues(alpha: 0.3),
+                        ),
                       ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Icon(Icons.lightbulb_outline,
-                              color: Colors.amber, size: 22),
+                          const Icon(
+                            Icons.lightbulb_outline,
+                            color: Colors.amber,
+                            size: 22,
+                          ),
                           const SizedBox(width: 12),
                           Expanded(
                             child: Text(
