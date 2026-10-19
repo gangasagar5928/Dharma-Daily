@@ -3,7 +3,8 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  test('Verify 100% ID alignment between drive_sources.json and full texts', () {
+  test('Verify 100% ID alignment between drive_sources.json and full texts',
+      () {
     final driveFile = File('assets/data/drive_sources.json');
     final puranasFile = File('assets/data/puranas_full.json');
     final vedasFile = File('assets/data/vedas_full.json');
@@ -14,12 +15,10 @@ void main() {
         jsonDecode(puranasFile.readAsStringSync()) as List<dynamic>;
     final vedasJson = jsonDecode(vedasFile.readAsStringSync()) as List<dynamic>;
 
-    final drivePuranIds = (driveJson['puranas'] as List)
-        .map((e) => e['id'] as String)
-        .toSet();
-    final driveVedaIds = (driveJson['vedas'] as List)
-        .map((e) => e['id'] as String)
-        .toSet();
+    final drivePuranIds =
+        (driveJson['puranas'] as List).map((e) => e['id'] as String).toSet();
+    final driveVedaIds =
+        (driveJson['vedas'] as List).map((e) => e['id'] as String).toSet();
 
     // Verify Purans
     for (final p in puranasJson) {

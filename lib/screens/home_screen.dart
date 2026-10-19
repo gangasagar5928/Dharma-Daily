@@ -13,14 +13,12 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final ds = DataService();
     final todayStr = DateTime.now().toIso8601String().substring(0, 10);
-    final todayPanchang =
-        ds.getPanchangForDate(todayStr) ??
+    final todayPanchang = ds.getPanchangForDate(todayStr) ??
         (ds.panchangDays.isNotEmpty ? ds.panchangDays.first : null);
     final dailyVerse = ds.getRandomDailyVerse();
     final upcomingFestivals = ds.getUpcomingFestivals(limit: 6);
-    final featuredTradition = ds.traditions.isNotEmpty
-        ? ds.traditions.first
-        : null;
+    final featuredTradition =
+        ds.traditions.isNotEmpty ? ds.traditions.first : null;
 
     return Scaffold(
       body: SafeArea(

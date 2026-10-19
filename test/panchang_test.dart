@@ -7,9 +7,8 @@ void main() {
 
   setUpAll(() {
     // Use dart:io File — rootBundle is unavailable in unit test context.
-    days =
-        jsonDecode(File('assets/data/panchang_2026.json').readAsStringSync())
-            as List<dynamic>;
+    days = jsonDecode(File('assets/data/panchang_2026.json').readAsStringSync())
+        as List<dynamic>;
   });
 
   group('Panchang Astronomical Calculation Verification', () {

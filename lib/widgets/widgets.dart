@@ -82,8 +82,7 @@ class TopHeaderBanner extends StatelessWidget {
 
                   // Notification Touch Area
                   InkWell(
-                    onTap:
-                        onNotificationTap ??
+                    onTap: onNotificationTap ??
                         () {
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(

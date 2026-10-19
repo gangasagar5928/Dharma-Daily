@@ -20,11 +20,11 @@ class DriveSource {
   });
 
   factory DriveSource.fromJson(Map<String, dynamic> json) => DriveSource(
-    id: json['id'] as String,
-    name: json['name'] as String,
-    nameEn: json['name_en'] as String,
-    fileId: json['file_id'] as String,
-  );
+        id: json['id'] as String,
+        name: json['name'] as String,
+        nameEn: json['name_en'] as String,
+        fileId: json['file_id'] as String,
+      );
 
   String get downloadUrl =>
       'https://drive.usercontent.google.com/download?id=$fileId&export=download&confirm=t';
@@ -49,9 +49,8 @@ class DriveSourcesService {
     try {
       final str = await rootBundle.loadString('assets/data/drive_sources.json');
       final json = jsonDecode(str) as Map<String, dynamic>;
-      _vedas = (json['vedas'] as List)
-          .map((e) => DriveSource.fromJson(e))
-          .toList();
+      _vedas =
+          (json['vedas'] as List).map((e) => DriveSource.fromJson(e)).toList();
       _puranas = (json['puranas'] as List)
           .map((e) => DriveSource.fromJson(e))
           .toList();

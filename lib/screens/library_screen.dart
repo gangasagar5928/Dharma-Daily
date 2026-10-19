@@ -37,8 +37,8 @@ class _LibraryScreenState extends State<LibraryScreen>
     final filteredScriptures = ds.scriptures.where((s) {
       final matchesSearch =
           s.title.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-          s.subtitle.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-          s.author.toLowerCase().contains(_searchQuery.toLowerCase());
+              s.subtitle.toLowerCase().contains(_searchQuery.toLowerCase()) ||
+              s.author.toLowerCase().contains(_searchQuery.toLowerCase());
       return matchesSearch;
     }).toList();
 
@@ -56,9 +56,9 @@ class _LibraryScreenState extends State<LibraryScreen>
     final filteredTraditions = ds.traditions.where((t) {
       final matchesSearch =
           t.title.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-          t.titleHi.contains(_searchQuery) ||
-          t.subtitle.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-          t.category.toLowerCase().contains(_searchQuery.toLowerCase());
+              t.titleHi.contains(_searchQuery) ||
+              t.subtitle.toLowerCase().contains(_searchQuery.toLowerCase()) ||
+              t.category.toLowerCase().contains(_searchQuery.toLowerCase());
       final matchesCat =
           _selectedCategory == 'All' || t.category == _selectedCategory;
       return matchesSearch && matchesCat;

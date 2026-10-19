@@ -415,7 +415,9 @@ class _ScriptureDetailSheetState extends State<ScriptureDetailSheet> {
                                 Container(
                                   padding: const EdgeInsets.all(10),
                                   decoration: BoxDecoration(
-                                    color: Theme.of(context).colorScheme.primary
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .primary
                                         .withValues(alpha: 0.08),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
@@ -460,12 +462,10 @@ class _TraditionDetailSheetState extends State<TraditionDetailSheet> {
     final title = _language == 'hi' ? t.titleHi : t.title;
     final subtitle = _language == 'hi' ? t.subtitleHi : t.subtitle;
     final shortStory = _language == 'hi' ? t.shortStoryHi : t.shortStory;
-    final historicalOrigin = _language == 'hi'
-        ? t.historicalOriginHi
-        : t.historicalOrigin;
-    final scientificLogic = _language == 'hi'
-        ? t.scientificLogicHi
-        : t.scientificLogic;
+    final historicalOrigin =
+        _language == 'hi' ? t.historicalOriginHi : t.historicalOrigin;
+    final scientificLogic =
+        _language == 'hi' ? t.scientificLogicHi : t.scientificLogic;
 
     return Container(
       height: MediaQuery.of(context).size.height * 0.88,
@@ -577,9 +577,8 @@ class _TraditionDetailSheetState extends State<TraditionDetailSheet> {
                     style: TextStyle(
                       fontSize: 15,
                       height: 1.5,
-                      fontFamily: _language == 'hi'
-                          ? 'NotoSansDevanagari'
-                          : null,
+                      fontFamily:
+                          _language == 'hi' ? 'NotoSansDevanagari' : null,
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -594,9 +593,8 @@ class _TraditionDetailSheetState extends State<TraditionDetailSheet> {
                       fontSize: 14,
                       height: 1.5,
                       color: Colors.grey,
-                      fontFamily: _language == 'hi'
-                          ? 'NotoSansDevanagari'
-                          : null,
+                      fontFamily:
+                          _language == 'hi' ? 'NotoSansDevanagari' : null,
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -692,9 +690,8 @@ class _VedaDetailSheetState extends State<VedaDetailSheet> {
   @override
   Widget build(BuildContext context) {
     final v = widget.veda;
-    final currentSection = v.sections.isNotEmpty
-        ? v.sections[_selectedSectionIndex]
-        : null;
+    final currentSection =
+        v.sections.isNotEmpty ? v.sections[_selectedSectionIndex] : null;
 
     return Container(
       height: MediaQuery.of(context).size.height * 0.9,
@@ -999,9 +996,8 @@ class _PuranDetailSheetState extends State<PuranDetailSheet> {
   @override
   Widget build(BuildContext context) {
     final p = widget.puran;
-    final currentSection = p.sections.isNotEmpty
-        ? p.sections[_selectedSectionIndex]
-        : null;
+    final currentSection =
+        p.sections.isNotEmpty ? p.sections[_selectedSectionIndex] : null;
 
     return Container(
       height: MediaQuery.of(context).size.height * 0.9,

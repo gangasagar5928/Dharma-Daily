@@ -38,9 +38,8 @@ class DataService {
         );
         final dynamic panchangDecoded = await compute(jsonDecode, panchangStr);
         final List<dynamic> panchangJson = panchangDecoded as List<dynamic>;
-        _panchangDays = panchangJson
-            .map((e) => PanchangDay.fromJson(e))
-            .toList();
+        _panchangDays =
+            panchangJson.map((e) => PanchangDay.fromJson(e)).toList();
       } catch (e) {
         debugPrint('Error loading Panchang: $e');
         _loadError = 'Failed to load Panchang data.';
@@ -179,8 +178,7 @@ class DataService {
           subtitle: 'The Foundation of Ashtanga Yoga (196 Sutras)',
           author: sys['author'] ?? 'Maharishi Patanjali',
           period: sys['period'] ?? 'c. 400 CE',
-          introduction:
-              sys['introduction'] ??
+          introduction: sys['introduction'] ??
               'A collection of 196 Sanskrit sutras on the theory and practice of Yoga.',
           chapters: chapters,
           flatVerses: chapters.expand((c) => c.verses).toList(),
@@ -197,9 +195,9 @@ class DataService {
         if (data is Map<String, dynamic>) {
           verses.add(
             Verse(
-              number:
-                  (data['doha_number'] ?? data['chaupai_number'] ?? defaultNum)
-                      as int? ??
+              number: (data['doha_number'] ??
+                      data['chaupai_number'] ??
+                      defaultNum) as int? ??
                   defaultNum,
               sanskrit: data['sanskrit'] ?? data['text'] ?? '',
               transliteration: data['transliteration'] ?? '',
@@ -213,9 +211,9 @@ class DataService {
             if (item is Map<String, dynamic>) {
               verses.add(
                 Verse(
-                  number:
-                      (item['doha_number'] ?? item['chaupai_number'] ?? count++)
-                          as int? ??
+                  number: (item['doha_number'] ??
+                          item['chaupai_number'] ??
+                          count++) as int? ??
                       count,
                   sanskrit: item['sanskrit'] ?? item['text'] ?? '',
                   transliteration: item['transliteration'] ?? '',
@@ -242,8 +240,7 @@ class DataService {
           subtitle: '40 Hymns of Devotion & Courage',
           author: hc['author'] ?? 'Goswami Tulsidas',
           period: hc['period'] ?? '16th Century',
-          introduction:
-              hc['introduction'] ??
+          introduction: hc['introduction'] ??
               'A devotional hymn addressed to Lord Hanuman, recited daily by millions for strength and peace.',
           chapters: [
             Chapter(
@@ -285,8 +282,7 @@ class DataService {
           subtitle: 'Core Philosophical Texts of Vedanta',
           author: 'Ancient Rishis',
           period: '800 - 500 BCE',
-          introduction:
-              up['introduction'] ??
+          introduction: up['introduction'] ??
               'Philosophical texts exploring Brahman, Atman, and the nature of ultimate reality.',
           chapters: chapters,
           flatVerses: chapters.expand((c) => c.verses).toList(),
@@ -306,8 +302,7 @@ class DataService {
           subtitle: 'Maxims on Governance, Ethics & Life',
           author: cn['author'] ?? 'Chanakya (Kautilya)',
           period: cn['period'] ?? 'c. 300 BCE',
-          introduction:
-              cn['introduction'] ??
+          introduction: cn['introduction'] ??
               'Practical maxims on political science, personal strategy, and ethical living.',
           chapters: [
             Chapter(
@@ -336,8 +331,7 @@ class DataService {
           subtitle: 'Crest-Jewel of Discrimination',
           author: vc['author'] ?? 'Adi Shankaracharya',
           period: vc['period'] ?? '8th Century CE',
-          introduction:
-              vc['introduction'] ??
+          introduction: vc['introduction'] ??
               'A seminal Advaita Vedanta text expounding discrimination between the Real and Unreal.',
           chapters: [
             Chapter(
@@ -387,9 +381,8 @@ class DataService {
 
   List<Festival> getUpcomingFestivals({int limit = 5}) {
     final todayStr = DateTime.now().toIso8601String().substring(0, 10);
-    final upcoming = _festivals
-        .where((f) => f.date.compareTo(todayStr) >= 0)
-        .toList();
+    final upcoming =
+        _festivals.where((f) => f.date.compareTo(todayStr) >= 0).toList();
     if (upcoming.isEmpty) return _festivals.take(limit).toList();
     return upcoming.take(limit).toList();
   }
@@ -419,9 +412,8 @@ class DataService {
         meaning: 'Sacred ancient chant',
       );
     }
-    final dayOfYear = DateTime.now()
-        .difference(DateTime(DateTime.now().year, 1, 1))
-        .inDays;
+    final dayOfYear =
+        DateTime.now().difference(DateTime(DateTime.now().year, 1, 1)).inDays;
     final index = dayOfYear % gita.flatVerses.length;
     return gita.flatVerses[index];
   }

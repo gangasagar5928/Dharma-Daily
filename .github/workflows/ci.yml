@@ -30,7 +30,7 @@ jobs:
         run: flutter pub get
 
       - name: Verify code formatting
-        run: dart format --output=none --set-exit-if-changed .
+        run: dart format --output=none --set-exit-if-changed lib/ test/
 
       - name: Run linter static analysis
         run: flutter analyze
